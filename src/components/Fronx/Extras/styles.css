@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.panel p {
+  font-size: 28pt;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  padding: 10px;
+}
+
+.panel p a {
+  font-size: 40pt;
+  color: white;
+  /* font-family: 'Rubik', sans-serif; */
+  padding: 10px;
+}
+
+.panel p a:hover {
+  color: gray !important;
+}
+
+.App .panel {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.hfont {
+  /* font-family: 'Rubik', sans-serif; */
+  margin-top: 30rem;
+}
+
+.hclass {
+  visibility: hidden;
+}

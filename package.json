@@ -1,0 +1,103 @@
+{
+  "name": "saboonexa",
+  "version": "0.1.0",
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "@mui/material": "^5.14.8",
+    "@mui/x-data-grid": "^6.13.0",
+    "@reduxjs/toolkit": "^1.8.3",
+    "aos": "^2.3.4",
+    "axios": "^0.26.1",
+    "firebase": "^9.23.0",
+    "formik": "^2.4.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.11.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "react-snap": "^1.23.0",
+    "react-toastify": "^8.2.0",
+    "react-tridi": "^2.1.1",
+    "swiper": "^8.4.7",
+    "xlsx": "^0.18.5",
+    "yup": "^1.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "keywords": [
+    "Best Nexa Dealers in Hyderabad | Nexa Hyderabad",
+    "Best Maruti Suzuki Dealer in Hyderabad & Secundrabad | Saboo Nexa",
+    "Nexa XL6 Price in Hyderabad | Maruti XL6 On Road Price in Hyderabad",
+    "Nexa Ciaz Car Price, Mileage, Specifications & Offers | Saboo Nexa",
+    "Nexa Baleno Price in Hyderabad | Maruti Baleno Offers & Discounts",
+    "Nexa Ignis Price & Offers in Hyderabad | Saboo Nexa",
+    "Maruti New Suzuki Grand Vitara On Road Price in Secunderabad, Hyderabad & 2022 Offers",
+    "Maruti Suzuki Invicto On-Road Price in Hyderabad | Saboo NEXA",
+    "Maruti Suzuki Fronx On-Road Price in Hyderabad | Saboo NEXA",
+    "Maruti Suzuki Jimny On-Road Price in Hyderabad | Saboo NEXA",
+    "Maruti Car Insurance price, Offers & Renewal Details | Saboo Nexa",
+    "Maruti Suzuki Car Finance with Low Interest | Saboo Nexa",
+    "Maruti Suzuki 24/7 Car Service Center in India | Saboo NEXA",
+    "Maruti Suzuki Nexa Showrooms in Hyderabad & Secundrabad | Saboo Nexa",
+    "Maruti Suzuki Nexa Showrooms in Hyderabad & Secundrabad | Saboo Nexa",
+    "Maruti Suzuki Authorised True Value Car Showroom in Hyderabad",
+    "Client Testimonials | Saboo Nexa | RKS Motor",
+    "Nexa CNG Car On-Road Price, Mileage, Specifications & Offers | Saboo Nexa",
+    "Awards & Achievements | Nexa Car Dealers in Hyderabad",
+    "Maruti Suzuki Nexa Showroom Images in Hyderabad | Maruti Suzuki Nexa Workshop Images",
+    "Nexa Genuine Accessories & Spare Parts in Hyderabad | Saboo NEXA",
+    "Nexa Car Offers in Hyderabad | Saboo NEXA",
+    "Maruti Nexa Car Service in Hyderabad | Nexa Service Center Near Me",
+    "Maruti Suzuki Nexa Showroom, Car Finance, Maruti Insurance |SabooNexa",
+    "Maruti Suzuki Terms and Conditions | Saboo Nexa",
+    "Compare Cars | Nexa Hyderabad | Saboo Nexa",
+    "RKS Motor | Maruti Suzuki Showrooms in Hyderabad",
+    "Maruti Suzuki Grand Vitara CNG Price",
+    "New Nexa Baleno CNG Price in Hyderabad | Maruti Baleno 2023 Price, Offers & Discounts",
+    "Nexa XL6 CNG Price in Hyderabad | Maruti XL6 CNG On Road Price in Hyderabad",
+    "Maruti Suzuki Fronx On-Road Price in Hyderabad | Saboo NEXA",
+    "Contact us for Sales, Feedback or Complaint | SabooNexa",
+    "Explore job vacancies in Saboo Rks in Hyderabad",
+    "Saboo Motor Driving School Join Today"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
+    "source-map-explorer": "^2.5.3",
+    "tailwindcss": "^3.0.23",
+    "tailwindcss-responsive-embed": "^1.0.0"
+  }
+}

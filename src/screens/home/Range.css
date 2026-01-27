@@ -1,0 +1,77 @@
+/* media query start */
+@media screen and (min-width: 1024px) {
+  .slider_margin_range {
+    margin-top: -23rem;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .carSlider .swiper-slide .slider_car {
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mainslidermobile {
+    display: none;
+  }
+
+  .carSlider .swiper-slide img {
+    width: 100%;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  .carSlider .swiper-slide .car_content {
+    display: none;
+  }
+
+  .carSlider .swiper-slide-active .car_content {
+    display: flex;
+  }
+
+  .carSlider .swiper-slide-active img {
+    opacity: 1;
+    transition-duration: 2s;
+    transform: scale(1.1);
+  }
+
+  .carSlider .swiper-wrapper {
+    transition-duration: 0.8s ease !important;
+  }
+
+  .carSlider .swiper-slide img.car_logo {
+    display: none;
+  }
+
+  .carSlider .swiper-slide-active img.car_logo {
+    display: block;
+  }
+
+  .slider_margin_range {
+    margin-top: -27rem;
+  }
+}
+
+/* media query close */
+
+/* Mobile Versions */
+
+/*Slider car image height */
+@media screen and (max-width: 576px) {
+  .carSlider .swiper-slide .slider_car {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider_margin_range {
+    margin-top: -20rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider_margin_range {
+    margin-top: -26rem;
+  }
+}

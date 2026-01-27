@@ -1,0 +1,48 @@
+User-agent: Googlebot
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: Bingbot
+Disallow: /auth/sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: DuckDuckBot
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: Slurp
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: SemrushBot
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: AhrefsBot
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: Googlebot-Image
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: Googlebot-News
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+User-agent: Googlebot-Ads
+Disallow: /sign-in
+Disallow: /admin/
+Disallow: /thank-you
+
+# Block all other bots
+User-agent: *
+Disallow: /

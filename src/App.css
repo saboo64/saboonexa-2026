@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:wght@100&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f01b23 !important;
+}
+
+/* Slider buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 0 20px;
+  background-color: #1b1a1a;
+  /* background-color: transparent; */
+  border-radius: 20px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+  font-size: 15px !important;
+}
+
+/* Hover styles */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: white;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  color: black;
+}
+
+.arrow-dropdown-selected-car {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -10px;
+  right: 0;
+  margin: 0 auto;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+}
+
+.product_image {
+  transition: all 0.5s ease-in;
+  --webkit-transition: all 0.5s ease-in-out;
+}
+
+.product_image:hover {
+  transform: scale(1.1);
+  --webkit-transform: scale(1.1);
+}
+
+/* Pagination css
+.paginationButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.paginationButtons > li {
+  margin-left: 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.activePage {
+  background-color: #f01b23;
+  color: #fff;
+  border: none !important;
+} */
+
+.swiper-pagination-bullet {
+  height: 5px !important;
+  width: 5px !important;
+  border-radius: 20px !important;
+  background-color: #000000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important;
+  width: 14px !important;
+}
+
+.disabledPage,
+.disabledPage > a {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  /* background: var(--primary); Adjust background color */
+  border-radius: 1px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 100%;
+  border: 2px solid var(--primary);
+}
+
+:root {
+  --primary: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Adjust alpha channel to control transparency */
+  --secondary: rgb(0, 0, 0);
+}
+
+*::-webkit-scrollbar:hover {
+  background-color: rgb(255, 255, 255);
+  width: 8px;
+}
+
+/* Change secondary color to gray on hover */
+*::-webkit-scrollbar-thumb:hover {
+  width: 8px;
+}
