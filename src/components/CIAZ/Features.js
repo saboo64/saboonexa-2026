@@ -4,11 +4,11 @@ import { ciaz } from "../../constants/cars";
 
 function Features() {
   return (
-    <div className="max-w-7xl mx-auto py-6 lg:py-16 ">
-      <div className="grid md:grid-cols-4 md:space-x-4 lg:space-x-1 gap-4">
+    <div className="py-6 mx-auto max-w-7xl lg:py-16 ">
+      <div className="grid gap-4 md:grid-cols-4 md:space-x-4 lg:space-x-1">
         <Tab.Group>
           <div className="col-span-1">
-            <p className="p-4 bg-black w-full text-white ml-3 mb-1">Features</p>
+            <p className="w-full p-4 mb-1 ml-3 text-white bg-black">Features</p>
             <Tab.List className="space-x-3">
               {/* Engine */}
               <Tab
@@ -22,7 +22,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/engine.png"
                     alt="engine"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Engine</p>
                 </div>
@@ -40,7 +40,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/transmission.png"
                     alt="transmission"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Transmission</p>
                 </div>
@@ -58,7 +58,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/dimensions.png"
                     alt="dimensions"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Dimensions</p>
                 </div>
@@ -76,7 +76,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/weight.png"
                     alt="Weight"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Weight</p>
                 </div>
@@ -94,7 +94,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/brakes.png"
                     alt="Brakes"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Brakes</p>
                 </div>
@@ -112,7 +112,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/suspension.png"
                     alt="Suspension"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Suspension</p>
                 </div>
@@ -130,7 +130,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/tyre.png"
                     alt="Tyre Size"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Tyre Size</p>
                 </div>
@@ -148,7 +148,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/fuel.png"
                     alt="Fuel Tank"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Fuel Tank</p>
                 </div>
@@ -166,7 +166,7 @@ function Features() {
                   <img
                     src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/seat.png"
                     alt="Seating Capacity"
-                    className="h-5 w-5"
+                    className="w-5 h-5"
                   />
                   <p>Seating Capacity</p>
                 </div>
@@ -178,22 +178,22 @@ function Features() {
               {/* Engine */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">
+                  <div className="p-4 text-gray-300 bg-black">
                     Specifications
                   </div>
-                  <div className="bg-black p-4 text-gray-300">
+                  <div className="p-4 text-gray-300 bg-black">
                     K15 SMART HYBRID
                   </div>
 
                   {ciaz.engine.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.specs}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.var1}
                       </div>
                     </>
@@ -207,19 +207,19 @@ function Features() {
               {/* Transmission */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">
+                  <div className="p-4 text-gray-300 bg-black">
                     DRIVE & TRANSMISSION
                   </div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.transmission.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>
@@ -233,19 +233,19 @@ function Features() {
               {/* Dimensions */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">
+                  <div className="p-4 text-gray-300 bg-black">
                     Dimensions Type
                   </div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.dimensions.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>
@@ -259,17 +259,17 @@ function Features() {
               {/* Weight */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">Weight</div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Weight</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.weight.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>
@@ -283,17 +283,17 @@ function Features() {
               {/* Brakes */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">Body Type</div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Body Type</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.brakes.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>
@@ -307,17 +307,17 @@ function Features() {
               {/* Suspension */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">Body Type</div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Body Type</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.suspension.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>
@@ -331,17 +331,17 @@ function Features() {
               {/* Tyre Size */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">Body Type</div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Body Type</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.tyre.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>
@@ -355,17 +355,17 @@ function Features() {
               {/* Fuel Tank */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">Body Type</div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Body Type</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.fuel.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>
@@ -379,17 +379,17 @@ function Features() {
               {/* Seating Capacity */}
               <Tab.Panel>
                 <div className="grid grid-cols-2">
-                  <div className="bg-black p-4 text-gray-300">Body Type</div>
-                  <div className="bg-black p-4 text-gray-300">Petrol BS VI</div>
+                  <div className="p-4 text-gray-300 bg-black">Body Type</div>
+                  <div className="p-4 text-gray-300 bg-black">Petrol BS VI</div>
                   {ciaz.seating.map((item, index) => (
                     <>
                       <div
-                        className="bg-gray-100 p-4 text-gray-700"
+                        className="p-4 text-gray-700 bg-gray-100"
                         key={index}
                       >
                         {item.body}
                       </div>
-                      <div className="bg-gray-100 p-4 text-gray-700">
+                      <div className="p-4 text-gray-700 bg-gray-100">
                         {item.data}
                       </div>
                     </>

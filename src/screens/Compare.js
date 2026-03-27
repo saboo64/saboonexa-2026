@@ -6,19 +6,19 @@ function Compare() {
   return (
     <>
       <Helmet>
-        <title>Compare Your Favorite Models - Saboo Nexa</title>
+        <title>Compare Your Favorite Models - Popular Rks Nexa</title>
 
         <meta
           name="title"
-          content="Compare Your Favorite Models - Saboo Nexa"
+          content="Compare Your Favorite Models - Popular Rks Nexa"
         />
         <meta
           name="description"
-          content="Compare features, specifications, and prices of your favorite car models at Saboo Nexa to make an informed decision."
+          content="Compare features, specifications, and prices of your favorite car models at Popular Rks Nexa to make an informed decision."
         />
         <meta
           name="keywords"
-          content="Compare, Models, Features, Specifications, Prices, Saboo Nexa"
+          content="Compare, Models, Features, Specifications, Prices, Popular Rks Nexa"
         />
         <meta name="author" content="Broaddcast" />
       </Helmet>

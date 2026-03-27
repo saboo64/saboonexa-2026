@@ -31,26 +31,26 @@ function Offers() {
   ];
   return (
     <>
- <Helmet>
-  <title>
-    Sankranti 2026 Festive Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa
-  </title>
+      <Helmet>
+        <title>
+          Sankranti 2026 Festive Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa
+        </title>
 
-  <meta
-    name="title"
-    content="Sankranti 2026 Festive Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa"
-  />
+        <meta
+          name="title"
+          content="Sankranti 2026 Festive Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa"
+        />
 
-  <meta
-    name="description"
-    content="Celebrate Sankranti 2026 with massive festive offers at Saboo Nexa & RKS Motor! Enjoy huge discounts on Maruti Suzuki cars like Grand Vitara, Fronx, Baleno, XL6, and more. Get attractive exchange bonuses, low EMI options, free vehicle checkups, and exclusive Sankranti service packages. Limited-time Sankranti deals – book now!"
-  />
+        <meta
+          name="description"
+          content="Celebrate Sankranti 2026 with massive festive offers at Saboo Nexa & RKS Motor! Enjoy huge discounts on Maruti Suzuki cars like Grand Vitara, Fronx, Baleno, XL6, and more. Get attractive exchange bonuses, low EMI options, free vehicle checkups, and exclusive Sankranti service packages. Limited-time Sankranti deals – book now!"
+        />
 
-  <meta
-    name="keywords"
-    content="Sankranti 2026 Car Offers, Maruti Suzuki Sankranti Discounts, Saboo Nexa Sankranti Deals, RKS Motor Sankranti Offers, Nexa Car Offers Sankranti, Grand Vitara Sankranti Offer, Baleno Fronx Sankranti Discount, Maruti Free Checkup Sankranti, Nexa Hyderabad Festive Offers"
-  />
-</Helmet>
+        <meta
+          name="keywords"
+          content="Sankranti 2026 Car Offers, Maruti Suzuki Sankranti Discounts, Saboo Nexa Sankranti Deals, RKS Motor Sankranti Offers, Nexa Car Offers Sankranti, Grand Vitara Sankranti Offer, Baleno Fronx Sankranti Discount, Maruti Free Checkup Sankranti, Nexa Hyderabad Festive Offers"
+        />
+      </Helmet>
 
 
       <Header />
@@ -100,19 +100,17 @@ function Offers() {
               />
             </div>
           </SwiperSlide>{' '} */}
-          {/* <SwiperSlide className=''>
-            <div className='hidden sm:block'>
+          <SwiperSlide className=''>
+            {/* <div className='hidden sm:block'>
               <img
-                src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_August_Independence_Day_Offers_Saboo_RKS_Nexa.webp')}
-                //  src={require("../../components/Website_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp")}
-                //src={require("../../assets/HomePageImages/Ignis_Radiance_Edition_banner_Augest_2024_Maruti_Suzuki_Saboo_Nexa.webp")}
-                // src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Nexa+Service+Hafeezpet.webp"
+                src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_February_Offers_Saboo_RKS_Popular_Vehicles.webp')}
+
                 alt='May_offers_are_live_at_Saboo_RKS_Motor'
                 className={` w-full `}
                 loading='lazy'
               />
-            </div>
-          </SwiperSlide> */}
+            </div> */}
+          </SwiperSlide>
           {/* <SwiperSlide className="">
             <div className="hidden sm:block">
               <img
@@ -131,16 +129,15 @@ function Offers() {
             </div>
           </SwiperSlide> */}
         </Swiper>
-        {/* <div className='sm:hidden'>
+        <div className='sm:hidden'>
           <img
-            src={require('../../assets/others/Website_Mobile_Maruti_Suzuki_Nexa_August_Independence_Day_Offers_Saboo_RKS_Nexa.webp')}
-            //  src={require("../../assets/WM__Maruti_Suzuki_Arena_New_Year_Offers_2025_Sankranti_offers_are_live_at_Saboo_RKS_Motor.webp")}
-            // src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/banners/Website_Mobile_Maruti_Suzuki_No1_SUV_Maker_Saboo_RKS_Motor_October_Offers.webp"
+            src={require('../../assets/others/wm_ugadi_nexa_offers.webp')}
+
             alt='Maruti_Suzuki_No1_SUV_Maker_Saboo_RKS_Motor_Hyderabad_Dealer_Offers_Service_Invicto_Fronx_Xl6_Jimny_GrandVitara_Ciaz_Ignis_Baleno_Nexa_Car_Black_Edition_Mobile'
             className='w-full '
             loading='lazy'
           />
-        </div> */}
+        </div>
       </section>
 
       <div className='py-10 space-y-3 text-center'>

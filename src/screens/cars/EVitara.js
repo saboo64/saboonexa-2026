@@ -24,6 +24,7 @@ import { Navigation } from 'swiper';
 import View360 from '../../components/utils/View360';
 import { Tb360View, TbView360 } from 'react-icons/tb';
 import { GiReturnArrow } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 export const imagineList = [
   {
@@ -249,16 +250,16 @@ const EVitara = () => {
         </title>
         <meta
           name='description'
-          //  content="Drive home the luxurious Maruti Suzuki e-VITARA with exciting 2025 Discounts and festive Offers! Avail exclusive finance offers, exchange benefits, and additional savings on this premium SUV. Limited period offers—book yours now!"
+        //  content="Drive home the luxurious Maruti Suzuki e-VITARA with exciting 2025 Discounts and festive Offers! Avail exclusive finance offers, exchange benefits, and additional savings on this premium SUV. Limited period offers—book yours now!"
         />
         <meta
           name='title'
-          // content="2025 Discounts and festive Offers on Maruti Suzuki e-VITARA - Luxury and Savings Combined! at RKS Motor"
+        // content="2025 Discounts and festive Offers on Maruti Suzuki e-VITARA - Luxury and Savings Combined! at RKS Motor"
         />
 
         <meta
           name='keywords'
-          //  content="Maruti Suzuki e-VITARA  offers, 2025 Discounts and festive Offers e-VITARA , luxury SUV deals, e-VITARA  Nexa offers, Maruti e-VITARA  finance, premium SUV offers ,2025 Discounts and festive Offers."
+        //  content="Maruti Suzuki e-VITARA  offers, 2025 Discounts and festive Offers e-VITARA , luxury SUV deals, e-VITARA  Nexa offers, Maruti e-VITARA  finance, premium SUV offers ,2025 Discounts and festive Offers."
         />
       </Helmet>
 
@@ -342,7 +343,7 @@ const EVitara = () => {
       </div>
 
       <CarEnq2 title='BOOK YOUR e-VITARA' carName='e-VITARA' />
-
+      <Variant />
       <div className='flex justify-between py-4 mx-10 bg-white'>
         {/* <div className="font-serif text-2xl">
           <a href="/e-vitara"> e VITARA </a>
@@ -417,22 +418,20 @@ const EVitara = () => {
         {/* Button Section */}
         <div className='flex justify-center space-x-5 text-white'>
           <button
-            className={`px-4 py-1 border tracking-widest rounded-lg duration-500 ${
-              activeTab === 0
-                ? 'border-white bg-white text-black'
-                : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
-            }`}
+            className={`px-4 py-1 border tracking-widest rounded-lg duration-500 ${activeTab === 0
+              ? 'border-white bg-white text-black'
+              : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
+              }`}
             onClick={() => setActiveTab(0)}
             aria-label='Exterior'
           >
             EXTERIOR
           </button>
           <button
-            className={`px-4 py-1 border tracking-widest rounded-lg duration-500 ${
-              activeTab === 1
-                ? 'border-white bg-white text-black'
-                : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
-            }`}
+            className={`px-4 py-1 border tracking-widest rounded-lg duration-500 ${activeTab === 1
+              ? 'border-white bg-white text-black'
+              : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
+              }`}
             onClick={() => setActiveTab(1)}
             aria-label='Interior'
           >
@@ -465,19 +464,8 @@ const EVitara = () => {
             {activeTab === 0
               ? renderSwiperSlides(exteriorImages)
               : renderSwiperSlides(interiorImages)}
-            {/* Custom Navigation Buttons */}
-            {/* <button
-          className="absolute left-0 z-50 flex items-center justify-center w-10 h-10 text-black transform -translate-y-1/2 bg-white rounded-full shadow-lg swiper-button-prev top-1/2 hover:bg-gray-200"
-          aria-label="Previous Slide"
-        >
-          ❮
-        </button>
-        <button
-          className="absolute right-0 z-10 flex items-center justify-center w-10 h-10 text-black transform -translate-y-1/2 bg-white rounded-full shadow-lg swiper-button-next top-1/2 hover:bg-gray-200"
-          aria-label="Next Slide"
-        >
-          ❯
-        </button> */}
+
+
 
             {/* Previous Button */}
             <div
@@ -498,26 +486,7 @@ const EVitara = () => {
         </div>
       </div>
 
-      {/* <MiniBanner 
-        sliders={polySliders}
-        poster={
-          "https://prod-nexa.marutisuzuki.com/adobe/assets/urn:aaid:aem:d870afe0-68fb-4c6f-a998-720fc8210614/as/studioFinish-banner.png?width=2000&id=1"
-        }
-        src={require("../../assets/teaserVideoFinal.mp4")}
-        title={"Polyhedral"}
-        subtitle={"Muscular Stance"}
-        desc={"Shaped by aerodynamics. Designed by your imagination."}
-      /> */}
-      {/* <MiniBanner
-        sliders={futureSliders}
-        poster={
-          "https://prod-nexa.marutisuzuki.com/adobe/assets/urn:aaid:aem:d870afe0-68fb-4c6f-a998-720fc8210614/as/studioFinish-banner.png?width=2000&id=1"
-        }
-        src={require("../../assets/teaserVideoFinal.mp4")}
-        title={"Futuristic &"}
-        subtitle={"Spacious Cabin"}
-        desc={"Experience interiors that radiate luxury and exclusivity."}
-      /> */}
+
       {/*comfort*/}
       <TabsListVitara
         bgColor={'black'}
@@ -692,6 +661,57 @@ const EV360 = () => {
           <div className='absolute flex-col items-center hidden text-black md:flex top-6 left-6'>
             <TbView360 className='text-3xl lg:text-5xl animate-pulse' />
             <Tb360View className='text-xl lg:text-4xl' />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+const Variant = () => {
+  const [price, setPrice] = useState('10,99,000');
+  return (
+    <div className=" bg-opacity-25 text-white bg-[url('https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_bg_image/5.webp')] bg-fixed  bg-black">
+      <div className='container py-20 mx-auto bg-black bg-opacity-10'>
+        <div className='grid space-y-3 md:grid-cols-3 md:space-y-0'>
+          <div className='mx-auto space-y-3 md:mx-0'>
+            <label className='text-gray-300 uppercase' htmlFor='model'>
+              Select car Variant
+            </label>
+            <select
+              name='model'
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+              aria-labelledby='Select Car Variant'
+              className='block w-full max-w-[375px] py-2 px-3 border border-gray-300 bg-white text-black rounded-md shadow-sm focus:outline-none '
+            >
+
+              <option value='10,99,000'>e-VITARA</option>
+
+
+
+            </select>
+          </div>
+          <div className='text-center '>
+            <p className='text-2xl font-bold'>₹ {price}*</p>
+            <p className='text-xl tracking-wide'>
+              Ex-Showroom Price - Hyderabad
+            </p>
+            <div className='text-xs font-light text-red-200'>
+              <sup>*</sup>e-Vitara is a fully electric SUV powered by advanced EV technology.
+            </div>
+          </div>
+          <div className='text-center'>
+            <p className='mb-6 text-center '>
+              You might have pre-approved loan offers
+            </p>
+            <Link
+              to='/maruti-car-finance'
+              className='px-4 py-2 tracking-wide text-black uppercase bg-white border border-black rounded shadow'
+            >
+              Check for loan offers
+            </Link>
           </div>
         </div>
       </div>

@@ -84,7 +84,7 @@ export const products = [
   {
     id: 0,
     name: 'e-Vitara',
-    price: 'Coming-soon',
+    price: '10,99,000*',
     logo: require('../components/Header/e vitara logo-01 webp.webp'),
     img: require('../assets/cars/Evitara.png'),
     specImage: require('../assets/cars/Evitara.png'),
@@ -92,24 +92,28 @@ export const products = [
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Brochure/e_VITARA_Saboo_RKS_Motor_Nexa_Brochure.pdf',
 
     explore: '/nexa-evitara-on-road',
-    engineType: 'K15C SMART HYBRID',
-    fuelType: 'PETROL/CNG',
-    displacement: '1462 cc',
-    power: '75.8 @ 6000 rpm',
-    torque: '136.8 @ 4400',
-    fuelTank: '45 L',
-    mileage: '20.97 (MT), 20.27 (AT)',
-    tranmission: '5 MT / 6 AT',
-    length: '4445',
-    width: '1775',
-    height: '1755',
-    wheelbase: '2740',
-    turningRadius: '5.2',
+
+    engineType: 'Permanent Magnet Synchronous Motor (Electric)',
+    fuelType: 'Electric',
+    displacement: 'Not Applicable',
+    power: '142 bhp / 174 bhp (Battery Variant Based)',
+    torque: '192 Nm',
+    // fuelTank: 'Not Applicable',
+    mileage: 'Up to 500+ km (Expected Range)',
+    tranmission: 'Single Speed Automatic',
+
+    length: '4275 mm',
+    width: '1800 mm',
+    height: '1640 mm',
+    wheelbase: '2700 mm',
+    turningRadius: '5.2 m',
+
     frontBrake: 'Disc',
-    rearBrake: 'Drum',
-    frontSuspension: 'MacPherson Strut with Coil Spring',
-    rearSuspension: 'Torsion Beam with Coil Spring',
-    seating: '6',
+    rearBrake: 'Disc',
+    frontSuspension: 'MacPherson Strut',
+    rearSuspension: 'Rear Twist Beam',
+
+    seating: '5',
   },
 
   {
@@ -296,36 +300,36 @@ export const products = [
     rearSuspension: 'Torsion Beam',
     seating: '5',
   },
-  {
-    id: 7,
-    name: 'Ciaz',
-    price: '9,09,000*',
-    logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Ciaz-logo.webp',
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/Product-thumbnail/Saboo-Nexa-product-ciaz.webp',
-    specImage:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/specification/Ciaz+Spec.webp',
-    brouchure:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Brochure/Maruti-Suzuki-All_new_Ciaz-Brochure.pdf',
-    explore: '/nexa-ciaz-on-road-price-in-hyderabad',
-    engineType: 'K15 Smart Hybrid Petrol Engine',
-    fuelType: 'PETROL',
-    displacement: '1462 cc',
-    power: '77 KW @ 6000 rpm',
-    torque: '136.8 @ 4400',
-    fuelTank: '43 L',
-    mileage: '20.65 (MT) / 20.04 (AT)',
-    tranmission: '5MT/4AT',
-    length: '4490',
-    width: '1730',
-    height: '1485',
-    wheelbase: '2650',
-    turningRadius: '5.4',
-    frontBrake: 'Ventilated Disc',
-    rearBrake: 'Drum',
-    frontSuspension: 'MacPherson ',
-    rearSuspension: 'Torsion Beam',
-    seating: '5',
-  },
+  // {
+  //   id: 7,
+  //   name: 'Ciaz',
+  //   price: '9,09,000*',
+  //   logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Ciaz-logo.webp',
+  //   img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/Product-thumbnail/Saboo-Nexa-product-ciaz.webp',
+  //   specImage:
+  //     'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/specification/Ciaz+Spec.webp',
+  //   brouchure:
+  //     'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Brochure/Maruti-Suzuki-All_new_Ciaz-Brochure.pdf',
+  //   explore: '/nexa-ciaz-on-road-price-in-hyderabad',
+  //   engineType: 'K15 Smart Hybrid Petrol Engine',
+  //   fuelType: 'PETROL',
+  //   displacement: '1462 cc',
+  //   power: '77 KW @ 6000 rpm',
+  //   torque: '136.8 @ 4400',
+  //   fuelTank: '43 L',
+  //   mileage: '20.65 (MT) / 20.04 (AT)',
+  //   tranmission: '5MT/4AT',
+  //   length: '4490',
+  //   width: '1730',
+  //   height: '1485',
+  //   wheelbase: '2650',
+  //   turningRadius: '5.4',
+  //   frontBrake: 'Ventilated Disc',
+  //   rearBrake: 'Drum',
+  //   frontSuspension: 'MacPherson ',
+  //   rearSuspension: 'Torsion Beam',
+  //   seating: '5',
+  // },
 
   {
     id: 8,
@@ -372,15 +376,15 @@ export const products = [
 export const offer_products = [
   {
     name: 'Grand Vitara',
-    price: '1,13,000',
-     desc: "+5 year EW",
+    price: '1,87,000',
+    desc: '+5 year EW',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/color-icons/GV-logo-204x37+webp.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp',
     explore: '/grand-vitara-on-road-price-in-hyderabad',
   },
   {
-    name: 'Ignis',  
-    price: '30,100',
+    name: 'Ignis',
+    price: '70,100',
     // desc: "",
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Maruti-Suzuki-Ignis-logo.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/Product-thumbnail/Saboo-Nexa-product-Ignis.webp',
@@ -388,7 +392,7 @@ export const offer_products = [
   },
   {
     name: 'Jimny',
-    price: ' 28,000',
+    price: ' 53,000',
     // price: "₹ coming soon",
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/jimny/120x30+black.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/jimny.webp',
@@ -399,7 +403,7 @@ export const offer_products = [
   {
     name: 'Baleno',
     price: '33,000',
-    desc: "REAGL KIT WORTH RS.50,389",
+    desc: 'REAGL KIT WORTH RS.50,389',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/newage_baleno_logo.png',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/cng/baleno-cng-thubnail.webp',
     explore: '/new-maruti-baleno-price-in-hyderabad',
@@ -414,14 +418,14 @@ export const offer_products = [
   },
   {
     name: 'XL6',
-    price: '43,000',
+    price: '95,000',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Logo-XL6.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/cng/xl6-cng-thumbnail.webp',
     explore: '/nexa-xl6-on-road-price-in-hyderabad',
   },
   {
     name: 'Fronx',
-    price: '28,000',
+    price: '48,000',
     //desc: "Free Velocity Kit (Worth 43K)",
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/Flash_header_Menu_logo.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/fronx-cng-thumbnail.webp',
@@ -430,7 +434,7 @@ export const offer_products = [
   {
     name: 'Invicto ',
     price: '1,68,000',
-    //  desc: "Special finance offer worth",
+    desc: '+ 50000 ( LOYALTY UPGRADE BONUS)',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/D23+logo+without+outline+Black_125x35.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/invicto-main-thubmnail-no-bg.webp',
     explore: '/maruti-invicto-price-in-hyderabad',
@@ -881,7 +885,7 @@ export const workshops = [
 export const truevalue = [
   {
     googleMap: 'https://maps.app.goo.gl/ZBuzK1rnchNDXRwd9',
-    title: 'Saboo True Value - Somajiguda',
+    title: 'Popular Rks True Value - Somajiguda',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/showroom+locations/webp-showrooms/webp-truevalue/RKS-Motor-Maruti-Suzuki-True-Value-Used-Cars-Center-Near-Me-Kushaiguda.webp',
     address:
@@ -889,7 +893,7 @@ export const truevalue = [
   },
   {
     googleMap: 'https://maps.app.goo.gl/3wo1SoXWUcqweG8T9',
-    title: 'Saboo True Value - Malakpet',
+    title: 'Popular Rks True Value - Malakpet',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/showroom+locations/webp-showrooms/webp-truevalue/RKS-Motor-Maruti-Suzuki-True-Value-Used-Cars-Center-Near-Me-Kushaiguda.webp',
     address:
@@ -897,7 +901,7 @@ export const truevalue = [
   },
   {
     googleMap: 'https://maps.app.goo.gl/bg43EvhvLmPELHRq8',
-    title: 'Saboo True Value - Kompally',
+    title: 'Popular Rks True Value - Kompally',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/showroom+locations/webp-showrooms/webp-truevalue/RKS-Motor-Maruti-Suzuki-True-Value-Used-Cars-Center-Near-Me-Kushaiguda.webp',
     address:
@@ -906,7 +910,7 @@ export const truevalue = [
 
   {
     googleMap: 'https://maps.app.goo.gl/xbZNBxWqe11CZ6yR8',
-    title: 'Saboo True Value - Kushaiguda',
+    title: 'Popular Rks True Value - Kushaiguda',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/showroom+locations/webp-showrooms/webp-truevalue/RKS-Motor-Maruti-Suzuki-True-Value-Used-Cars-Center-Near-Me-Kushaiguda.webp',
     address:

@@ -16,7 +16,7 @@ import Insurance from './screens/services/Insurance';
 import Finance from './screens/services/Finance';
 import Baleno from './screens/cars/Baleno';
 // import Scross from './screens/cars/Scross';
-import Ciaz from './screens/cars/Ciaz';
+// import Ciaz from './screens/cars/Ciaz';
 import Ignis from './screens/cars/Ignis';
 import Offers from './screens/more/Offers';
 import BookAService from './screens/more/BookAService';
@@ -91,10 +91,10 @@ function App() {
           path='/nexa-scross-petrol-on-road-price-in-hyderabad'
           element={<Scross />}
         /> */}
-        <Route
+        {/* <Route
           path='/nexa-ciaz-on-road-price-in-hyderabad'
           element={<Ciaz />}
-        />
+        /> */}
         <Route
           path='/new-maruti-baleno-price-in-hyderabad'
           element={<Baleno />}

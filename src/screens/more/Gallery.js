@@ -20,7 +20,7 @@ function Gallery() {
         />
         <meta
           name="keywords"
-          content="Gallery, Images, Photos, Cars, Showroom, Events, Saboo Nexa"
+          content="Gallery, Images, Photos, Cars, Showroom, Events, Popular Rks Nexa"
         />
         <meta name="author" content="Broaddcast" />
         <link rel="canonical" href="https://www.saboonexa.in/gallery" />
@@ -35,7 +35,7 @@ function Gallery() {
           content="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School."
         />
         <meta property="og:url" content="https://www.saboonexa.in/gallery/" />
-        <meta property="og:site_name" content="Saboo Nexa RKS Motors Pvt Ltd" />
+        <meta property="og:site_name" content="Popular Rks RKS Motors Pvt Ltd" />
         <meta
           property="og:image"
           itemprop="image"

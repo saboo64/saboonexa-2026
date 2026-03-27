@@ -39,14 +39,14 @@ function Corporate() {
   return (
     <>
       <Helmet>
-        <title>RKS Motor | Maruti Suzuki Showrooms in Hyderabad</title>
+        <title>Popular  Motor | Maruti Suzuki Showrooms in Hyderabad</title>
         <meta
           name="title"
-          content="RKS Motor | Maruti Suzuki Showrooms in Hyderabad"
+          content="Popular  Motor | Maruti Suzuki Showrooms in Hyderabad"
         />
         <meta
           name="description"
-          content="Saboo Nexa sells hatchbacks, sedans, MUVs and SUVs in Hyderabad through its ARENA and NEXA channels, certified pre-owned cars through TRUE VALUE, and commercial vehicles through its Maruti Suzuki Commercial channel. For more info Visit www.saboonexa.in."
+          content="Popular RKS Nexa sells hatchbacks, sedans, MUVs and SUVs in Hyderabad through its ARENA and NEXA channels, certified pre-owned cars through TRUE VALUE, and commercial vehicles through its Maruti Suzuki Commercial channel. For more info Visit www.saboonexa.in."
         />
       </Helmet>
       <Header col={true} />

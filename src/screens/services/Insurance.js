@@ -31,11 +31,11 @@ function Insurance() {
       <Header />
       <Helmet>
         <title>
-          Maruti Car Insurance price, Offers & Renewal Details | Saboo Nexa
+          Maruti Car Insurance price, Offers & Renewal Details | Popular RKS Nexa
         </title>
         <meta
           name="title"
-          content="Maruti Car Insurance price, Offers & Renewal Details | Saboo Nexa"
+          content="Maruti Car Insurance price, Offers & Renewal Details | Popular RKS Nexa"
         />
         <meta
           name="description"
@@ -50,7 +50,7 @@ function Insurance() {
         />
         <meta
           property="og:title"
-          content="Maruti Suzuki Nexa Car Insurance price, Offers & Renewal Details | Saboo Nexa"
+          content="Maruti Suzuki Nexa Car Insurance price, Offers & Renewal Details | Popular RKS Nexa"
         />
         <meta
           property="og:description"
@@ -67,7 +67,7 @@ function Insurance() {
         />
         <meta
           property="twitter:title"
-          content="Maruti Suzuki Nexa Car Insurance price, Offers & Renewal Details | Saboo Nexa"
+          content="Maruti Suzuki Nexa Car Insurance price, Offers & Renewal Details | Popular RKS Nexa"
         />
         <meta
           property="twitter:description"

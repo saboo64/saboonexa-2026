@@ -1,11 +1,11 @@
 export const vechicle = {
   baleno: {
     title:
-      'Maruti Suzuki Baleno Sankranti Festive Offers 2026 | Best Price & EMI Deals in Hyderabad',
+      'Maruti Suzuki Baleno On-Road Price in Hyderabad 2026 | Best Offers & EMI – Nexa',
     description:
-      'Celebrate Sankranti 2026 with unbeatable festive offers on Maruti Suzuki Baleno at Popular Nexa Hyderabad. Avail huge discounts, attractive EMI plans, exchange bonuses, and quick delivery. Book your Baleno today!',
+      'Buy Maruti Suzuki Baleno in Hyderabad at best on-road price from Popular Nexa. Get latest 2026 offers, exchange bonus, low EMI plans & quick delivery. Book your Baleno today.',
     keywords:
-      'Maruti Suzuki Baleno Sankranti offers 2026, Best Baleno price Hyderabad, Baleno EMI deals Sankranti, Nexa Baleno exchange bonus, Baleno on-road price Hyderabad, Festive Baleno offers',
+      'Maruti Baleno on road price Hyderabad, Baleno offers 2026, Baleno EMI Hyderabad, Nexa Baleno price, Baleno exchange bonus',
     url: 'https://saboonexa.in/new-maruti-baleno-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Baleno.jpg',
@@ -13,11 +13,11 @@ export const vechicle = {
 
   ciaz: {
     title:
-      'Maruti Suzuki Ciaz Sankranti Festive Offers 2026 | Premium Sedan Deals in Hyderabad',
+      'Maruti Suzuki Ciaz On-Road Price in Hyderabad 2026 | Best Sedan Offers – Nexa',
     description:
-      'Avail exclusive Sankranti 2026 festive offers on Maruti Suzuki Ciaz at Popular Nexa Hyderabad. Enjoy premium sedan discounts, EMI options, and exchange bonuses. Drive home your Ciaz this festive season!',
+      'Check Maruti Suzuki Ciaz on-road price in Hyderabad with best 2026 offers. Enjoy premium sedan comfort, low EMI options & exchange benefits at Popular Nexa.',
     keywords:
-      'Maruti Suzuki Ciaz Sankranti offers 2026, Best Ciaz price Hyderabad, Nexa Ciaz EMI plans, Ciaz exchange bonus Telangana, Premium sedan Sankranti deals',
+      'Maruti Ciaz on road price Hyderabad, Ciaz offers 2026, Ciaz EMI Hyderabad, Nexa Ciaz sedan price, Ciaz exchange bonus',
     url: 'https://saboonexa.in/nexa-ciaz-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Ciaz.jpg',
@@ -25,11 +25,11 @@ export const vechicle = {
 
   fronx: {
     title:
-      'Maruti Suzuki Fronx Sankranti Festive Offers 2026 | Best SUV Price in Hyderabad',
+      'Maruti Suzuki Fronx On-Road Price in Hyderabad 2026 | Best Compact SUV Deals',
     description:
-      'Celebrate Sankranti with exciting festive offers on Maruti Suzuki Fronx at Popular Nexa Hyderabad. Avail EMI benefits, exchange bonuses, and limited-time Sankranti discounts. Book now!',
+      'Explore Maruti Suzuki Fronx on-road price in Hyderabad at Popular Nexa. Get latest offers, attractive EMI plans & exchange bonus on this stylish compact SUV.',
     keywords:
-      'Maruti Fronx Sankranti offers 2026, Best Fronx SUV price Hyderabad, Nexa Fronx EMI plans, Fronx exchange bonus Telangana',
+      'Maruti Fronx on road price Hyderabad, Fronx offers 2026, Fronx EMI Hyderabad, Nexa Fronx SUV price',
     url: 'https://saboonexa.in/maruti-fronx-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Fronx.jpg',
@@ -37,11 +37,11 @@ export const vechicle = {
 
   GrandVitara: {
     title:
-      'Maruti Grand Vitara Sankranti Festive Offers 2026 | Premium SUV Deals in Hyderabad',
+      'Maruti Grand Vitara On-Road Price in Hyderabad 2026 | Best Hybrid SUV Offers',
     description:
-      'Get exclusive Sankranti 2026 festive offers on Maruti Grand Vitara at Popular Nexa Hyderabad. Enjoy premium SUV discounts, attractive EMI plans, and exchange bonuses.',
+      'Discover Maruti Grand Vitara on-road price in Hyderabad with best 2026 offers. Premium hybrid SUV with low running cost, EMI plans & exchange benefits.',
     keywords:
-      'Maruti Grand Vitara Sankranti offers 2026, Nexa Grand Vitara EMI deals, Best Grand Vitara price Hyderabad, Premium SUV festive offers',
+      'Maruti Grand Vitara on road price Hyderabad, Grand Vitara offers 2026, Hybrid SUV price Hyderabad, Nexa Grand Vitara EMI',
     url: 'https://saboonexa.in/grand-vitara-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/GrandVitara.jpg',
@@ -49,11 +49,11 @@ export const vechicle = {
 
   ignis: {
     title:
-      'Maruti Ignis Sankranti Festive Offers 2026 | Compact Hatchback Deals in Hyderabad',
+      'Maruti Suzuki Ignis On-Road Price in Hyderabad 2026 | Best Hatchback Offers',
     description:
-      'Avail Sankranti 2026 festive offers on Maruti Ignis at Popular Nexa Hyderabad. Enjoy huge discounts, EMI options, and exchange bonuses. Book your Ignis today!',
+      'Buy Maruti Suzuki Ignis in Hyderabad at best price from Popular Nexa. Compact hatchback with sporty design, EMI benefits & exchange bonus.',
     keywords:
-      'Maruti Ignis Sankranti offers 2026, Nexa Ignis EMI offers, Best Ignis price Hyderabad, Ignis exchange bonus Telangana',
+      'Maruti Ignis on road price Hyderabad, Ignis offers 2026, Ignis EMI Hyderabad, Nexa Ignis hatchback',
     url: 'https://saboonexa.in/nexa-ignis-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Ignis.jpg',
@@ -61,11 +61,11 @@ export const vechicle = {
 
   invicto: {
     title:
-      'Maruti Invicto Sankranti Festive Offers 2026 | Premium MPV Deals in Hyderabad',
+      'Maruti Suzuki Invicto On-Road Price in Hyderabad 2026 | Premium MPV Offers',
     description:
-      'Unlock exclusive Sankranti 2026 festive offers on Maruti Invicto at Popular Nexa Hyderabad. Enjoy massive savings, EMI plans, and exchange bonuses. Book your Invicto now!',
+      'Check Maruti Suzuki Invicto on-road price in Hyderabad with best MPV offers. Luxury MPV with hybrid efficiency, EMI plans & exchange benefits.',
     keywords:
-      'Maruti Invicto Sankranti offers 2026, Nexa Invicto EMI deals, Best Invicto MPV price Hyderabad, Invicto exchange bonus Telangana',
+      'Maruti Invicto on road price Hyderabad, Invicto offers 2026, Invicto EMI Hyderabad, Nexa premium MPV',
     url: 'https://saboonexa.in/maruti-invicto-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Invicto.jpg',
@@ -73,11 +73,11 @@ export const vechicle = {
 
   jimny: {
     title:
-      'Maruti Jimny Sankranti Festive Offers 2026 | Best SUV Deals & EMI in Hyderabad',
+      'Maruti Suzuki Jimny On-Road Price in Hyderabad 2026 | Best Off-Road SUV',
     description:
-      'Drive home the Maruti Jimny this Sankranti with festive offers at Popular Nexa Hyderabad. Get special discounts, EMI options, and exchange bonuses. Limited-time Sankranti deal!',
+      'Explore Maruti Suzuki Jimny on-road price in Hyderabad at Popular Nexa. Iconic 4x4 SUV with EMI options, exchange bonus & adventure-ready performance.',
     keywords:
-      'Maruti Jimny Sankranti offers 2026, Nexa Jimny EMI offers, Best Jimny SUV price Hyderabad, Jimny exchange bonus Telangana',
+      'Maruti Jimny on road price Hyderabad, Jimny offers 2026, Jimny EMI Hyderabad, Nexa Jimny 4x4 SUV',
     url: 'https://saboonexa.in/maruti-jimny-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Jimny.jpg',
@@ -85,11 +85,11 @@ export const vechicle = {
 
   Scross: {
     title:
-      'Maruti S-Cross Sankranti Festive Offers 2026 | Premium SUV Deals in Hyderabad',
+      'Maruti S-Cross On-Road Price in Hyderabad 2026 | Premium Crossover Offers',
     description:
-      'Avail limited-time Sankranti 2026 festive offers on Maruti S-Cross at Popular Nexa Hyderabad. Enjoy exclusive discounts, EMI plans, and exchange bonuses.',
+      'Buy Maruti S-Cross in Hyderabad with best offers at Popular Nexa. Premium crossover with comfortable ride, EMI plans & exchange bonus.',
     keywords:
-      'Maruti S-Cross Sankranti offers 2026, Nexa S-Cross EMI plans, Best S-Cross SUV price Hyderabad, S-Cross exchange bonus Telangana',
+      'Maruti S-Cross on road price Hyderabad, S-Cross offers 2026, Nexa S-Cross EMI Hyderabad, crossover SUV price',
     url: 'https://www.saboonexa.in/nexa-scross-petrol-price/',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Scross.jpg',
@@ -97,11 +97,11 @@ export const vechicle = {
 
   XL6: {
     title:
-      'Maruti XL6 Sankranti Festive Offers 2026 | Premium MPV Deals in Hyderabad',
+      'Maruti XL6 On-Road Price in Hyderabad 2026 | Best Premium MPV Deals',
     description:
-      'Get top Sankranti 2026 festive offers on Maruti XL6 at Popular Nexa Hyderabad. Enjoy premium MPV discounts, EMI plans, and exchange bonuses. Book your XL6 today!',
+      'Check Maruti XL6 on-road price in Hyderabad with best 2026 offers. Stylish premium MPV with captain seats, EMI benefits & exchange bonus.',
     keywords:
-      'Maruti XL6 Sankranti offers 2026, Nexa XL6 EMI plans, Best XL6 MPV price Hyderabad, XL6 exchange bonus Telangana',
+      'Maruti XL6 on road price Hyderabad, XL6 offers 2026, XL6 EMI Hyderabad, Nexa XL6 MPV price',
     url: 'https://saboonexa.in/nexa-xl6-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/XL6.jpg',
@@ -112,11 +112,11 @@ export const vechicle = {
 export const CNGvehicles = {
   baleno: {
     title:
-      'Maruti Suzuki Baleno CNG Sankranti Festive Offers 2026 | Stylish & Fuel-Efficient Hatchback in Hyderabad',
+      'Maruti Suzuki Baleno CNG On-Road Price in Hyderabad 2026 | Best Mileage Hatchback',
     description:
-      'Celebrate Sankranti 2026 with exclusive festive offers on the Maruti Suzuki Baleno CNG at Popular Nexa Hyderabad. Enjoy excellent fuel efficiency, premium comfort, attractive EMI plans, exchange bonuses, and quick delivery. Book your Sankranti test drive today!',
+      'Buy Maruti Suzuki Baleno CNG in Hyderabad at best on-road price from Popular Nexa. Enjoy excellent mileage, low running cost, attractive EMI plans & exchange bonus. Book your Baleno CNG today.',
     keywords:
-      'Baleno CNG Sankranti offers 2026, Maruti Suzuki Baleno CNG Hyderabad, Fuel-efficient CNG hatchback, Baleno CNG mileage, Popular Nexa Baleno CNG offers, Sankranti CNG car deals Hyderabad, Nexa Baleno CNG festive offers',
+      'Baleno CNG on road price Hyderabad, Maruti Baleno CNG offers 2026, Baleno CNG mileage, Baleno CNG EMI Hyderabad, Nexa Baleno CNG price',
     url: 'https://saboonexa.in/baleno-cng',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Baleno.jpg',
@@ -124,11 +124,11 @@ export const CNGvehicles = {
 
   fronx: {
     title:
-      'Maruti Suzuki Fronx CNG Sankranti Festive Offers 2026 | Smart & Efficient CNG SUV in Hyderabad',
+      'Maruti Suzuki Fronx CNG On-Road Price in Hyderabad 2026 | Best CNG Compact SUV',
     description:
-      'Welcome Sankranti 2026 with festive offers on the Maruti Suzuki Fronx CNG at Popular Nexa Hyderabad. Enjoy smart efficiency, advanced CNG technology, stylish SUV design, EMI benefits, and exchange bonuses. Limited-time Sankranti deals available!',
+      'Explore Maruti Suzuki Fronx CNG on-road price in Hyderabad at Popular Nexa. Stylish compact SUV with high fuel efficiency, EMI benefits & exchange offers.',
     keywords:
-      'Fronx CNG Sankranti offers 2026, Maruti Suzuki Fronx CNG Hyderabad, Fuel-efficient CNG SUV, Fronx CNG mileage, Popular Nexa Fronx CNG offers, Sankranti CNG SUV deals, Nexa Fronx CNG festive offers',
+      'Fronx CNG on road price Hyderabad, Maruti Fronx CNG offers 2026, Fronx CNG mileage, Fronx CNG EMI Hyderabad, Nexa CNG SUV',
     url: 'https://saboonexa.in/fronx-cng',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Fronx.jpg',
@@ -136,11 +136,11 @@ export const CNGvehicles = {
 
   GrandVitara: {
     title:
-      'Maruti Suzuki Grand Vitara CNG Sankranti Festive Offers 2026 | Powerful & Efficient SUV in Hyderabad',
+      'Maruti Suzuki Grand Vitara CNG On-Road Price in Hyderabad 2026 | Premium CNG SUV',
     description:
-      'Celebrate Sankranti 2026 with premium festive offers on the Maruti Suzuki Grand Vitara CNG at Popular Nexa Hyderabad. Experience powerful performance, excellent fuel economy, luxury features, and attractive Sankranti benefits. Book your test drive now!',
+      'Check Maruti Suzuki Grand Vitara CNG on-road price in Hyderabad with best offers. Premium SUV comfort with low running cost, EMI plans & exchange benefits.',
     keywords:
-      'Grand Vitara CNG Sankranti offers 2026, Maruti Suzuki Grand Vitara CNG Hyderabad, Fuel-efficient CNG SUV, Grand Vitara CNG mileage, Popular Nexa Grand Vitara CNG offers, Sankranti premium SUV deals, Nexa Grand Vitara CNG festive offers',
+      'Grand Vitara CNG on road price Hyderabad, Maruti Grand Vitara CNG offers 2026, Grand Vitara CNG mileage, Nexa Grand Vitara CNG EMI',
     url: 'https://saboonexa.in/grand-vitara-cng',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/GrandVitara.jpg',

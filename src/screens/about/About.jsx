@@ -64,7 +64,7 @@ function About() {
       <div className="container mx-auto md:py-16">
         <div className="grid gap-2 px-5 bg-gray-100 md:grid-cols-2 lg:gap-8 md:rounded-xl md:shadow-lg md:shadow-gray-600 group">
           <div className="my-10 font-medium leading-loose text-justify text-black md:my-28 indent-8">
-            Saboo RKS has been at the forefront of Hyderabad's automotive
+            Popular RKS has been at the forefront of Hyderabad's automotive
             industry, driving growth in automobile sales and service for over
             four decades. With a history dating back to 1973, we began as a
             2-wheeler dealership and have since expanded to include 4-wheelers,

@@ -14,7 +14,7 @@ function Testimonial() {
         </title>
         <meta
           name="title"
-          content="Hear from Our Satisfied Customers - Testimonials - Saboo Nexa"
+          content="Hear from Our Satisfied Customers - Testimonials - Popular Nexa"
         />
         <meta
           name="description"
@@ -22,7 +22,7 @@ function Testimonial() {
         />
         <meta
           name="keywords"
-          content="Testimonials, Customers, Satisfaction, Reviews, Saboo Nexa"
+          content="Testimonials, Customers, Satisfaction, Reviews, Popular Nexa"
         />
       </Helmet>
       <Header />

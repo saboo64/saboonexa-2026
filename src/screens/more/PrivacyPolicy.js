@@ -9,19 +9,19 @@ function PrivacyPolicy() {
       <Header col={true} />
       <Helmet>
         <title>
-          Privacy Policy | Saboo Motor Authorised Dealers Maruti Suzuki
+          Privacy Policy | Popular Rks  Motor Authorised Dealers Maruti Suzuki
         </title>
         <meta
           name="title"
-          content="Privacy Policy | Saboo Motor Authorised Dealers Maruti Suzuki"
+          content="Privacy Policy | Popular Rks Motor Authorised Dealers Maruti Suzuki"
         />
         <meta
           name="description"
-          content="Privacy Policy Saboo Motor | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School"
+          content="Privacy Policy  Popular Rks Motor | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School"
         />
-        <meta
+        <metaPopular Rks
           name="keywords"
-          content="Privacy Policy,Saboo Motor, Maruti Suzuki, Nexa, Arena, True Value, Driving School"
+          content="Privacy Policy,Popular Rks Motor, Maruti Suzuki, Nexa, Arena, True Value, Driving School"
         />
       </Helmet>
       <img
@@ -33,10 +33,10 @@ function PrivacyPolicy() {
         <p className="text-xl font-semibold uppercase">Privacy Policy</p>
 
         <div className="my-4 space-y-1">
-          <h5>Saboo RKS Maruti Suzuki Statement of Privacy</h5>
+          <h5>Popular Rks Maruti Suzuki Statement of Privacy</h5>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            At Saboo RKS we take your privacy seriously. Please read the
+            At Popular Rks RKS we take your privacy seriously. Please read the
             following to learn more about our terms and conditions.
           </p>
         </div>
@@ -46,23 +46,22 @@ function PrivacyPolicy() {
           <div className="flex">
             <RiArrowRightSLine className="text-red-600" size={23} />
             <p className="text-sm font-light">
-              This covers Saboo RKS Maruti Suzuki treatment of personally
-              identifiable information that Saboo RKS Maruti Suzuki collects
-              when you are on Saboo RKS Maruti Suzuki site and when you use our
-              services. This policy also covers Saboo RKS Maruti Suzuki
-              treatment of any Personally identifiable information that Saboo
-              RKS Maruti Suzuki shares with you.
+              This covers Popular Rks RKS Maruti Suzuki treatment of personally
+              identifiable information that V RKS Maruti Suzuki collects
+              when you are on Popular Rks RKS Maruti Suzuki site and when you use our
+              services. This policy also covers Popular Rks Maruti Suzuki
+              treatment of any Personally identifiable information that Popular RksS Maruti Suzuki shares with you.
             </p>
           </div>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            This policy does not apply to the practices of companies that Saboo
-            RKS Maruti Suzuki does not own or control or Saboo RKS Maruti Suzuki
+            This policy does not apply to the practices of companies that Popular Rks
+            RKS Maruti Suzuki does not own or control or Popular Rks Maruti Suzuki
             does not own or employ or manage.
           </p>
           <br></br>
           <p className="flex items-center text-sm font-light">
-            I, hereby authorize RKS Motor Pvt Ltd., to contact me. It will
+            I, hereby authorize Popular Rks Motor Pvt Ltd., to contact me. It will
             override my registry on the NCPR. By providing your contact details
             you have expressly authorized RKS Motor to contact you in future
             through calls /SMS / E-mails and inform you about our products.
@@ -74,9 +73,9 @@ function PrivacyPolicy() {
           <div className="flex">
             <RiArrowRightSLine className="text-red-600" size={22} />
             <p className="text-sm font-light">
-              Saboo RKS Maruti Suzuki collects personally identifiable
-              information when you register for a Saboo RKS Maruti Suzuki
-              account. When you choose the services and promotions. Saboo RKS
+              Popular Rks Maruti Suzuki collects personally identifiable
+              information when you register for a Popular Rks Maruti Suzuki
+              account. When you choose the services and promotions. Popular Rks RKS
               Maruti Suzuki may also receive personally identifiable information
               from our business partners.
             </p>
@@ -84,15 +83,15 @@ function PrivacyPolicy() {
           <div className="flex">
             <RiArrowRightSLine className="text-red-600" size={22} />
             <p className="text-sm font-light">
-              When you register with Saboo RKS Maruti Suzuki, we ask for your
+              When you register with SPopular Rks Maruti Suzuki, we ask for your
               name, e-mail address, birth date, gender, occupation, industry and
-              personal interest. Once you register with Saboo RKS Maruti Suzuki
+              personal interest. Once you register with Popular Rks Maruti Suzuki
               and sign in to our services, you are not anonymous to us.
             </p>
           </div>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            Saboo RKS Maruti Suzuki uses information for three general purpose:
+            Popular Rks Maruti Suzuki uses information for three general purpose:
             to fulfill your requests for certain products and services and to
             contact you about specials and new products.
           </p>
@@ -102,12 +101,12 @@ function PrivacyPolicy() {
           <h5>Information Sharing and Disclosure</h5>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            Saboo RKS Maruti Suzuki will not sell or rent your Personally
+            Popular Rks Maruti Suzuki will not sell or rent your Personally
             Identifiable Information to anyone.
           </p>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            Saboo RKS Maruti Suzuki will send Personally Identifiable
+            Popular Rks Maruti Suzuki will send Personally Identifiable
             Information about you when:
           </p>
           <p className="flex items-center text-sm font-light">
@@ -125,7 +124,7 @@ function PrivacyPolicy() {
           </p>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            When we find your action on the web site violates the Saboo RKS
+            When we find your action on the web site violates the Popular Rks
             Maruti Suzuki terms and condition or any of your usage guidelines
             for specific products or services.
           </p>
@@ -135,7 +134,7 @@ function PrivacyPolicy() {
           <h5>Security</h5>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            Your Saboo RKS Maruti Suzuki account information is
+            Your Popular Rks Maruti Suzuki account information is
             password-protected for your privacy and security We have taken
             adequate measures to secure access to your personal data
           </p>
@@ -144,7 +143,7 @@ function PrivacyPolicy() {
           <h5>Changes to this Policy</h5>
           <p className="flex items-center text-sm font-light">
             <RiArrowRightSLine className="text-red-600" />
-            Saboo RKS Maruti Suzuki may edit this policy from time to time. If
+            Popular Rks Maruti Suzuki may edit this policy from time to time. If
             we make any substantial changes ,we will notify you by posting a
             prominent announcement on our pages.
           </p>

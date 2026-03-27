@@ -49,55 +49,7 @@ function XL() {
   return (
     <>
       <Seo />
-      {/* <Helmet>
-        <title>
-        Maruti XL6 2025 – The New Benchmark in Style! July Monsoon Offers & Exclusive Deals Starting at ₹11.61 Lakh at Saboo Nexa Hyderabad
-        </title>
-        <meta
-          name="title"
-          content="Maruti XL6 2025 – The New Benchmark in Style! July Monsoon Offers & Exclusive Deals Starting at ₹11.61 Lakh at Saboo Nexa Hyderabad"
-        />
-        <meta
-          name="description"
-          content="Experience premium style and unmatched comfort with the 2025 Maruti Suzuki XL6. Take advantage of exclusive July Monsoon offers, along with special discounts and deals at Nexa showrooms. Drive home your dream premium MPV today with unbeatable offers this season!"
-        />
-        <meta
-          name="keywords"
-          content="2025 Maruti Suzuki XL6 July Monsoon Offers, Nexa XL6 Discounts 2025, XL6 Premium MPV Monsoon Deals, XL6 2025 July Discounts, Maruti Suzuki XL6 July Offers, Nexa XL6 July Monsoon Sale, XL6 Best Offers July 2025, XL6 On-Road Price July 2025, XL6 EMI Offers July 2025, Maruti Suzuki XL6 Finance Offers July 2025, Premium MPV Monsoon Deals 2025, Best Nexa XL6 Deals July 2025, XL6 Special Offers July 2025."
-        />
-        <meta name="author" content="Broaddcast" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.saboonexa.in/the-xl6/" />
-        <meta
-          property="og:title"
-          content=" Maruti XL6 2025 – The New Benchmark in Style! July Monsoon Offers & Exclusive Deals Starting at ₹11.61 Lakh at Saboo Nexa Hyderabad"
-        />
-        <meta
-          property="og:description"
-          content="Experience premium style and unmatched comfort with the 2025 Maruti Suzuki XL6. Take advantage of exclusive July Monsoon offers, along with special discounts and deals at Nexa showrooms. Drive home your dream premium MPV today with unbeatable offers this season!"
-        />
-        <meta
-          property="og:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/XL6.jpg"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.saboonexa.in/the-xl6/"
-        />
-        <meta
-          property="twitter:title"
-          content=" Maruti XL6 2025 – The New Benchmark in Style! July Monsoon Offers & Exclusive Deals Starting at ₹11.61 Lakh at Saboo Nexa Hyderabad"
-        />
-        <meta
-          property="twitter:description"
-          content="Experience premium style and unmatched comfort with the 2025 Maruti Suzuki XL6. Take advantage of exclusive July Monsoon offers, along with special discounts and deals at Nexa showrooms. Drive home your dream premium MPV today with unbeatable offers this season!"
-        />
-        <meta
-          property="twitter:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/XL6.jpg"
-        />
-      </Helmet> */}
+
       <Header />
       <div className='relative bg-black'>
         <div className='top-0 left-0 w-full h-screen '>
@@ -179,7 +131,7 @@ function XL() {
       {/* <OnRoadPrice title={'XL6'} /> */}
       {/* <Features /> */}
       <Safety />
-      <CarComp details={products[8]} />
+      <CarComp details={products[7]} />
       <CarEnq2 title='BOOK YOUR XL6' carName='XL6' />
     </>
   );

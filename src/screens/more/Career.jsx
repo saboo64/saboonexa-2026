@@ -123,15 +123,15 @@ const Career = ({ formValue }) => {
   return (
     <>
       <Helmet>
-        <title>Join Our Team - Careers at Saboo Nexa</title>
-        <meta name="title" content="Join Our Team - Careers at Saboo Nexa" />
+        <title>Join Our Team - Careers at Popular Rks Nexa</title>
+        <meta name="title" content="Join Our Team - Careers at Popular Rks Nexa" />
         <meta
           name="description"
-          content="Explore exciting career opportunities at Saboo Nexa and become part of a dynamic team dedicated to automotive excellence."
+          content="Explore exciting career opportunities at Popular Rks Nexa and become part of a dynamic team dedicated to automotive excellence."
         />
         <meta
           name="keywords"
-          content="Careers, Jobs, Saboo Nexa, Automotive Industry, Opportunities"
+          content="Careers, Jobs, Popular Rks Nexa, Automotive Industry, Opportunities"
         />
       </Helmet>
       <Header col={sub} />
@@ -160,7 +160,7 @@ const Career = ({ formValue }) => {
         <div>
           <div className="pb-[67px] bg-black sm:pb-[120px] lg:pb-[135px]"></div>
           <div className="bg-[#15151e] pt-14 pb-10 text-center text-white uppercase text-2xl sm:text-3xl md:text-4xl font-medium">
-            POWER UP YOUR AUTO CAREER WITH SABOO RKS
+            POWER UP YOUR AUTO CAREER WITH Popular  RKS
           </div>
 
           <div className={` my-2 mx-auto container `}>

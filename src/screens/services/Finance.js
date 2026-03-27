@@ -52,10 +52,10 @@ function Finance() {
   return (
     <>
       <Helmet>
-        <title>Maruti Suzuki Car Finance with Low Interest | Saboo Nexa</title>
+        <title>Maruti Suzuki Car Finance with Low Interest | Popular RKS Nexa</title>
         <meta
           name="title"
-          content="Maruti Suzuki Car Finance with Low Interest | Saboo Nexa"
+          content="Maruti Suzuki Car Finance with Low Interest | Popular RKS Nexa"
         />
         <meta
           name="description"
@@ -70,7 +70,7 @@ function Finance() {
         />
         <meta
           property="og:title"
-          content="Maruti Suzuki Nexa Car Finance with Low Interest | Saboo Nexa"
+          content="Maruti Suzuki Nexa Car Finance with Low Interest | Popular RKS Nexa"
         />
         <meta
           property="og:description"
@@ -87,7 +87,7 @@ function Finance() {
         />
         <meta
           property="twitter:title"
-          content="Maruti Suzuki Nexa Car Finance with Low Interest | Saboo Nexa"
+          content="Maruti Suzuki Nexa Car Finance with Low Interest | Popular RKS Nexa"
         />
         <meta
           property="twitter:description"

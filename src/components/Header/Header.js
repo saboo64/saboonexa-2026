@@ -23,7 +23,7 @@ const navigation = {
           imageSrc:
             require('../../assets/cars/Evitara.png'),
           imageAlt: "EVitara",
-          price: "coming-soon*",
+          price: "₹ 10,99,000*",
         },
 
 
@@ -79,16 +79,16 @@ const navigation = {
           price: "₹ 11,61,000*",
         },
 
-        {
-          name: "Created to Inspire Elegance.",
-          brand_logo:
-            "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Ciaz-logo.webp",
-          href: "/nexa-ciaz-on-road-price-in-hyderabad",
-          imageSrc:
-            "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Ciaz-Car.webp",
-          imageAlt: "Ciaz",
-          price: " ₹ 9,40,000*",
-        },
+        // {
+        //   name: "Created to Inspire Elegance.",
+        //   brand_logo:
+        //     "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Ciaz-logo.webp",
+        //   href: "/nexa-ciaz-on-road-price-in-hyderabad",
+        //   imageSrc:
+        //     "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Ciaz-Car.webp",
+        //   imageAlt: "Ciaz",
+        //   price: " ₹ 9,40,000*",
+        // },
         {
           name: "Created to Inspire The Bold and Intelligent.",
           brand_logo:
@@ -242,11 +242,11 @@ const carLinks = [
     link: "/nexa-xl6-on-road-price-in-hyderabad",
     heading: "Created to Inspire Indulgence.",
   },
-  {
-    name: "Ciaz",
-    link: "/nexa-ciaz-on-road-price-in-hyderabad",
-    heading: "Created to Inspire Elegance.",
-  },
+  // {
+  //   name: "Ciaz",
+  //   link: "/nexa-ciaz-on-road-price-in-hyderabad",
+  //   heading: "Created to Inspire Elegance.",
+  // },
   {
     name: "Baleno",
     link: "/new-maruti-baleno-price-in-hyderabad",

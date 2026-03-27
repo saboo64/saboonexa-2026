@@ -31,20 +31,20 @@ function Showrooms({ title }) {
     <>
       <Helmet>
         <title>
-          Discover Luxury and Innovation at Saboo Nexa Outlets | Find Your Dream
+          Discover Luxury and Innovation at Popular RKS Nexa Outlets | Find Your Dream
           Car Today
         </title>
         <meta
           name="title"
-          content="Discover Luxury and Innovation at Saboo Nexa Outlets | Find Your Dream Car Today"
+          content="Discover Luxury and Innovation at Popular RKS Nexa Outlets | Find Your Dream Car Today"
         />
         <meta
           name="description"
-          content="Explore the latest collection of premium Nexa cars at Saboo Nexa Outlets. From sleek sedans to stylish SUVs, find your perfect ride with us."
+          content="Explore the latest collection of premium Nexa cars at Popular RKS Nexa Outlets. From sleek sedans to stylish SUVs, find your perfect ride with us."
         />
         <meta
           name="keywords"
-          content="Nexa cars, luxury cars, premium cars, car showroom, car dealership, Saboo Nexa, dream car, car collection, stylish cars, innovative cars"
+          content="Nexa cars, luxury cars, premium cars, car showroom, car dealership, Popular RKS Nexa, dream car, car collection, stylish cars, innovative cars"
         />
         <meta name="author" content="Broaddcast" />
       </Helmet>

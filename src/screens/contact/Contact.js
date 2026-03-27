@@ -45,11 +45,11 @@ function Contact() {
         />
         <meta
           name="description"
-          content="Contact your nearest Saboo Nexa showroom for any Maruti Suzuki Nexa Vehicle Enquiry. For queries about any of the NEXA cars feedback or complaints contact us on 9848898488. Write to us at info@saboomaruti.in."
+          content="Contact your nearest Popular Rks Nexa showroom for any Maruti Suzuki Nexa Vehicle Enquiry. For queries about any of the NEXA cars feedback or complaints contact us on 9848898488. Write to us at info@saboomaruti.in."
         />
         <meta
           name="keywords"
-          content="Saboo Nexa, Contact Us, Test Drive, Service Appointment, Customer Support, Automotive Dealership ,Car Sales, Vehicle Maintenance, Inquiries, Nexa Dealership"
+          content="Popular Rks Nexa, Contact Us, Test Drive, Service Appointment, Customer Support, Automotive Dealership ,Car Sales, Vehicle Maintenance, Inquiries, Nexa Dealership"
         />
         <meta name="author" content="Broaddcast" />
         <meta property="og:type" content="website" />
@@ -93,7 +93,7 @@ function Contact() {
         CONTACT US
       </div>
       <div className="mt-4 mb-5 text-center">
-        for Sales, Feedback or Complaint | Saboo Nexa
+        for Sales, Feedback or Complaint | Popular Rks Nexa
       </div>
 
       <div className="container px-5 py-6 mx-auto space-y-3 lg:py-12 lg:px-0">
