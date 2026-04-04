@@ -45,7 +45,7 @@ function Contact() {
         />
         <meta
           name="description"
-          content="Contact your nearest Popular Rks Nexa showroom for any Maruti Suzuki Nexa Vehicle Enquiry. For queries about any of the NEXA cars feedback or complaints contact us on 9848898488. Write to us at info@saboomaruti.in."
+          content="Contact your nearest Popular Rks Nexa showroom for any Maruti Suzuki Nexa Vehicle Enquiry. For queries about any of the NEXA cars feedback or complaints contact us on 9848898488. Write to us at smg.crc.cm@popularv.com."
         />
         <meta
           name="keywords"

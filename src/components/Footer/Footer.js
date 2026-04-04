@@ -19,10 +19,10 @@ const navigation = {
       to: "/nexa-evitara-on-road",
     },
 
-    
+
     { name: "Maruti XL6", to: "/nexa-xl6-on-road-price-in-hyderabad" },
-    
-    
+
+
 
     // { name: "Maruti Ciaz", to: "/nexa-ciaz-on-road-price-in-hyderabad" },
     { name: "Maruti Baleno", to: "/new-maruti-baleno-price-in-hyderabad" },
@@ -102,19 +102,19 @@ function Footer() {
               />
               <div className="grid grid-rows-2 gap-4">
                 <p className="mt-3 font-light text-white">
-                   Popular RKS is Hyderabad’s leading automobile dealership and has
+                  Popular RKS is Hyderabad’s leading automobile dealership and has
                   been driving growth in domains of automobile sales & service
                   over the last four decades.
                 </p>
                 <div className="space-x-2">
                   <a
-                    href="mailto:info@saboomaruti.in"
+                    href="mailto:smg.crc.cm@popularv.com"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="email"
                     className=" bg-white  px-2 sm:px-3 py-1.5 rounded shadow-sm text-sm mt-3"
                   >
-                    info@saboomaruti.in
+                    smg.crc.cm@popularv.com
                   </a>
 
                   <a

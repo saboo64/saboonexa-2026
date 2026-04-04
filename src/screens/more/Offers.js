@@ -142,7 +142,7 @@ function Offers() {
 
       <div className='py-10 space-y-3 text-center'>
         <p className='font-bold lg:text-3xl sm:text-xl'>
-          SAVE WITH SABOO NEXA OFFERS IN HYDERABAD INDIA
+          SAVE WITH POPULAR NEXA OFFERS IN HYDERABAD INDIA
         </p>
 
         <p>
