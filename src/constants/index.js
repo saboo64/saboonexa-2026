@@ -376,15 +376,15 @@ export const products = [
 export const offer_products = [
   {
     name: 'Grand Vitara',
-    price: '1,87,000',
-    desc: '+5 year EW',
+    price: '1,50,000',
+    desc: '+5 year EW + 30,000 Loyalty Upgrade Bonus',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/color-icons/GV-logo-204x37+webp.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp',
     explore: '/grand-vitara-on-road-price-in-hyderabad',
   },
   {
     name: 'Ignis',
-    price: '70,100',
+    price: '58,000',
     // desc: "",
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Maruti-Suzuki-Ignis-logo.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/Product-thumbnail/Saboo-Nexa-product-Ignis.webp',
@@ -402,7 +402,7 @@ export const offer_products = [
 
   {
     name: 'Baleno',
-    price: '33,000',
+    price: '28,000',
     desc: 'REAGL KIT WORTH RS.50,389',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/newage_baleno_logo.png',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/cng/baleno-cng-thubnail.webp',
@@ -418,14 +418,14 @@ export const offer_products = [
   },
   {
     name: 'XL6',
-    price: '95,000',
+    price: '48,000',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Logo-XL6.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/cng/xl6-cng-thumbnail.webp',
     explore: '/nexa-xl6-on-road-price-in-hyderabad',
   },
   {
     name: 'Fronx',
-    price: '48,000',
+    price: '13,000',
     //desc: "Free Velocity Kit (Worth 43K)",
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/Flash_header_Menu_logo.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/fronx-cng-thumbnail.webp',
@@ -433,7 +433,7 @@ export const offer_products = [
   },
   {
     name: 'Invicto ',
-    price: '1,68,000',
+    price: '2,68,000',
     desc: '+ 50000 ( LOYALTY UPGRADE BONUS)',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/D23+logo+without+outline+Black_125x35.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/invicto-main-thubmnail-no-bg.webp',

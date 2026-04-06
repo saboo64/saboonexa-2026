@@ -62,7 +62,7 @@ export const blogData = [
       "The keys were handed over to customers by Jayesh Ranjan and Vinay Saboo, Chairman & Managing Director in the presence of senior officials from Maruti Suzuki.",
     publishedBy: "Telangana Today",
     date: "24 JUNE 2023",
-    desc: `Hyderabad: Hyderabad's first batch of the iconic SUV from Maruti Suzuki, the Jimny was delivered to customers at NEXA Lumbini, RKS Motor Pvt Ltd. The delivery ceremony had the presence of Jayesh Ranjan, Principal Secretary for Information Technology, Electronics & Communications (ITE&C)
+    desc: `Hyderabad: Hyderabad's first batch of the iconic SUV from Maruti Suzuki, the Jimny was delivered to customers at NEXA Lumbini, Popular RKS. The delivery ceremony had the presence of Jayesh Ranjan, Principal Secretary for Information Technology, Electronics & Communications (ITE&C)
     The keys were handed over to customers by Jayesh Ranjan and Vinay Saboo, Chairman & Managing Director in the presence of senior officials from Maruti Suzuki.
     
     Tanay Saboo, Chief Growth Officer said the bookings of the SUV were very good and added, “about 250 cars have already been booked by customers at our Nexa Jubilee and Nexa Lumbini showrooms.”

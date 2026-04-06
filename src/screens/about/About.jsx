@@ -94,7 +94,7 @@ function About() {
             />
           </div>
           <div className="my-10 space-y-4 font-medium leading-loose text-justify text-black md:my-28 indent-8">
-            At RKS MOTOR PVT LTD, our unwavering dedication to the "Customers
+            At Popular RKS, our unwavering dedication to the "Customers
             for Life" philosophy drives us. With a skilled workforce, advanced
             technology, and commitment to excellence, we aim to add value to
             each interaction, ensuring your contentment. With a rich history of
@@ -108,7 +108,7 @@ function About() {
       <div className="container mx-auto md:pt-16 md:pb-10">
         <div className="grid gap-2 px-5 bg-gray-100 md:grid-cols-2 lg:gap-8 md:rounded-xl md:shadow-lg md:shadow-gray-600 group">
           <div className="my-10 font-medium leading-loose text-justify text-black md:my-24 indent-8">
-            Rooted in the "Customers for Life" ethos, RKS MOTOR PVT LTD centers
+            Rooted in the "Customers for Life" ethos, Popular RKS centers
             on delivering value. Our skilled workforce, advanced technology, and
             unwavering commitment to service excellence ensure satisfaction.
             Fueled by a history of excellence and customer contentment, we stand
@@ -208,7 +208,7 @@ function About() {
             proactive in adapting to new trends and technologies, ensuring that
             we are always ahead in meeting your evolving needs.
           </div>
-          In choosing Saboo RKS Motor Pvt Ltd, you're not just choosing an
+          In choosing Popular RKS Pvt Ltd, you're not just choosing an
           automotive dealer; you're choosing a partner that's dedicated to
           enhancing your journey, from the moment you step into our outlets to
           the moment you drive away with confidence and satisfaction.

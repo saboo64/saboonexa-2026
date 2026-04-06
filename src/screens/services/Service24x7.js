@@ -1050,7 +1050,7 @@ function Service24x7() {
               <div className='font-serif'>Terms & Conditions</div>
               <div className='font-serif'>Privacy Policy</div>
               <div className='font-serif'>
-                ©2023 All Rights Reserved by RKS Motor Pvt Ltd.
+                ©2023 All Rights Reserved by Popular RKS Pvt Ltd.
               </div>
             </div>
           </div>
