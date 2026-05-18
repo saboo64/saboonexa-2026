@@ -33,22 +33,22 @@ function Offers() {
     <>
       <Helmet>
         <title>
-          Sankranti 2026 Festive Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa
+          Summer 2026 Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa
         </title>
 
         <meta
           name="title"
-          content="Sankranti 2026 Festive Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa"
+          content="Summer 2026 Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa"
         />
 
         <meta
           name="description"
-          content="Celebrate Sankranti 2026 with massive festive offers at Saboo Nexa & RKS Motor! Enjoy huge discounts on Maruti Suzuki cars like Grand Vitara, Fronx, Baleno, XL6, and more. Get attractive exchange bonuses, low EMI options, free vehicle checkups, and exclusive Sankranti service packages. Limited-time Sankranti deals – book now!"
+          content="Celebrate Summer 2026 with massive offers at Saboo Nexa & RKS Motor! Enjoy huge discounts on Maruti Suzuki cars like Grand Vitara, Fronx, Baleno, XL6, and more. Get attractive exchange bonuses, low EMI options, free vehicle checkups, and exclusive summer service packages. Limited-time Summer deals – book now!"
         />
 
         <meta
           name="keywords"
-          content="Sankranti 2026 Car Offers, Maruti Suzuki Sankranti Discounts, Saboo Nexa Sankranti Deals, RKS Motor Sankranti Offers, Nexa Car Offers Sankranti, Grand Vitara Sankranti Offer, Baleno Fronx Sankranti Discount, Maruti Free Checkup Sankranti, Nexa Hyderabad Festive Offers"
+          content="Summer 2026 Car Offers, Maruti Suzuki Summer Discounts, Saboo Nexa Summer Deals, RKS Motor Summer Offers, Nexa Car Summer Offers, Grand Vitara Summer Offer, Baleno Fronx Summer Discount, Maruti Free Checkup Summer, Nexa Hyderabad Summer Offers"
         />
       </Helmet>
 
@@ -129,7 +129,7 @@ function Offers() {
             </div>
           </SwiperSlide> */}
         </Swiper>
-        <div className='sm:hidden'>
+        {/* <div className='sm:hidden'>
           <img
             src={require('../../assets/others/wm_ugadi_nexa_offers.webp')}
 
@@ -137,7 +137,7 @@ function Offers() {
             className='w-full '
             loading='lazy'
           />
-        </div>
+        </div> */}
       </section>
 
       <div className='py-10 space-y-3 text-center'>
@@ -152,9 +152,9 @@ function Offers() {
         </p>
       </div>
       <OfferProducts />
-      <div className='container mx-auto '>
+      {/* <div className='container mx-auto '>
         Note: Offer applicable on 23rd October 2025 only, while stocks last.
-      </div>
+      </div> */}
     </>
   );
 }

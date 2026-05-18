@@ -325,8 +325,8 @@ const EVitara = () => {
             </div>
             <div className='w-px h-10 bg-white'></div>
             <div className='md:space-y-3'>
-              <p className='text-xl'>500 km</p>
-              <p className='text-xs uppercase '>Range</p>
+              <p className='text-xl'>543 km</p>
+              <p className='text-xs uppercase '>Range <br/>(Certified by ARAI)</p>
             </div>
           </div>
         </div>

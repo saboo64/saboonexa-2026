@@ -35,52 +35,65 @@ function BookAService() {
       <Header />
       <Helmet>
         <title>
-          Best Nexa Service Center in Hyderabad | September & Dussehra 2026
-          Service Offers at Popular Rks Nexa
+          Best Nexa Service Center in Hyderabad | Summer 2026 Service Offers at Popular RKS Nexa
         </title>
+
         <meta
           name='title'
-          content='Best Nexa Service Center in Hyderabad | September & Dussehra 2025 Service Offers at Popular Rks Nexa'
+          content='Best Nexa Service Center in Hyderabad | Summer 2026 Service Offers at Popular RKS Nexa'
         />
+
         <meta
           name='description'
-          content='Book your Nexa car service with Popular Rks Nexa and enjoy exclusive September & Dussehra 2025 offers! Get expert care, genuine parts, and up to 15% off on select services. Visit our service centers at Kukatpally, Kompally, Somajiguda, and Uppal. Call 98488 98488 to book now!'
+          content='Book your Nexa car service with Popular RKS Nexa and enjoy Summer 2026 service offers. Get expert technicians, genuine parts, free pickup & drop, and up to 15% off on select services. Visit Kukatpally, Kompally, Somajiguda & Uppal Nexa service centers. Call 98488 98488 to book now.'
         />
+
         <meta
           name='keywords'
-          content='Nexa Service Center Hyderabad, September Dussehra Service Offers 2025, Nexa Car Service Deals, Popular Rks Nexa Kukatpally, Kompally, Uppal, Somajiguda, Baleno Ignis Ciaz Service Offers, Nexa Car Maintenance, Maruti Suzuki Service Discount, Book Nexa Service Online Hyderabad'
+          content='Nexa Service Center Hyderabad, Summer 2026 Service Offers, Nexa Car Service Hyderabad, Popular RKS Nexa Kukatpally, Kompally Nexa Service, Uppal Nexa Service, Somajiguda Nexa Service, Baleno Ignis Ciaz Service, Nexa Car Maintenance Hyderabad, Maruti Nexa Service Discount, Book Nexa Service Online Hyderabad'
         />
+
         <meta name='author' content='Broaddcast' />
+
         <meta property='og:type' content='website' />
+
         <meta
           property='og:url'
           content='https://www.saboonexa.in/book-online-maruti-nexa-car-service'
         />
+
         <meta
           property='og:title'
-          content='Book Nexa Car Service in Hyderabad | Popular Rks Nexa – September & Dussehra 2025 Service Offers'
+          content='Book Nexa Car Service in Hyderabad | Popular RKS Nexa – Summer 2026 Service Offers'
         />
+
         <meta
           property='og:description'
-          content='Book your Nexa car service with Popular Rks Nexa and get up to 15% off this September & Dussehra 2025. Trusted service centers in Hyderabad – Kukatpally, Kompally, Uppal & Somajiguda. Contact: 98488 98488'
+          content='Book your Nexa car service with Popular RKS Nexa and get up to 15% off this Summer 2026. Trusted Nexa service centers in Hyderabad – Kukatpally, Kompally, Uppal & Somajiguda. Contact: 98488 98488'
         />
+
         <meta
           property='og:image'
           content='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Book-service.jpg'
         />
+
         <meta property='twitter:card' content='summary_large_image' />
+
         <meta
           property='twitter:url'
           content='https://www.saboonexa.in/book-online-maruti-nexa-car-service'
         />
+
         <meta
           property='twitter:title'
-          content='Book Nexa Car Service in Hyderabad | Popular Rks Nexa – September & Dussehra 2025 Service Offers'
+          content='Book Nexa Car Service in Hyderabad | Popular RKS Nexa – Summer 2026 Service Offers'
         />
+
         <meta
           property='twitter:description'
-          content='Top-rated Nexa service center in Hyderabad. Enjoy September & Dussehra 2025 offers with expert technicians, genuine parts & attractive discounts. Call Saboo Nexa: 98488 98488'
+          content='Top-rated Nexa service center in Hyderabad. Enjoy Summer 2026 offers with expert technicians, genuine parts & attractive discounts. Call Saboo Nexa: 98488 98488'
         />
+
         <meta
           property='twitter:image'
           content='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Book-service.jpg'
@@ -112,7 +125,7 @@ function BookAService() {
 
 
 
-        
+
         {/* <img
           //src={require("../../assets/HomePageImages/Saboo_Nexa_Service_Center_In_Hyderabad.webp")}
           src={require('../../assets/others/Website_Maruti_Suzuki_Service_Freedom_offer_with_Saboo_RKS_Motor_service_Independence_day_Service.webp')}
@@ -255,7 +268,7 @@ function BookAService() {
                       leadForm: 'Book A Service',
                     }
                   )
-                  .then((res) => {})
+                  .then((res) => { })
                   .catch((err) => {
                     toast.error('Something went wrong!');
                     console.log(err);
