@@ -48,11 +48,11 @@ function Home({ setSelected }) {
   return (
     <div className='relative'>
       <Seo
-        title='Popular RKS Nexa – Best Maruti Suzuki Nexa Dealer in Hyderabad | Luxury Car Showroom with Summer 2026 Offers'
-        description="Explore the latest Maruti Suzuki Nexa models at Popular RKS Nexa, Hyderabad's leading luxury car dealership. Enjoy Summer 2026 exclusive offers, unbeatable discounts, exchange bonus, and exceptional customer service. Drive home your dream Nexa car today with the best deals and premium experience."
-        keywords='Popular RKS Nexa Hyderabad, Summer offers 2026 Nexa Hyderabad, Best Maruti Suzuki Nexa Cars in Hyderabad, Premium Cars in Hyderabad, Nexa Showroom Hyderabad, Nexa Summer Car Deals, Maruti Suzuki Premium Cars Hyderabad, Luxury Cars Hyderabad, Buy Nexa Car Hyderabad, Best Nexa Dealer Hyderabad, Nexa On-Road Price Hyderabad, Nexa Exchange Offers Hyderabad, Maruti Nexa Finance Offers, Nexa EMI Hyderabad, Summer Car Offers Hyderabad'
-        url='https://www.saboonexa.in/'
-        image='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg'
+        title="Monsoon 2026 Offers on Maruti Suzuki Nexa Cars in Hyderabad | Popular RKS Nexa"
+        description="Get exclusive Monsoon 2026 offers on Maruti Suzuki Nexa cars in Hyderabad at Popular RKS Nexa. Explore Baleno, Fronx, Grand Vitara, Jimny, XL6, Invicto, and Ciaz with attractive discounts, exchange bonus, low EMI plans, and instant delivery benefits."
+        keywords="Monsoon offers Nexa Hyderabad, Maruti Suzuki Nexa cars Hyderabad, Baleno offers Hyderabad, Fronx offers Hyderabad, Grand Vitara offers Hyderabad, Jimny offers Hyderabad, XL6 offers Hyderabad, Nexa showroom Hyderabad, Nexa dealer Hyderabad, Nexa EMI offers, Nexa exchange bonus, Maruti Nexa Hyderabad"
+        url="https://www.saboonexa.in/"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg"
       />
 
       <Header />
@@ -1128,24 +1128,24 @@ const WhyToChooseUs = () => {
 const Offer = () => {
   return (
     <div className='container px-2 pb-5 mx-auto xl:max-w-7xl '>
-      {/* <div className='hidden sm:block'>
+      <div className='hidden sm:block'>
           <img
-            src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_February_Offers_Saboo_RKS_Popular_Vehicles.webp')}
+            src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
             alt='components/Website_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp'
             className={`hidden w-full sm:block rounded-xl border-b border-gray-300 border-x`}
             loading='lazy'
           />
-        </div> */}
-      {/* <div className='sm:hidden'>
+        </div>
+      <div className='sm:hidden'>
         <img
-          src={require('../../assets/others/wm_ugadi_nexa_offers.webp')}
+          src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
           // src={require("../../Website_Mobile_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp")}
           // src={require("../../assets/HomePageImages/Website_Mobile_Maruti_Suzuki_Nexa_Year_End_Offers_Remember_To_Remember_Offers_Saboo_RKS_Motor_Nexa.webp")}
           alt='Mobile_Maruti_Suzuki_Nexa_Year_End_Offers_Remember_To_Remember_Offers_Saboo_RKS_Motor_Nexa'
           className='w-full rounded-2xl sm:hidden'
           loading='lazy'
         />
-      </div> */}
+      </div>
       <section className=''>
         <Swiper
           style={{

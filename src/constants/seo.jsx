@@ -1,11 +1,11 @@
 export const vechicle = {
   baleno: {
     title:
-      'Maruti Suzuki Baleno On-Road Price in Hyderabad 2026 | Summer Offers & EMI – Nexa',
+      'Maruti Suzuki Baleno On-Road Price in Hyderabad 2026 | Monsoon Offers & EMI – Nexa',
     description:
-      'Buy Maruti Suzuki Baleno in Hyderabad at best on-road price from Popular Nexa. Get Summer 2026 offers, exchange bonus, low EMI plans & quick delivery. Book your Baleno today.',
+      'Buy Maruti Suzuki Baleno in Hyderabad at best on-road price from Popular Nexa. Get Monsoon 2026 offers, exchange bonus, low EMI plans & quick delivery. Book your Baleno today.',
     keywords:
-      'Maruti Baleno on road price Hyderabad, Baleno Summer offers 2026, Baleno EMI Hyderabad, Nexa Baleno price, Baleno exchange bonus',
+      'Maruti Baleno on road price Hyderabad, Baleno Monsoon offers 2026, Baleno EMI Hyderabad, Nexa Baleno price, Baleno exchange bonus',
     url: 'https://saboonexa.in/new-maruti-baleno-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Baleno.jpg',
@@ -13,11 +13,11 @@ export const vechicle = {
 
   ciaz: {
     title:
-      'Maruti Suzuki Ciaz On-Road Price in Hyderabad 2026 | Summer Sedan Offers – Nexa',
+      'Maruti Suzuki Ciaz On-Road Price in Hyderabad 2026 | Monsoon Sedan Offers – Nexa',
     description:
-      'Check Maruti Suzuki Ciaz on-road price in Hyderabad with Summer 2026 offers. Enjoy premium sedan comfort, low EMI options & exchange benefits at Popular Nexa.',
+      'Check Maruti Suzuki Ciaz on-road price in Hyderabad with Monsoon 2026 offers. Enjoy premium sedan comfort, low EMI options & exchange benefits at Popular Nexa.',
     keywords:
-      'Maruti Ciaz on road price Hyderabad, Ciaz Summer offers 2026, Ciaz EMI Hyderabad, Nexa Ciaz sedan price, Ciaz exchange bonus',
+      'Maruti Ciaz on road price Hyderabad, Ciaz Monsoon offers 2026, Ciaz EMI Hyderabad, Nexa Ciaz sedan price, Ciaz exchange bonus',
     url: 'https://saboonexa.in/nexa-ciaz-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Ciaz.jpg',
@@ -25,11 +25,11 @@ export const vechicle = {
 
   fronx: {
     title:
-      'Maruti Suzuki Fronx On-Road Price in Hyderabad 2026 | Summer Compact SUV Deals',
+      'Maruti Suzuki Fronx On-Road Price in Hyderabad 2026 | Monsoon Compact SUV Deals',
     description:
-      'Explore Maruti Suzuki Fronx on-road price in Hyderabad at Popular Nexa. Get Summer 2026 offers, attractive EMI plans & exchange bonus.',
+      'Explore Maruti Suzuki Fronx on-road price in Hyderabad at Popular Nexa. Get Monsoon 2026 offers, attractive EMI plans & exchange bonus.',
     keywords:
-      'Maruti Fronx on road price Hyderabad, Fronx Summer offers 2026, Fronx EMI Hyderabad, Nexa Fronx SUV price',
+      'Maruti Fronx on road price Hyderabad, Fronx Monsoon offers 2026, Fronx EMI Hyderabad, Nexa Fronx SUV price',
     url: 'https://saboonexa.in/maruti-fronx-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Fronx.jpg',
@@ -37,11 +37,11 @@ export const vechicle = {
 
   GrandVitara: {
     title:
-      'Maruti Grand Vitara On-Road Price in Hyderabad 2026 | Summer Hybrid SUV Offers',
+      'Maruti Grand Vitara On-Road Price in Hyderabad 2026 | Monsoon Hybrid SUV Offers',
     description:
-      'Discover Maruti Grand Vitara on-road price in Hyderabad with Summer 2026 offers. Premium hybrid SUV with low running cost, EMI plans & exchange benefits.',
+      'Discover Maruti Grand Vitara on-road price in Hyderabad with Monsoon 2026 offers. Premium hybrid SUV with low running cost, EMI plans & exchange benefits.',
     keywords:
-      'Maruti Grand Vitara on road price Hyderabad, Grand Vitara Summer offers 2026, Hybrid SUV price Hyderabad, Nexa Grand Vitara EMI',
+      'Maruti Grand Vitara on road price Hyderabad, Grand Vitara Monsoon offers 2026, Hybrid SUV price Hyderabad, Nexa Grand Vitara EMI',
     url: 'https://saboonexa.in/grand-vitara-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/GrandVitara.jpg',
@@ -49,11 +49,11 @@ export const vechicle = {
 
   ignis: {
     title:
-      'Maruti Suzuki Ignis On-Road Price in Hyderabad 2026 | Summer Hatchback Offers',
+      'Maruti Suzuki Ignis On-Road Price in Hyderabad 2026 | Monsoon Hatchback Offers',
     description:
-      'Buy Maruti Suzuki Ignis in Hyderabad at best price from Popular Nexa. Compact hatchback with Summer 2026 offers, EMI benefits & exchange bonus.',
+      'Buy Maruti Suzuki Ignis in Hyderabad at best price from Popular Nexa. Compact hatchback with Monsoon 2026 offers, EMI benefits & exchange bonus.',
     keywords:
-      'Maruti Ignis on road price Hyderabad, Ignis Summer offers 2026, Ignis EMI Hyderabad, Nexa Ignis hatchback',
+      'Maruti Ignis on road price Hyderabad, Ignis Monsoon offers 2026, Ignis EMI Hyderabad, Nexa Ignis hatchback',
     url: 'https://saboonexa.in/nexa-ignis-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Ignis.jpg',
@@ -61,11 +61,11 @@ export const vechicle = {
 
   invicto: {
     title:
-      'Maruti Suzuki Invicto On-Road Price in Hyderabad 2026 | Summer Premium MPV Offers',
+      'Maruti Suzuki Invicto On-Road Price in Hyderabad 2026 | Monsoon Premium MPV Offers',
     description:
-      'Check Maruti Suzuki Invicto on-road price in Hyderabad with Summer 2026 offers. Luxury MPV with hybrid efficiency, EMI plans & exchange benefits.',
+      'Check Maruti Suzuki Invicto on-road price in Hyderabad with Monsoon 2026 offers. Luxury MPV with hybrid efficiency, EMI plans & exchange benefits.',
     keywords:
-      'Maruti Invicto on road price Hyderabad, Invicto Summer offers 2026, Invicto EMI Hyderabad, Nexa premium MPV',
+      'Maruti Invicto on road price Hyderabad, Invicto Monsoon offers 2026, Invicto EMI Hyderabad, Nexa premium MPV',
     url: 'https://saboonexa.in/maruti-invicto-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Invicto.jpg',
@@ -73,11 +73,11 @@ export const vechicle = {
 
   jimny: {
     title:
-      'Maruti Suzuki Jimny On-Road Price in Hyderabad 2026 | Summer Off-Road SUV',
+      'Maruti Suzuki Jimny On-Road Price in Hyderabad 2026 | Monsoon Off-Road SUV',
     description:
-      'Explore Maruti Suzuki Jimny on-road price in Hyderabad at Popular Nexa. Iconic 4x4 SUV with Summer 2026 offers, EMI options & exchange bonus.',
+      'Explore Maruti Suzuki Jimny on-road price in Hyderabad at Popular Nexa. Iconic 4x4 SUV with Monsoon 2026 offers, EMI options & exchange bonus.',
     keywords:
-      'Maruti Jimny on road price Hyderabad, Jimny Summer offers 2026, Jimny EMI Hyderabad, Nexa Jimny 4x4 SUV',
+      'Maruti Jimny on road price Hyderabad, Jimny Monsoon offers 2026, Jimny EMI Hyderabad, Nexa Jimny 4x4 SUV',
     url: 'https://saboonexa.in/maruti-jimny-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Jimny.jpg',
@@ -85,11 +85,11 @@ export const vechicle = {
 
   Scross: {
     title:
-      'Maruti S-Cross On-Road Price in Hyderabad 2026 | Summer Crossover Offers',
+      'Maruti S-Cross On-Road Price in Hyderabad 2026 | Monsoon Crossover Offers',
     description:
-      'Buy Maruti S-Cross in Hyderabad with Summer 2026 offers at Popular Nexa. Premium crossover with comfortable ride, EMI plans & exchange bonus.',
+      'Buy Maruti S-Cross in Hyderabad with Monsoon 2026 offers at Popular Nexa. Premium crossover with comfortable ride, EMI plans & exchange bonus.',
     keywords:
-      'Maruti S-Cross on road price Hyderabad, S-Cross Summer offers 2026, Nexa S-Cross EMI Hyderabad, crossover SUV price',
+      'Maruti S-Cross on road price Hyderabad, S-Cross Monsoon offers 2026, Nexa S-Cross EMI Hyderabad, crossover SUV price',
     url: 'https://www.saboonexa.in/nexa-scross-petrol-price/',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Scross.jpg',
@@ -97,11 +97,11 @@ export const vechicle = {
 
   XL6: {
     title:
-      'Maruti XL6 On-Road Price in Hyderabad 2026 | Summer Premium MPV Deals',
+      'Maruti XL6 On-Road Price in Hyderabad 2026 | Monsoon Premium MPV Deals',
     description:
-      'Check Maruti XL6 on-road price in Hyderabad with Summer 2026 offers. Stylish premium MPV with captain seats, EMI benefits & exchange bonus.',
+      'Check Maruti XL6 on-road price in Hyderabad with Monsoon 2026 offers. Stylish premium MPV with captain seats, EMI benefits & exchange bonus.',
     keywords:
-      'Maruti XL6 on road price Hyderabad, XL6 Summer offers 2026, XL6 EMI Hyderabad, Nexa XL6 MPV price',
+      'Maruti XL6 on road price Hyderabad, XL6 Monsoon offers 2026, XL6 EMI Hyderabad, Nexa XL6 MPV price',
     url: 'https://saboonexa.in/nexa-xl6-on-road-price-in-hyderabad',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/XL6.jpg',
@@ -112,11 +112,11 @@ export const vechicle = {
 export const CNGvehicles = {
   baleno: {
     title:
-      'Maruti Suzuki Baleno CNG On-Road Price in Hyderabad 2026 | Summer Offers & Best Mileage Hatchback',
+      'Maruti Suzuki Baleno CNG On-Road Price in Hyderabad 2026 | Monsoon Offers & Best Mileage Hatchback',
     description:
-      'Buy Maruti Suzuki Baleno CNG in Hyderabad at best on-road price from Popular Nexa. Get Summer 2026 offers, excellent mileage, low running cost, attractive EMI plans & exchange bonus.',
+      'Buy Maruti Suzuki Baleno CNG in Hyderabad at best on-road price from Popular Nexa. Get Monsoon 2026 offers, excellent mileage, low running cost, attractive EMI plans & exchange bonus.',
     keywords:
-      'Baleno CNG on road price Hyderabad, Baleno CNG Summer offers 2026, Baleno CNG mileage, Baleno CNG EMI Hyderabad, Nexa Baleno CNG price',
+      'Baleno CNG on road price Hyderabad, Baleno CNG Monsoon offers 2026, Baleno CNG mileage, Baleno CNG EMI Hyderabad, Nexa Baleno CNG price',
     url: 'https://saboonexa.in/baleno-cng',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Baleno.jpg',
@@ -124,11 +124,11 @@ export const CNGvehicles = {
 
   fronx: {
     title:
-      'Maruti Suzuki Fronx CNG On-Road Price in Hyderabad 2026 | Summer CNG SUV Offers',
+      'Maruti Suzuki Fronx CNG On-Road Price in Hyderabad 2026 | Monsoon CNG SUV Offers',
     description:
-      'Explore Maruti Suzuki Fronx CNG on-road price in Hyderabad at Popular Nexa. Stylish compact SUV with Summer 2026 offers, high fuel efficiency, EMI benefits & exchange bonus.',
+      'Explore Maruti Suzuki Fronx CNG on-road price in Hyderabad at Popular Nexa. Stylish compact SUV with Monsoon 2026 offers, high fuel efficiency, EMI benefits & exchange bonus.',
     keywords:
-      'Fronx CNG on road price Hyderabad, Fronx CNG Summer offers 2026, Fronx CNG mileage, Fronx CNG EMI Hyderabad, Nexa CNG SUV',
+      'Fronx CNG on road price Hyderabad, Fronx CNG Monsoon offers 2026, Fronx CNG mileage, Fronx CNG EMI Hyderabad, Nexa CNG SUV',
     url: 'https://saboonexa.in/fronx-cng',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Fronx.jpg',
@@ -136,11 +136,11 @@ export const CNGvehicles = {
 
   GrandVitara: {
     title:
-      'Maruti Suzuki Grand Vitara CNG On-Road Price in Hyderabad 2026 | Summer Premium CNG SUV',
+      'Maruti Suzuki Grand Vitara CNG On-Road Price in Hyderabad 2026 | Monsoon Premium CNG SUV',
     description:
-      'Check Maruti Suzuki Grand Vitara CNG on-road price in Hyderabad with Summer 2026 offers. Premium SUV comfort with low running cost, EMI plans & exchange benefits.',
+      'Check Maruti Suzuki Grand Vitara CNG on-road price in Hyderabad with Monsoon 2026 offers. Premium SUV comfort with low running cost, EMI plans & exchange benefits.',
     keywords:
-      'Grand Vitara CNG on road price Hyderabad, Grand Vitara CNG Summer offers 2026, Grand Vitara CNG mileage, Nexa Grand Vitara CNG EMI',
+      'Grand Vitara CNG on road price Hyderabad, Grand Vitara CNG Monsoon offers 2026, Grand Vitara CNG mileage, Nexa Grand Vitara CNG EMI',
     url: 'https://saboonexa.in/grand-vitara-cng',
     image:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/GrandVitara.jpg',

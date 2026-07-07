@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Helmet from 'react-helmet';
 import { offer_products } from '../../constants';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
@@ -13,6 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Autoplay, Navigation } from 'swiper';
+import Seo from '../../components/SEO/seo';
 
 function Offers() {
   const months = [
@@ -31,26 +31,13 @@ function Offers() {
   ];
   return (
     <>
-      <Helmet>
-        <title>
-          Summer 2026 Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa
-        </title>
-
-        <meta
-          name="title"
-          content="Summer 2026 Offers – Huge Discounts on Maruti Suzuki Cars & Services | Saboo Nexa"
-        />
-
-        <meta
-          name="description"
-          content="Celebrate Summer 2026 with massive offers at Saboo Nexa & RKS Motor! Enjoy huge discounts on Maruti Suzuki cars like Grand Vitara, Fronx, Baleno, XL6, and more. Get attractive exchange bonuses, low EMI options, free vehicle checkups, and exclusive summer service packages. Limited-time Summer deals – book now!"
-        />
-
-        <meta
-          name="keywords"
-          content="Summer 2026 Car Offers, Maruti Suzuki Summer Discounts, Saboo Nexa Summer Deals, RKS Motor Summer Offers, Nexa Car Summer Offers, Grand Vitara Summer Offer, Baleno Fronx Summer Discount, Maruti Free Checkup Summer, Nexa Hyderabad Summer Offers"
-        />
-      </Helmet>
+      <Seo
+        title="Monsoon 2026 Offers on Maruti Suzuki Cars in Hyderabad | Saboo Nexa"
+        description="Get exclusive Monsoon 2026 offers on Maruti Suzuki Nexa cars in Hyderabad. Explore Grand Vitara, Fronx, Baleno, XL6, Jimny, and Invicto with attractive discounts, exchange bonus, low EMI plans, free vehicle checkups, and service benefits."
+        keywords="Monsoon offers Maruti Suzuki Hyderabad, Nexa offers Hyderabad, Grand Vitara offers, Fronx offers, Baleno offers, XL6 offers, Jimny offers, Invicto offers, Maruti Suzuki discounts Hyderabad, Nexa exchange bonus, Monsoon car deals Hyderabad"
+        url="https://www.saboonexa.in/offers"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg"
+      />
 
 
       <Header />
@@ -88,56 +75,29 @@ function Offers() {
           modules={[Navigation, Autoplay]}
           className='select-none mySwiper2 '
         >
-          {/* <SwiperSlide className=''>
+          <SwiperSlide className=''>
             <div className='hidden sm:block '>
               <img
                 //  src={require("../../components/Website_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp")}
                 // src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Nexa+Service+Hafeezpet.webp"
-                src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_August_Independence_Day_Offers_Saboo_RKS_Nexa.webp')}
+                src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
                 alt='may-web-Banner-Nexa.webp'
                 className={` w-full `}
                 loading='lazy'
               />
             </div>
-          </SwiperSlide>{' '} */}
-          <SwiperSlide className=''>
-            {/* <div className='hidden sm:block'>
-              <img
-                src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_February_Offers_Saboo_RKS_Popular_Vehicles.webp')}
-
-                alt='May_offers_are_live_at_Saboo_RKS_Motor'
-                className={` w-full `}
-                loading='lazy'
-              />
-            </div> */}
-          </SwiperSlide>
-          {/* <SwiperSlide className="">
-            <div className="hidden sm:block">
-              <img
-                src={require("../../assets/HomePageImages/Maruti_Suzuki_Saboo_RKS_Motor_Hyderabad_Dealer_Offers_Service_Invicto_Fronx_Xl6_Jimny_GrandVitara_Ciaz_Ignis_Baleno_Nexa_Car_Black_Edition_Service.webp")}
-                alt="Maruti_Suzuki_No1_SUV_Maker_Saboo_RKS_Motor_Hyderabad_Dealer_Offers_Service_Invicto_Fronx_Xl6_Jimny_GrandVitara_Ciaz_Ignis_Baleno_Nexa_Car_Service"
-                className={`hidden w-full sm:block `}
-              />
-            </div>
-            <div className="sm:hidden">
-              <img
-                src={require("../../assets/HomePageImages/Maruti_Suzuki_Saboo_RKS_Motor_Hyderabad_Dealer_Offers_Service_Invicto_Fronx_Xl6_Jimny_GrandVitara_Ciaz_Ignis_Baleno_Nexa_Car_Black_Edition_Mobile.webp")}
-                // src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/banners/Website_Mobile_Maruti_Suzuki_No1_SUV_Maker_Saboo_RKS_Motor_October_Offers.webp"
-                alt="Maruti_Suzuki_No1_SUV_Maker_Saboo_RKS_Motor_Hyderabad_Dealer_Offers_Service_Invicto_Fronx_Xl6_Jimny_GrandVitara_Ciaz_Ignis_Baleno_Nexa_Car_Black_Edition_Mobile"
-                className="w-full "
-              />
-            </div>
-          </SwiperSlide> */}
+          </SwiperSlide>{' '}
+    
         </Swiper>
-        {/* <div className='sm:hidden'>
+        <div className='sm:hidden'>
           <img
-            src={require('../../assets/others/wm_ugadi_nexa_offers.webp')}
+            src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
 
             alt='Maruti_Suzuki_No1_SUV_Maker_Saboo_RKS_Motor_Hyderabad_Dealer_Offers_Service_Invicto_Fronx_Xl6_Jimny_GrandVitara_Ciaz_Ignis_Baleno_Nexa_Car_Black_Edition_Mobile'
             className='w-full '
             loading='lazy'
           />
-        </div> */}
+        </div>
       </section>
 
       <div className='py-10 space-y-3 text-center'>
