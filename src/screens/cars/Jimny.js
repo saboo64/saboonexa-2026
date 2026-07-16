@@ -10,9 +10,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-import View360 from '../../components/utils/View360';
-import { Tb360View, TbView360 } from 'react-icons/tb';
-import { GiReturnArrow } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import { MdOutlineFileDownload } from 'react-icons/md';
 import MobileCarousel from '../../components/Jimny/Extras/MobileCarousel';
@@ -1113,73 +1110,3 @@ const Performance = () => {
 };
 
 export default Jimny;
-
-const Jimny360 = () => {
-  return (
-    <div
-      className='relative bg-center bg-no-repeat bg-cover'
-      style={{
-        backgroundImage: "url('https://your-image-url-here.jpg')",
-      }}
-    >
-      <div className='bg-black bg-opacity-50'>
-        {/* Small screen title */}
-        <div className='text-center text-black'>
-          <div className='w-full pt-10 pb-2 text-3xl text-center uppercase sm:text-4xl md:text-5xl lg:hidden'>
-            360
-            <sup>
-              <span className='text-lg'>0</span>
-            </sup>{' '}
-            View
-          </div>
-          <div className='pb-4 text-black lg:hidden'>
-            Take A 360 Degree Look Around The Jimny And Get To Know It Better
-          </div>
-        </div>
-
-        {/* View360 Component */}
-        <div className='relative w-full max-w-7xl mx-auto px-4 h-[200px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[670px] '>
-          {/* Force View360 container height */}
-          <div className='flex items-center justify-center w-full h-full overflow-hidden'>
-            <div className='w-full h-full '>
-              <View360
-                path='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/jimny/360/1.png'
-                count={40}
-                format='png'
-              />
-            </div>
-          </div>
-          {/* Left/Right Arrows */}
-          <div className='absolute left-0 flex flex-col items-center text-black -translate-y-1/2 top-1/2 sm:left-2 md-left-2 lg:left-[0px] 2xl:left-[-100px]  z-10'>
-            <GiReturnArrow className='text-3xl rotate-180 lg:text-5xl animate-pulse' />
-          </div>
-
-          <div className='absolute right-0 flex flex-col items-center text-black -translate-y-1/2 top-1/2 sm:right-10 md:right-2 lg:right-[0px] 2xl:right-[-100px] '>
-            <GiReturnArrow className='text-3xl lg:text-5xl animate-pulse' />
-          </div>
-
-          {/* 360 Icons and Text for Desktop */}
-          <div className='absolute flex-col items-center hidden w-full text-white lg:flex top-6'>
-            <div className='text-4xl font-bold text-black uppercase'>
-              360
-              <sup>
-                <span className='text-lg'>0</span>
-              </sup>{' '}
-              View
-            </div>
-            <div className='mt-2 text-lg text-black'>
-              Take A 360 Degree Look Around The Grand Vitara And Get To Know It
-              Better
-            </div>
-          </div>
-
-          {/* Icon Left Top for md+ */}
-          <div className='absolute flex-col items-center hidden text-black md:flex top-6 left-6'>
-            <TbView360 className='text-3xl lg:text-5xl animate-pulse' />
-            <Tb360View className='text-xl lg:text-4xl' />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};

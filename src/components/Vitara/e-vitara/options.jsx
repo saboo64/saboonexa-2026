@@ -32,6 +32,7 @@ export const Options = ({ open, setOpen }) => {
             <div>
               <a
                 target={"_blank"}
+                rel="noreferrer"
                 href="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Brochure/e_VITARA_Saboo_RKS_Motor_Nexa_Brochure.pdf"
                 className="px-5 py-3 text-white bg-black rounded-lg"
               >

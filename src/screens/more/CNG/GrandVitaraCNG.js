@@ -3,8 +3,6 @@ import Header from '../../../components/Header/Header';
 
 // import { products } from '../../constants';
 
-import { Helmet } from 'react-helmet';
-
 import './fronx.css';
 
 // import { products } from '../../constants';
