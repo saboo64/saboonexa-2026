@@ -374,7 +374,7 @@ export const products = [
 export const offer_products = [
   {
     name: 'Grand Vitara',
-    price: '1,65,000',
+    price: '1,90,000',
     desc: '+5 year EW',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/color-icons/GV-logo-204x37+webp.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp',
@@ -400,7 +400,7 @@ export const offer_products = [
 
   {
     name: 'Baleno',
-    price: '35,000',
+    price: '30,000',
     desc: 'REAGL KIT WORTH RS.50,389',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/newage_baleno_logo.png',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/cng/baleno-cng-thubnail.webp',
@@ -409,7 +409,7 @@ export const offer_products = [
 
   {
     name: 'Ciaz',
-    price: '25,000',
+    price: '30,000',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/Saboo-Nexa-Ciaz-logo.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/Product-thumbnail/Saboo-Nexa-product-ciaz.webp',
     explore: '/nexa-ciaz-on-road-price-in-hyderabad',
