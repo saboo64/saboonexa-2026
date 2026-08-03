@@ -1,30 +1,21 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
 import { testimonials } from "../../constants";
 import { BsQuote } from "react-icons/bs";
 import { RiStarFill } from "react-icons/ri";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function Testimonial() {
   return (
     <>
-      <Helmet>
-        <title>
-          Hear from Our Satisfied Customers - Testimonials - Saboo Nexa
-        </title>
-        <meta
-          name="title"
-          content="Hear from Our Satisfied Customers - Testimonials - Popular Nexa"
-        />
-        <meta
-          name="description"
-          content="Discover what our satisfied customers have to say about their experiences with Saboo Nexa and our exceptional services."
-        />
-        <meta
-          name="keywords"
-          content="Testimonials, Customers, Satisfaction, Reviews, Popular Nexa"
-        />
-      </Helmet>
+      <Seo
+        title="Hear from Our Satisfied Customers - Testimonials - Popular Nexa"
+        description="Discover what our satisfied customers have to say about their experiences with Saboo Nexa and our exceptional services."
+        keywords="Testimonials, Customers, Satisfaction, Reviews, Popular Nexa"
+        url="https://saboonexa.in/testimonials"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Testimonials' }]} />
       <Header />
       <div className="pb-[67px] bg-black sm:pb-[120px] lg:pb-[135px]"></div>
 

@@ -1,33 +1,24 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import { RiArrowRightSLine } from "react-icons/ri";
-import { Helmet } from "react-helmet";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function TermsAndCond() {
   return (
     <>
       <Header col={true} />
-      <Helmet>
-        <title>
-          Terms and Conditions | Popular RKS Motor Authorised Dealers Maruti Suzuki
-        </title>
-        <meta
-          name="title"
-          content="Terms and Conditions | Popular RKS Motor Authorised Dealers Maruti Suzuki"
-        />
-        <meta
-          name="description"
-          content="Terms and Conditions Popular RKS Motor | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School"
-        />
-        <meta
-          name="keywords"
-          content="Terms and Conditions, Popular RKS Motor, Maruti Suzuki, Nexa, Arena, True Value, Driving School"
-        />
-      </Helmet>
+      <Seo
+        title="Terms and Conditions | Popular RKS Motor Authorised Dealers Maruti Suzuki"
+        description="Terms and Conditions Popular RKS Motor | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School"
+        keywords="Terms and Conditions, Popular RKS Motor, Maruti Suzuki, Nexa, Arena, True Value, Driving School"
+        url="https://saboonexa.in/terms-and-condition"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Terms and Conditions' }]} />
       <img
         src={require("../../assets/others/privacy-policy-banner-nexa.webp")}
         className="w-full"
-        alt=""
+        alt="Popular Nexa Terms and Conditions"
       />
       <div className="container px-5 mx-auto">
         <p className="text-xl font-semibold uppercase">Terms and Conditions </p>

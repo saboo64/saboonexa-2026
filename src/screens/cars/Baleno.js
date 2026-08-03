@@ -20,6 +20,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 
 function Baleno() {
   useEffect(() => {
@@ -38,6 +39,20 @@ function Baleno() {
   return (
     <>
       <Seo {...vechicle.baleno} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Baleno' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Baleno'
+        description={vechicle.baleno.description}
+        image={vechicle.baleno.image}
+        url={vechicle.baleno.url}
+        priceINR='598900'
+        fuelType='Petrol/CNG'
+        seatingCapacity='5'
+        vehicleTransmission='5MT/5AMT'
+        vehicleEngine='Adv. K Series Dual Jet / Dual VVT Engine'
+      />
       <Header />
       <div className='relative bg-black'>
         <div className='top-0 left-0 w-full h-screen '>

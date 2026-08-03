@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 const NexaPriceList = () => {
   const [fronxPrice, setFronxPrize] = useState("7,51,500");
@@ -13,6 +15,13 @@ const NexaPriceList = () => {
 
   return (
     <div className="header">
+      <Seo
+        title="Maruti Suzuki Nexa Cars Price List in Hyderabad | Popular Nexa"
+        description="Check the latest ex-showroom price list for Maruti Suzuki Nexa cars in Hyderabad, including Fronx, Jimny, Grand Vitara, XL6, Ciaz, Baleno and Ignis."
+        keywords="Nexa Price List, Maruti Suzuki Price List Hyderabad, Fronx Price, Jimny Price, Grand Vitara Price, XL6 Price, Baleno Price, Ignis Price"
+        url="https://saboonexa.in/pricelist"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Price List' }]} />
       <nav className="py-2 bg-black md:py-4">
         <div className="container px-2 mx-auto md:flex md:items-center">
           <div className="flex items-center justify-between">

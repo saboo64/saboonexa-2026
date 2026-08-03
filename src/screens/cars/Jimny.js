@@ -21,6 +21,7 @@ import { products } from '../../constants';
 import { CarEnq2 } from '../../components/Invicto/CarEnq2';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 
 const Jimny = () => {
   useEffect(() => {
@@ -31,6 +32,20 @@ const Jimny = () => {
   return (
     <>
       <Seo {...vechicle.jimny} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Jimny' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Jimny'
+        description={vechicle.jimny.description}
+        image={vechicle.jimny.image}
+        url={vechicle.jimny.url}
+        priceINR='1231500'
+        fuelType='Petrol'
+        seatingCapacity='4'
+        vehicleTransmission='5MT/4AT'
+        vehicleEngine='K15B 1.5L Petrol Engine'
+      />
 
       <Header />
       <VariantPlayer />

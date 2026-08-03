@@ -4,7 +4,8 @@ import Header from '../../../components/Header/Header';
 import { BsArrowDown } from 'react-icons/bs';
 import { BiRupee } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import Seo from '../../../components/SEO/seo';
+import { BreadcrumbSchema } from '../../../components/SEO/schema';
 // import { products } from '../../constants';
 
 import EnquiryPopup from '../../../components/utils/EnquiryPopup';
@@ -136,22 +137,14 @@ const NexaCNG = () => {
 
   return (
     <div onContextMenu={(e) => e.preventDefault()}>
-      <Helmet>
-        <title> Saboo Nexa: Explore Our Eco-Friendly CNG Car Selection.</title>
-        <meta
-          name='title'
-          content=' Saboo Nexa: Explore Our Eco-Friendly CNG Car Selection.
-'
-        />
-        <meta
-          name='description'
-          content='Discover the eco-friendly and fuel-efficient CNG cars at SabooNexa. Explore our range of CNG vehicles designed for sustainability and performance. Visit us today!'
-        />
-        <meta
-          name='keywords'
-          content='SabooNexa, CNG Cars, Eco-Friendly Vehicles, Fuel Efficiency, Sustainable Driving, Environmentally Friendly Cars, Nexa CNG Models, CNG Car Dealership, CNG Vehicle Selection, CNG Car Offers'
-        />
-      </Helmet>
+      <Seo
+        title='Maruti Suzuki CNG Cars in Hyderabad | Eco-Friendly CNG Range – Popular Nexa'
+        description='Discover eco-friendly and fuel-efficient Maruti Suzuki CNG cars at Popular Nexa Hyderabad. Explore Grand Vitara, XL6, Fronx & Baleno CNG models designed for sustainability and performance.'
+        keywords='Maruti Suzuki CNG cars Hyderabad, Nexa CNG models, CNG car dealership Hyderabad, eco-friendly cars, CNG car offers'
+        url='https://saboonexa.in/cng'
+        image={mobileImageSrc}
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'CNG Cars' }]} />
       <Header />
       <div className='pb-[67px] bg-black sm:pb-[120px] lg:pb-[135px]'></div>
       <div className='select-none'>

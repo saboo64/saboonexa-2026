@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../Header/Header";
-import { Helmet } from "react-helmet";
+import Seo from "../SEO/seo";
+import { BreadcrumbSchema } from "../SEO/schema";
 import DrivingSchoolPopup from "../utils/DrivingSchoolPopup";
 import { DrivingSchoolForm } from "./DrivingSchoolForm";
 
@@ -16,25 +17,14 @@ import { Autoplay, Navigation } from "swiper";
 const DrivingSchool = () => {
   return (
     <div className="">
-      <Helmet>
-        <title>
-          Maruti Suzuki Driving School Car Service | Expert Training &
-          Maintenance.
-        </title>
-        <meta
-          name="title"
-          content="Maruti Suzuki Driving School Car Service | Expert Training & Maintenance."
-        />
-        <meta
-          name="description"
-          content="Learn to drive with confidence at Maruti Suzuki Driving School. Our expert instructors and well-maintained vehicles ensure a safe and comprehensive driving experience. Enroll now for professional driving lessons and top-notch car service."
-        />
-        <meta
-          name="keywords"
-          content="Maruti Suzuki Driving School, Car service, Driving lessons, Professional driving training, Expert instructors, Safe driving, Comprehensive driving school ,Vehicle maintenance, Learn to drive"
-        />
-        <meta name="author" content="Broaddcast" />
-      </Helmet>
+      <Seo
+        title="Maruti Suzuki Driving School Car Service | Expert Training & Maintenance."
+        description="Learn to drive with confidence at Maruti Suzuki Driving School. Our expert instructors and well-maintained vehicles ensure a safe and comprehensive driving experience. Enroll now for professional driving lessons and top-notch car service."
+        keywords="Maruti Suzuki Driving School, Car service, Driving lessons, Professional driving training, Expert instructors, Safe driving, Comprehensive driving school, Vehicle maintenance, Learn to drive"
+        url="https://saboonexa.in/maruti-suzuki-driving-school"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/driving-school/learner-course.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Driving School' }]} />
       <Header />
 
       <HeroSection />

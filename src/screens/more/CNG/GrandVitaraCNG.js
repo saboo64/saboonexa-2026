@@ -17,11 +17,28 @@ import { useState } from 'react';
 import { CarEnq2 } from '../../../components/Invicto/CarEnq2';
 import Seo from '../../../components/SEO/seo';
 import { CNGvehicles } from '../../../constants/seo';
+import {
+  BreadcrumbSchema,
+  VehicleSchema,
+} from '../../../components/SEO/schema';
 
 const GrandVitaraCNG = () => {
   return (
     <>
       <Seo {...CNGvehicles.GrandVitara} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Grand Vitara CNG' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Grand Vitara CNG'
+        description={CNGvehicles.GrandVitara.description}
+        image={CNGvehicles.GrandVitara.image}
+        url={CNGvehicles.GrandVitara.url}
+        fuelType='CNG/Petrol'
+        seatingCapacity='5'
+        vehicleTransmission='5MT/ 6AT / e-CVT'
+        vehicleEngine='SMART HYBRID / INTELLIGENT ELECTRIC HYBRID'
+      />
 
       <Header />
       {/* <div>

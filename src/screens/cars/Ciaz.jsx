@@ -24,6 +24,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
@@ -40,6 +41,19 @@ function Ciaz() {
   return (
     <>
       <Seo {...vechicle.ciaz} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Ciaz' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Ciaz'
+        description={vechicle.ciaz.description}
+        image={vechicle.ciaz.image}
+        url={vechicle.ciaz.url}
+        fuelType='Petrol'
+        seatingCapacity='5'
+        vehicleTransmission='5MT/4AT'
+        vehicleEngine='K15 Smart Hybrid Petrol Engine'
+      />
 
       <Header />
       <div className='relative bg-black'>

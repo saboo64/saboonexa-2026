@@ -450,7 +450,7 @@ function Header({ col }) {
                       <img
                         className={`h-10  `}
                         src={require("../../assets/others/logo_color.png")}
-                        alt="logo"
+                        alt="Popular Nexa Logo"
                       />
                     </Link>
                   </div>

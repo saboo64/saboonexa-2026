@@ -7,7 +7,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../Extras/styles.css";
-import Helmet from "react-helmet";
+import Seo from "../../SEO/seo";
+import { BreadcrumbSchema } from "../../SEO/schema";
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
@@ -19,18 +20,20 @@ import { CarEnq2 } from "../../Invicto/CarEnq2";
 const VitaraAG = () => {
   return (
     <>
-      <Helmet>
-        <title>Nexa Grand Vitara AllGrip On Road Price | Saboo Nexa</title>
-        <meta
-          name="title"
-          content="Nexa Grand Vitara AllGrip On Road Price | Saboo Nexa"
-        />
-        <meta
-          name="description"
-          content="Maruti Suzuki Grand Vitara, a new breed of SUV by Nexa. Grand Vitara comes with the new all grip technology.  Maruti NEXA Grand Vitara Alpha AllGrip  price is Rs 16.89 lakh. Book now get amazing deals."
-        />
-        
-      </Helmet>
+      <Seo
+        title="Grand Vitara AllGrip On-Road Price in Hyderabad | Saboo Nexa"
+        description="Maruti Suzuki Grand Vitara AllGrip, a new breed of SUV by Nexa with all-grip AWD technology. Grand Vitara Alpha AllGrip price starts at Rs 16.89 Lakh*. Book now for amazing deals."
+        keywords="Grand Vitara AllGrip price, Grand Vitara AWD Hyderabad, Nexa Grand Vitara AllGrip"
+        url="https://saboonexa.in/grand-vitara-allgrip"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Grand Vitara", path: "/grand-vitara-on-road-price-in-hyderabad" },
+          { name: "AllGrip" },
+        ]}
+      />
       <Header col={true} />
       <div className="container pb-16 mx-auto space-y-4 rounded lg:pt-32 pt-28">
         {/* <Carousel /> */}

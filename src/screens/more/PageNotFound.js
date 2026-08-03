@@ -2,10 +2,17 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
 
 function PageNotFound() {
   return (
     <>
+      <Seo
+        title="Page Not Found | Popular Nexa"
+        description="The page you're looking for could not be found."
+        url="https://saboonexa.in/404"
+        noindex
+      />
       <Header col={true} />
       <div className="text-center py-32 text-gray-700">
         <h1 className="text-9xl font-extrabold">404</h1>

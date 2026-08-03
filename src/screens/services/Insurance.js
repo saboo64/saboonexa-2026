@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 import axios from "axios";
 import { CgSpinner } from "react-icons/cg";
 import { Link, useNavigate } from "react-router-dom";
@@ -29,59 +30,18 @@ function Insurance() {
   return (
     <>
       <Header />
-      <Helmet>
-        <title>
-          Maruti Car Insurance price, Offers & Renewal Details | Popular RKS Nexa
-        </title>
-        <meta
-          name="title"
-          content="Maruti Car Insurance price, Offers & Renewal Details | Popular RKS Nexa"
-        />
-        <meta
-          name="description"
-          content="Maruti Car Insurance Premium Details, Renewals & Offers. Get cashless settlement on Maruti Insurance. Visit nearest Saboo Nexa showroom today."
-        />
-        <meta name="keywords" content="Maruti Car Insurance" />
-        <meta name="author" content="Broaddcast" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.saboonexa.in/maruti-car-insurance/"
-        />
-        <meta
-          property="og:title"
-          content="Maruti Suzuki Nexa Car Insurance price, Offers & Renewal Details | Popular RKS Nexa"
-        />
-        <meta
-          property="og:description"
-          content="Maruti Car Insurance Premium Details, Renewals & Offers. Get cashless settlement on Maruti Insurance. Visit nearest Saboo Nexa showroom today."
-        />
-        <meta
-          property="og:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Insurance.jpg"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.saboonexa.in/maruti-car-insurance/"
-        />
-        <meta
-          property="twitter:title"
-          content="Maruti Suzuki Nexa Car Insurance price, Offers & Renewal Details | Popular RKS Nexa"
-        />
-        <meta
-          property="twitter:description"
-          content="Maruti Car Insurance Premium Details, Renewals & Offers. Get cashless settlement on Maruti Insurance. Visit nearest Saboo Nexa showroom today."
-        />
-        <meta
-          property="twitter:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Insurance.jpg"
-        />
-      </Helmet>
+      <Seo
+        title="Maruti Car Insurance price, Offers & Renewal Details | Popular RKS Nexa"
+        description="Maruti Car Insurance Premium Details, Renewals & Offers. Get cashless settlement on Maruti Insurance. Visit nearest Saboo Nexa showroom today."
+        keywords="Maruti Car Insurance"
+        url="https://saboonexa.in/maruti-car-insurance"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Insurance-Banner.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Insurance' }]} />
       <img
         src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Insurance-Banner.webp"
         className="w-full max-w-full"
-        alt="inusrance banner"
+        alt="Maruti Suzuki Car Insurance at Popular Nexa"
       />
       <div className="px-4 shadow sm:px-0">
         <p className="container py-4 mx-auto">

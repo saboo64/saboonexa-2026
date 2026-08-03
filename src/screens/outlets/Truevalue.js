@@ -3,40 +3,28 @@ import { truevalue } from "../../constants";
 // import { MdLocalPhone } from 'react-icons/md';
 // import { FaEnvelope } from 'react-icons/fa';
 // import { IoIosPricetags } from 'react-icons/io';
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function Truevalue() {
   return (
     <>
       <Header />
-      <Helmet>
-        <title>
-          Find Quality Pre-Owned Cars at Saboo Nexa True Value | Drive with
-          Confidence
-        </title>
-        <meta
-          name="title"
-          content="Find Quality Pre-Owned Cars at Saboo Nexa True Value | Drive with Confidence"
-        />
-        <meta
-          name="description"
-          content="Looking for a reliable pre-owned car? Explore the extensive range of certified pre-owned vehicles at Saboo Nexa True Value. Drive with confidence knowing you're getting top-quality cars.
-"
-        />
-        <meta
-          name="keywords"
-          content="Pre-owned cars, used cars, certified pre-owned cars, True Value, car dealership, reliable cars, quality cars, Saboo Nexa True Value, pre-owned car showroom, second-hand cars
-"
-        />
-        <meta name="author" content="Broaddcast" />
-      </Helmet>
+      <Seo
+        title="Find Quality Pre-Owned Cars at Saboo Nexa True Value | Drive with Confidence"
+        description="Looking for a reliable pre-owned car? Explore the extensive range of certified pre-owned vehicles at Saboo Nexa True Value. Drive with confidence knowing you're getting top-quality cars."
+        keywords="Pre-owned cars, used cars, certified pre-owned cars, True Value, car dealership, reliable cars, quality cars, Saboo Nexa True Value, pre-owned car showroom, second-hand cars"
+        url="https://saboonexa.in/maruti-nexa-truevalue-outlets-in-hyderabad"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'True Value' }]} />
       <div className="h-16 bg-black lg:h-20"></div>
 
       <img
         src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
         className="w-full max-w-full"
-        alt="finance banner"
+        alt="Popular Nexa True Value Outlets in Hyderabad"
       />
 
       <div className="pt-10 mb-2 text-4xl font-medium text-center uppercase lg:pt-16 md:text-5xl">

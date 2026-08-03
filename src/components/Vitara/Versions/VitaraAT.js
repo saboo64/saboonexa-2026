@@ -1,7 +1,8 @@
 import Header from "../../../components/Header/Header";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import Helmet from "react-helmet";
+import Seo from "../../SEO/seo";
+import { BreadcrumbSchema } from "../../SEO/schema";
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,18 +20,20 @@ import { CarEnq2 } from "../../Invicto/CarEnq2";
 const VitaraAT = () => {
   return (
     <>
-      <Helmet>
-        <title>Nexa Grand Vitara 6 Speed Automtic Transmissions Price </title>
-        <meta
-          name="title"
-          content="Nexa Grand Vitara 6 Speed Automtic Transmissions Price "
-        />
-        <meta
-          name="description"
-          content="Nexa Grand Vitara 6 Speed Automatic Price Starts at 13.40Lac*. Maruti Suzuki Grand Vitara Comes with Panoramic Sunroof, 6- Air bags, 6-Speed Automatic Transmission. For More Info & Offers Visit Nearest Saboo Nexa Showroom Today or Call Us 9848898488."
-        />
-       
-      </Helmet>
+      <Seo
+        title="Grand Vitara 6-Speed Automatic Transmission Price in Hyderabad | Saboo Nexa"
+        description="Nexa Grand Vitara 6-Speed Automatic price starts at 13.40 Lac*. Comes with Panoramic Sunroof, 6 Airbags & 6-Speed Automatic Transmission. Visit Saboo Nexa Hyderabad or call 98488 98488."
+        keywords="Grand Vitara automatic transmission price, Grand Vitara 6-speed AT Hyderabad, Nexa Grand Vitara automatic"
+        url="https://saboonexa.in/grand-vitara-6-speed-automatic-transmission-price"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Grand Vitara", path: "/grand-vitara-on-road-price-in-hyderabad" },
+          { name: "6-Speed Automatic" },
+        ]}
+      />
       <Header col={true} />
       <div className="container pb-16 mx-auto space-y-4 rounded lg:pt-32 pt-28">
         {/* <Carousel /> */}

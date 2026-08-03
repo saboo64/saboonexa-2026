@@ -1,7 +1,8 @@
 import Header from "../../Header/Header";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import Helmet from "react-helmet";
+import Seo from "../../SEO/seo";
+import { BreadcrumbSchema } from "../../SEO/schema";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,18 +18,20 @@ import { CarEnq2 } from "../../Invicto/CarEnq2";
 const VitaraMT = () => {
   return (
     <>
-      <Helmet>
-        <title>Nexa Grand Vitara 5 Speed manual Transmissions Price</title>
-        <meta
-          name="title"
-          content="Nexa Grand Vitara 5 Speed manual Transmissions Price"
-        />
-        <meta
-          name="description"
-          content="Nexa Grand Vitara 5 Speed Manual Price Starts at 10.45Lac*. Maruti Suzuki Grand Vitara available in transmission options: Manual, Automatic (TC) and Automatic (CVT). For more info, call now 9848898488."
-        />
-       
-      </Helmet>
+      <Seo
+        title="Grand Vitara 5-Speed Manual Transmission Price in Hyderabad | Saboo Nexa"
+        description="Nexa Grand Vitara 5-Speed Manual price starts at 10.45 Lac*. Maruti Suzuki Grand Vitara is available in Manual, Automatic (TC) and Automatic (CVT). Call 98488 98488 for more info."
+        keywords="Grand Vitara manual transmission price, Grand Vitara 5-speed MT Hyderabad, Nexa Grand Vitara manual"
+        url="https://saboonexa.in/grand-vitara-5-speed-manual-transmission-price"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Grand Vitara", path: "/grand-vitara-on-road-price-in-hyderabad" },
+          { name: "5-Speed Manual" },
+        ]}
+      />
       <Header col={true} />
       <div className="container pb-16 mx-auto space-y-4 rounded lg:pt-32 pt-28">
         {/* <Carousel /> */}

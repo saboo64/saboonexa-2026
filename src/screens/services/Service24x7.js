@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import Helmet from 'react-helmet';
 import Header from '../../components/Header/Header';
+import Seo from '../../components/SEO/seo';
+import { BreadcrumbSchema } from '../../components/SEO/schema';
 import { CgSpinner } from 'react-icons/cg';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { toast } from 'react-toastify';
@@ -45,59 +46,14 @@ function Service24x7() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          Popular RKS Nexa 24/7 Car Service - Reliable, Round-the-Clock Automotive
-          Care
-        </title>
-        <meta
-          name='title'
-          content='Popular RKSo Nexa 24/7 Car Service - Reliable, Round-the-Clock Automotive Care'
-        />
-        <meta
-          name='description'
-          content='Experience reliable and round-the-clock automotive care with Popular RKS Nexa 24/7 Car Service. Our expert technicians provide comprehensive car maintenance and repair services to keep your vehicle running smoothly at any hour. Visit us online to book your service appointment now!'
-        />
-        <meta
-          name='keywords'
-          content='Popular RKS Nexa, 24/7 Car Service, Round-the-Clock Automotive Care, Car Maintenance,Car Repair, Nexa Service, Emergency Car Service, Vehicle Maintenance, Automotive Technicians, Saboo Nexa Service         '
-        />
-        <meta name='author' content='Broaddcast' />
-        <meta property='og:type' content='website' />
-        <meta
-          property='og:url'
-          content='https://www.saboonexa.in/book-online-maruti-nexa-car-service'
-        />
-        <meta
-          property='og:title'
-          content='Popular RKS Nexa 24/7 Car Service - Reliable, Round-the-Clock Automotive Care '
-        />
-        <meta
-          property='og:description'
-          content='Experience reliable and round-the-clock automotive care with Popular RKS Nexa 24/7 Car Service. Our expert technicians provide comprehensive car maintenance and repair services to keep your vehicle running smoothly at any hour. Visit us online to book your service appointment now!  '
-        />
-        <meta
-          property='og:image'
-          content='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Book-service.jpg'
-        />
-        <meta property='twitter:card' content='summary_large_image' />
-        <meta
-          property='twitter:url'
-          content='https://www.saboonexa.in/book-online-maruti-nexa-car-service'
-        />
-        <meta
-          property='twitter:title'
-          content='Popular RKS Nexa 24/7 Car Service - Reliable, Round-the-Clock Automotive Care'
-        />
-        <meta
-          property='twitter:description'
-          content='Experience reliable and round-the-clock automotive care with Popular RKS Nexa 24/7 Car Service. Our expert technicians provide comprehensive car maintenance and repair services to keep your vehicle running smoothly at any hour. Visit us online to book your service appointment now!'
-        />
-        <meta
-          property='twitter:image'
-          content='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Book-service.jpg'
-        />
-      </Helmet>
+      <Seo
+        title="Popular RKS Nexa 24/7 Car Service - Reliable, Round-the-Clock Automotive Care"
+        description="Experience reliable and round-the-clock automotive care with Popular RKS Nexa 24/7 Car Service. Our expert technicians provide comprehensive car maintenance and repair services to keep your vehicle running smoothly at any hour. Visit us online to book your service appointment now!"
+        keywords="Popular RKS Nexa, 24/7 Car Service, Round-the-Clock Automotive Care, Car Maintenance, Car Repair, Nexa Service, Emergency Car Service, Vehicle Maintenance, Automotive Technicians"
+        url="https://saboonexa.in/maruti-suzuki-24/7-service-in-hyderabad"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Book-service.jpg"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: '24/7 Service' }]} />
       <div className='md:hidden'>
         <Header col={true} />
       </div>

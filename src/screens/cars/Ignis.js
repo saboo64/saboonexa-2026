@@ -25,6 +25,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 
 function Ignis() {
   const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -42,6 +43,20 @@ function Ignis() {
   return (
     <>
       <Seo {...vechicle.ignis} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Ignis' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Ignis'
+        description={vechicle.ignis.description}
+        image={vechicle.ignis.image}
+        url={vechicle.ignis.url}
+        priceINR='535100'
+        fuelType='Petrol'
+        seatingCapacity='5'
+        vehicleTransmission='5MT / AMT'
+        vehicleEngine='VVT 1197 cc Petrol Engine'
+      />
 
       <Header />
       <div className='relative bg-black'>

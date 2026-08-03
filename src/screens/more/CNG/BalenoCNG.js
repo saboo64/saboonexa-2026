@@ -8,11 +8,28 @@ import Features from '../../../components/BALENO/Features';
 import { CarEnq2 } from '../../../components/Invicto/CarEnq2';
 import Seo from '../../../components/SEO/seo';
 import { CNGvehicles } from '../../../constants/seo';
+import {
+  BreadcrumbSchema,
+  VehicleSchema,
+} from '../../../components/SEO/schema';
 
 const BalenoCNG = () => {
   return (
     <>
       <Seo {...CNGvehicles.baleno} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Baleno CNG' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Baleno CNG'
+        description={CNGvehicles.baleno.description}
+        image={CNGvehicles.baleno.image}
+        url={CNGvehicles.baleno.url}
+        fuelType='CNG/Petrol'
+        seatingCapacity='5'
+        vehicleTransmission='5MT/5AMT'
+        vehicleEngine='Adv. K Series Dual Jet / Dual VVT Engine'
+      />
 
       <Header />
       <div className='pb-[67px] bg-black sm:pb-[120px] lg:pb-[135px]'></div>

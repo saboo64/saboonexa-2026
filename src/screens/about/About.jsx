@@ -1,61 +1,20 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function About() {
   return (
     <>
       <Header col={true} />
-      <Helmet>
-        <title>
-          About Us | RKS Motor - Maruti Suzuki Largest Automobile Dealer in
-          Telangana
-        </title>
-        <meta
-          name="title"
-          content="About Us | RKS Motor - Maruti Suzuki Largest Automobile Dealer in Telangana"
-        />
-        <meta
-          name="description"
-          content="Maruti Suzuki Largest Automobile Dealer in Telangana, Hyderabad | Grown over the years ; now has 3 exclusive showrooms, 11 workshops & 204 touch points."
-        />
-        <meta
-          name="keywords"
-          content="Maruti dealers in Hyderabad, Nexa Delaers in Hyderabad, Nexa Cars Hyderabad, Nexa Balneo, Nexa Scross, Nexa Ignis, Nexa Ciaz, Nexa Xl6, Maruti baleno, maruti ciaz, maruti ignis, maruti xl6, maruti scross, Rks Motor, SabooRKS, Saboonexa."
-        />
-        <meta name="author" content="Broaddcast" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.saboonexa.in/about-us/" />
-        <meta
-          property="og:title"
-          content="About Us | RKS Motor - Maruti Suzuki Largest Automobile Dealer in Telangana"
-        />
-        <meta
-          property="og:description"
-          content="Maruti Suzuki Largest Automobile Dealer in Telangana, Hyderabad | Grown over the years ; now has 3 exclusive showrooms, 11 workshops & 204 touch points."
-        />
-        <meta
-          property="og:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/About-us.webp"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.saboonexa.in/about-us/"
-        />
-        <meta
-          property="twitter:title"
-          content="About Us | RKS Motor - Maruti Suzuki Largest Automobile Dealer in Telangana"
-        />
-        <meta
-          property="twitter:description"
-          content="Maruti Suzuki Largest Automobile Dealer in Telangana, Hyderabad | Grown over the years ; now has 3 exclusive showrooms, 11 workshops & 204 touch points."
-        />
-        <meta
-          property="twitter:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/About-us.webp"
-        />
-      </Helmet>
+      <Seo
+        title="About Us | RKS Motor - Maruti Suzuki Largest Automobile Dealer in Telangana"
+        description="Maruti Suzuki Largest Automobile Dealer in Telangana, Hyderabad | Grown over the years ; now has 3 exclusive showrooms, 11 workshops & 204 touch points."
+        keywords="Maruti dealers in Hyderabad, Nexa Delaers in Hyderabad, Nexa Cars Hyderabad, Nexa Balneo, Nexa Scross, Nexa Ignis, Nexa Ciaz, Nexa Xl6, Maruti baleno, maruti ciaz, maruti ignis, maruti xl6, maruti scross, Rks Motor, SabooRKS, Saboonexa."
+        url="https://saboonexa.in/about"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/About-us.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'About Us' }]} />
       <div className="pb-[67px]  sm:pb-[120px] lg:pb-[135px]"></div>
       <div className="pt-4 pb-8 text-3xl font-medium text-center uppercase sm:text-4xl md:text-5xl ">
         ABOUT US

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import Helmet from "react-helmet";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 import { CgSpinner } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -38,17 +39,13 @@ function Corporate() {
 
   return (
     <>
-      <Helmet>
-        <title>Popular  Motor | Maruti Suzuki Showrooms in Hyderabad</title>
-        <meta
-          name="title"
-          content="Popular  Motor | Maruti Suzuki Showrooms in Hyderabad"
-        />
-        <meta
-          name="description"
-          content="Popular RKS Nexa sells hatchbacks, sedans, MUVs and SUVs in Hyderabad through its ARENA and NEXA channels, certified pre-owned cars through TRUE VALUE, and commercial vehicles through its Maruti Suzuki Commercial channel. For more info Visit www.saboonexa.in."
-        />
-      </Helmet>
+      <Seo
+        title="Corporate | Maruti Suzuki Showrooms in Hyderabad - Popular Nexa"
+        description="Popular RKS Nexa sells hatchbacks, sedans, MUVs and SUVs in Hyderabad through its ARENA and NEXA channels, certified pre-owned cars through TRUE VALUE, and commercial vehicles through its Maruti Suzuki Commercial channel. For more info Visit www.saboonexa.in."
+        keywords="Popular Nexa Corporate, Maruti Suzuki Corporate Sales, Corporate Car Booking Hyderabad"
+        url="https://saboonexa.in/corporate"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Corporate' }]} />
       <Header col={true} />
       <div className="pb-[67px]  sm:pb-[120px] lg:pb-[135px]"></div>
       <div className="mt-6 text-2xl font-medium text-center uppercase sm:text-3xl md:text-4xl">

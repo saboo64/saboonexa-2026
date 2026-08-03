@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 import { CgSpinner } from "react-icons/cg";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
@@ -51,54 +52,14 @@ function Finance() {
 
   return (
     <>
-      <Helmet>
-        <title>Maruti Suzuki Car Finance with Low Interest | Popular RKS Nexa</title>
-        <meta
-          name="title"
-          content="Maruti Suzuki Car Finance with Low Interest | Popular RKS Nexa"
-        />
-        <meta
-          name="description"
-          content="Maruti Finance provides the best finance deals on New & Pre-Owned Car Loans. Get Quick Car Loan, Special offers, Quick Approval, Low-Interest Rates & Low EMI."
-        />
-        <meta name="keywords" content="Maruti Suzuki Nexa Car Finance" />
-        <meta name="author" content="Broaddcast" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.saboonexa.in/maruti-finance/"
-        />
-        <meta
-          property="og:title"
-          content="Maruti Suzuki Nexa Car Finance with Low Interest | Popular RKS Nexa"
-        />
-        <meta
-          property="og:description"
-          content="Maruti Suzuki Nexa Finance provides the best finance deals on New & Pre-Owned Car Loans. Get Quick Car Loan, Special offers, Quick Approval, Low-Interest Rates & Low EMI."
-        />
-        <meta
-          property="og:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Finance.jpg"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.saboonexa.in/maruti-finance/"
-        />
-        <meta
-          property="twitter:title"
-          content="Maruti Suzuki Nexa Car Finance with Low Interest | Popular RKS Nexa"
-        />
-        <meta
-          property="twitter:description"
-          content="Maruti Suzuki Nexa Finance provides the best finance deals on New & Pre-Owned Car Loans. Get Quick Car Loan, Special offers, Quick Approval, Low-Interest Rates & Low EMI."
-        />
-        <meta
-          property="twitter:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Finance.jpg"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Helmet>
+      <Seo
+        title="Maruti Suzuki Car Finance with Low Interest | Popular RKS Nexa"
+        description="Maruti Finance provides the best finance deals on New & Pre-Owned Car Loans. Get Quick Car Loan, Special offers, Quick Approval, Low-Interest Rates & Low EMI."
+        keywords="Maruti Suzuki Nexa Car Finance"
+        url="https://saboonexa.in/maruti-car-finance"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Finance.jpg"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Finance' }]} />
       <Header />
       <img
         src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Finance.webp"

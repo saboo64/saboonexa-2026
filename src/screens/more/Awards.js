@@ -1,7 +1,8 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 function Awards() {
   const awards = [
     {
@@ -87,52 +88,14 @@ function Awards() {
   ];
   return (
     <>
-      <Helmet>
-        <title>Saboo Maruti - Awards & Achievements | Arena | Nexa </title>
-        <meta
-          name="title"
-          content="Saboo Maruti - Awards & Achievements | Arena | Nexa "
-        />
-        <meta
-          name="description"
-          content="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School "
-        />
-        <meta
-          name="keywords"
-          content="Awards, Recognitions, Saboo Nexa, Automotive Excellence"
-        />
-        <meta name="author" content="Broaddcast" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.saboonexa.in/" />
-        <meta
-          property="og:title"
-          content="Saboo Maruti - Awards & Achievements | Arena | Nexa "
-        />
-        <meta
-          property="og:description"
-          content="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School 
-"
-        />
-        <meta
-          property="og:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/About-us.webp"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.saboonexa.in/" />
-        <meta
-          property="twitter:title"
-          content="Saboo Maruti - Awards & Achievements | Arena | Nexa "
-        />
-        <meta
-          property="twitter:description"
-          content="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School 
-"
-        />
-        <meta
-          property="twitter:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/About-us.webp"
-        />
-      </Helmet>
+      <Seo
+        title="Saboo Maruti - Awards & Achievements | Arena | Nexa"
+        description="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School"
+        keywords="Awards, Recognitions, Saboo Nexa, Automotive Excellence"
+        url="https://saboonexa.in/awards"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/maruti-suzuki-awards.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Awards' }]} />
       <Header />
       {/* <div className='bg-black h-[4.1rem] md:hidden'></div> */}
       <img

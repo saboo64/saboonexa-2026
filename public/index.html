@@ -3,26 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      property="og:title"
-      content=" Popular Nexa - Premium Maruti Suzuki Car Dealership in Hyderabad"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <meta
-      property="og:description"
-      content="Discover the latest Maruti Suzuki Nexa models at  Popular Nexa, your trusted car dealership in Hyderabad. Explore our range of premium vehicles, enjoy exceptional service, and find exclusive offers. Visit us today to experience luxury and performance like never before."
-    />
-    <meta
-      property="og:image"
-      content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/about/Maruti+Suzuki+Nexa+Saboo+RKS+Nexa+OG+Tag+Image.webp"
-    />
-    <meta
-      name="keywords"
-      content=" Popular Nexa, Nexa cars, Maruti Suzuki Nexa, Nexa dealership Hyderabad, premium cars Hyderabad, Maruti Suzuki cars, Nexa showroom, buy Nexa car, Nexa offers, car dealership Hyderabad"
-    />
-    <meta property="og:url" content="https://saboonexa.in/" />
-    <meta property="og:type" content="website" />
     <meta name="theme-color" content="#000000" />
+
+    <!--
+      Page-specific title/description/keywords/canonical/Open Graph/Twitter
+      tags are NOT duplicated here — they are owned exclusively by the
+      <Seo /> (react-helmet) component rendered on every route, so every
+      page gets unique, accurate metadata with no duplicate meta tags.
+      This block is only the last-resort fallback for the brief moment
+      before the app hydrates.
+    -->
+    <title>
+      Popular Nexa - Premium Maruti Suzuki Car Dealership in Hyderabad
+    </title>
 
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
@@ -30,17 +27,6 @@
     <meta
       name="google-site-verification"
       content="pK71K9wo8MtBkrEzYiWJTUBJdeXToT1XCF607P0nm1o"
-    />
-    <title>
-      Popular Nexa - Premium Maruti Suzuki Car Dealership in Hyderabad
-    </title>
-    <meta
-      name="title"
-      content=" Popular Nexa - Premium Maruti Suzuki Car Dealership in Hyderabad"
-    />
-    <meta
-      name="description"
-      content="Discover the latest Maruti Suzuki Nexa models at Popular Nexa, your trusted car dealership in Hyderabad. Explore our range of premium vehicles, enjoy exceptional service, and find exclusive offers. Visit us today to experience luxury and performance like never before."
     />
 
     <!-- Google Tag Manager -->
@@ -212,48 +198,57 @@
       });
     </script>
 
+    <!--
+      Site-wide identity schema (Organization + WebSite). Per-page
+      Product/Vehicle and BreadcrumbList schema is injected by the
+      individual screen components. The previous Product JSON-LD here
+      used fabricated gtin/review/rating values ("test", a single
+      always-5-star review) — that is exactly the kind of structured-data
+      spam Google's guidelines warn against and risks a manual action,
+      so it has been removed and replaced with accurate business data.
+    -->
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Popular Rks",
-        "image": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/nexa-banner.webp",
-        "description": "Popular Rks one of the best authorized Nexa dealers in Hyderabad.  Visit your nearest Saboo Nexa Hyderabad showroom to get best offers. Call now 98488 98488",
-        "brand": "Maruti Suzuki",
-        "sku": "1001",
-        "gtin8": "test",
-        "gtin13": "test",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://www.saboonexa.in/offers.php",
-          "priceCurrency": "INR",
-          "price": "12000",
-          "priceValidUntil": "2021-07-12",
-          "availability": "https://schema.org/InStock",
-          "itemCondition": "https://schema.org/NewCondition"
+        "@context": "https://schema.org",
+        "@type": "AutoDealer",
+        "@id": "https://saboonexa.in/#organization",
+        "name": "Popular Nexa (Popular RKS)",
+        "alternateName": "Saboo RKS Nexa",
+        "url": "https://saboonexa.in/",
+        "logo": "https://saboonexa.in/logo_color.png",
+        "image": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg",
+        "description": "Popular RKS is Hyderabad's leading authorized Maruti Suzuki Nexa dealership, offering new car sales, service, insurance and finance across Hyderabad.",
+        "telephone": "+91-98488-98488",
+        "email": "smg.crc.cm@popularv.com",
+        "brand": {
+          "@type": "Brand",
+          "name": "Maruti Suzuki Nexa"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "bestRating": "5",
-          "worstRating": "4",
-          "ratingCount": "1",
-          "reviewCount": "1"
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "addressCountry": "IN"
         },
-        "review": {
-          "@type": "Review",
-          "name": "test",
-          "reviewBody": "feedback",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5",
-            "worstRating": "4"
-          },
-          "datePublished": "2021-07-02",
-          "author": { "@type": "Person", "name": "Rahul" },
-          "publisher": { "@type": "Organization", "name": "broaddcast" }
-        }
+        "areaServed": "Hyderabad",
+        "sameAs": [
+          "https://www.facebook.com/saboorksnexa/",
+          "https://twitter.com/saboorksnexa",
+          "https://www.instagram.com/saboorksnexa/",
+          "https://www.youtube.com/channel/UCcX41w_0KU95uunUdNcP8TA",
+          "https://in.pinterest.com/rksmaruti/"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://saboonexa.in/#website",
+        "name": "Popular Nexa",
+        "url": "https://saboonexa.in/",
+        "publisher": { "@id": "https://saboonexa.in/#organization" },
+        "inLanguage": "en-IN"
       }
     </script>
   </body>

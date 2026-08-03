@@ -11,11 +11,28 @@ import { fronx } from '../../../constants/cars';
 import { CarEnq2 } from '../../../components/Invicto/CarEnq2';
 import Seo from '../../../components/SEO/seo';
 import { CNGvehicles } from '../../../constants/seo';
+import {
+  BreadcrumbSchema,
+  VehicleSchema,
+} from '../../../components/SEO/schema';
 
 const FronxCNG = () => {
   return (
     <>
       <Seo {...CNGvehicles.fronx} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Fronx CNG' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Fronx CNG'
+        description={CNGvehicles.fronx.description}
+        image={CNGvehicles.fronx.image}
+        url={CNGvehicles.fronx.url}
+        fuelType='CNG/Petrol'
+        seatingCapacity='5'
+        vehicleTransmission='5MT/ 6AT'
+        vehicleEngine='SMART HYBRID / ELECTRIC HYBRID'
+      />
 
       <Header />
 

@@ -1,7 +1,8 @@
 import Header from "../../../components/Header/Header";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import Helmet from "react-helmet";
+import Seo from "../../SEO/seo";
+import { BreadcrumbSchema } from "../../SEO/schema";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,20 +18,20 @@ import { CarEnq2 } from "../../Invicto/CarEnq2";
 const VitaraIHE = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          Maruti Suzuki Grand Vitara Intelligent Electric Hybrid Price
-        </title>
-        <meta
-          name="title"
-          content="Maruti Suzuki Grand Vitara Intelligent Electric Hybrid Price"
-        />
-        <meta
-          name="description"
-          content="Maruti Suzuki Nexa Grand Vitara Intelligent Electric Hybrid On Road Price in Hyderabad. Grand Vitara Intelligent Electric Hybrid Price Starts at 17.99Lac*, Comes with Bs6 Petrol Engine, 6 Air Bags. For Best Offers Visit Nearest Saboo Nexa Showroom Today."
-        />
-        
-      </Helmet>
+      <Seo
+        title="Grand Vitara Intelligent Electric Hybrid Price in Hyderabad | Saboo Nexa"
+        description="Maruti Suzuki Nexa Grand Vitara Intelligent Electric Hybrid on-road price in Hyderabad starts at 17.99 Lac*. BS6 petrol engine, 6 airbags. Visit Saboo Nexa Hyderabad for best offers."
+        keywords="Grand Vitara Intelligent Electric Hybrid price, Grand Vitara hybrid Hyderabad, Nexa Grand Vitara IHE"
+        url="https://saboonexa.in/grand-vitara-features-intelligent-electric-hybrid"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Grand Vitara", path: "/grand-vitara-on-road-price-in-hyderabad" },
+          { name: "Intelligent Electric Hybrid" },
+        ]}
+      />
       <Header col={true} />
       <div className="container pb-16 mx-auto space-y-4 rounded lg:pt-32 pt-28">
         {/* <Carousel /> */}

@@ -1,33 +1,24 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import { RiArrowRightSLine } from "react-icons/ri";
-import { Helmet } from "react-helmet";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function PrivacyPolicy() {
   return (
     <>
       <Header col={true} />
-      <Helmet>
-        <title>
-          Privacy Policy | Popular Rks  Motor Authorised Dealers Maruti Suzuki
-        </title>
-        <meta
-          name="title"
-          content="Privacy Policy | Popular Rks Motor Authorised Dealers Maruti Suzuki"
-        />
-        <meta
-          name="description"
-          content="Privacy Policy  Popular Rks Motor | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School"
-        />
-        <metaPopular Rks
-          name="keywords"
-          content="Privacy Policy,Popular Rks Motor, Maruti Suzuki, Nexa, Arena, True Value, Driving School"
-        />
-      </Helmet>
+      <Seo
+        title="Privacy Policy | Popular Rks Motor Authorised Dealers Maruti Suzuki"
+        description="Privacy Policy Popular Rks Motor | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School"
+        keywords="Privacy Policy, Popular Rks Motor, Maruti Suzuki, Nexa, Arena, True Value, Driving School"
+        url="https://saboonexa.in/privacy-policy"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Privacy Policy' }]} />
       <img
         src={require("../../assets/others/privacy-policy-banner-nexa.webp")}
         className="w-full"
-        alt=""
+        alt="Popular Nexa Privacy Policy"
       />
       <div className="container px-5 mx-auto">
         <p className="text-xl font-semibold uppercase">Privacy Policy</p>

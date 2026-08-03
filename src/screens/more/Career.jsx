@@ -3,8 +3,9 @@ import Header from "../../components/Header/Header";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import { Helmet } from "react-helmet";
 import { ToastContainer, toast } from "react-toastify";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 import "react-toastify/dist/ReactToastify.css";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -122,18 +123,13 @@ const Career = ({ formValue }) => {
 
   return (
     <>
-      <Helmet>
-        <title>Join Our Team - Careers at Popular Rks Nexa</title>
-        <meta name="title" content="Join Our Team - Careers at Popular Rks Nexa" />
-        <meta
-          name="description"
-          content="Explore exciting career opportunities at Popular Rks Nexa and become part of a dynamic team dedicated to automotive excellence."
-        />
-        <meta
-          name="keywords"
-          content="Careers, Jobs, Popular Rks Nexa, Automotive Industry, Opportunities"
-        />
-      </Helmet>
+      <Seo
+        title="Join Our Team - Careers at Popular Rks Nexa"
+        description="Explore exciting career opportunities at Popular Rks Nexa and become part of a dynamic team dedicated to automotive excellence."
+        keywords="Careers, Jobs, Popular Rks Nexa, Automotive Industry, Opportunities"
+        url="https://saboonexa.in/career"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Careers' }]} />
       <Header col={sub} />
       {sub ? (
         <div className=" pt-24 pb-10 flex flex-col justify-center items-center text-center    min-h-[75vh]">

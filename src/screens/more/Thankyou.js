@@ -1,32 +1,19 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { ImCheckmark } from "react-icons/im";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
 
 function Thankyou() {
   return (
     <>
-      <Helmet>
-        <title>
-          Thank You for Choosing SabooNexa | Your Premier Destination for Maruti
-          Suzuki Vehicles
-        </title>
-        <meta
-          name="title"
-          content="Thank You for Choosing SabooNexa | Your Premier Destination for Maruti Suzuki Vehicles"
-        />
-        <meta
-          name="description"
-          content="Thank you for choosing SabooNexa! We appreciate your trust in us. Explore our range of Maruti Suzuki vehicles, from stylish hatchbacks to powerful SUVs. Contact us for any assistance."
-        />
-        <meta
-          name="keywords"
-          content="SabooNexa, Maruti Suzuki, Thank You,Premier Destination, Car Dealership, Hatchbacks, SUVs, Contact Us, Customer Service, Automotive Excellence"
-        />
-        <meta name="author" content="Broaddcast" />
-      </Helmet>
+      <Seo
+        title="Thank You | Popular Nexa"
+        description="Thank you for your enquiry with Popular Nexa. Our executive will get in touch with you shortly."
+        url="https://saboonexa.in/thank-you"
+        noindex
+      />
       <Header col={true} />
 
       <div className="py-16 lg:py-28 xl:py-32">

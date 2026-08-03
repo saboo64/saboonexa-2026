@@ -28,6 +28,7 @@ import { GiBeltBuckles, GiSpeedometer } from 'react-icons/gi';
 import { products } from '../../constants';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 const videoSource = isSafari
@@ -44,6 +45,20 @@ const Fronx = () => {
   return (
     <>
       <Seo {...vechicle.fronx} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Fronx' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Fronx'
+        description={vechicle.fronx.description}
+        image={vechicle.fronx.image}
+        url={vechicle.fronx.url}
+        priceINR='684900'
+        fuelType='Petrol/CNG'
+        seatingCapacity='5'
+        vehicleTransmission='5MT/ 6AT'
+        vehicleEngine='SMART HYBRID / ELECTRIC HYBRID'
+      />
 
       <Header />
 

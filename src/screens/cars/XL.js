@@ -26,7 +26,9 @@ import View360 from '../../components/utils/View360';
 import { CarComp } from './Invicto';
 import { CarEnq2 } from '../../components/Invicto/CarEnq2';
 import { products } from '../../constants';
+import { vechicle } from '../../constants/seo';
 import Seo from '../../components/SEO/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
@@ -48,7 +50,29 @@ function XL() {
 
   return (
     <>
-      <Seo />
+      <Seo
+        title={vechicle.XL6.title}
+        description={vechicle.XL6.description}
+        keywords={vechicle.XL6.keywords}
+        url={vechicle.XL6.url}
+        image={vechicle.XL6.image}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'XL6' },
+        ]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki XL6'
+        description={vechicle.XL6.description}
+        image={vechicle.XL6.image}
+        url={vechicle.XL6.url}
+        fuelType='Petrol/CNG'
+        seatingCapacity='6'
+        vehicleTransmission='5MT/6AT'
+        vehicleEngine='1462 cc VVT Petrol Engine'
+      />
 
       <Header />
       <div className='relative bg-black'>

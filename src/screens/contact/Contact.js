@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 import { CgSpinner } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -37,56 +38,14 @@ function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>Maruti Suzuki Customer Care | Telangana & Hyderbad</title>
-        <meta
-          name="title"
-          content="Maruti Suzuki Customer Care | Telangana & Hyderbad"
-        />
-        <meta
-          name="description"
-          content="Contact your nearest Popular Rks Nexa showroom for any Maruti Suzuki Nexa Vehicle Enquiry. For queries about any of the NEXA cars feedback or complaints contact us on 9848898488. Write to us at smg.crc.cm@popularv.com."
-        />
-        <meta
-          name="keywords"
-          content="Popular Rks Nexa, Contact Us, Test Drive, Service Appointment, Customer Support, Automotive Dealership ,Car Sales, Vehicle Maintenance, Inquiries, Nexa Dealership"
-        />
-        <meta name="author" content="Broaddcast" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.saboonexa.in/contact-us/"
-        />
-        <meta
-          property="og:title"
-          content="Maruti Suzuki Customer Care | Telangana & Hyderbad"
-        />
-        <meta
-          property="og:description"
-          content="Maruti Suzuki customer care details for , Telanagana  | Telangana No. 1 Maruti Suzuki Dealer Sales: 9848898488 and Service:  9848898488"
-        />
-        <meta
-          property="og:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Contact-us.webp"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.saboonexa.in/contact-us/"
-        />
-        <meta
-          property="twitter:title"
-          content="Maruti Suzuki Customer Care | Telangana & Hyderbad"
-        />
-        <meta
-          property="twitter:description"
-          content="Maruti Suzuki customer care details for , Telanagana  | Telangana No. 1 Maruti Suzuki Dealer Sales: 9848898488 and Service:  9848898488"
-        />
-        <meta
-          property="twitter:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Contact-us.webp"
-        />
-      </Helmet>
+      <Seo
+        title="Maruti Suzuki Customer Care | Telangana & Hyderbad"
+        description="Contact your nearest Popular Rks Nexa showroom for any Maruti Suzuki Nexa Vehicle Enquiry. For queries about any of the NEXA cars feedback or complaints contact us on 9848898488. Write to us at smg.crc.cm@popularv.com."
+        keywords="Popular Rks Nexa, Contact Us, Test Drive, Service Appointment, Customer Support, Automotive Dealership ,Car Sales, Vehicle Maintenance, Inquiries, Nexa Dealership"
+        url="https://saboonexa.in/contact-us"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Contact-us.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Contact Us' }]} />
       <Header col={true} />
       <div className="pb-[67px]  sm:pb-[120px] lg:pb-[135px]"></div>
       <div className="mt-6 text-2xl font-medium text-center uppercase sm:text-3xl md:text-4xl ">

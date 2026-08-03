@@ -4,63 +4,32 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode, Navigation, Thumbs } from 'swiper';
 import 'swiper/css';
 import { MdOutlineFileDownload } from 'react-icons/md';
-import { Helmet } from 'react-helmet';
 import Features from '../../../components/XL/Features';
 import { CarEnq2 } from '../../../components/Invicto/CarEnq2';
+import Seo from '../../../components/SEO/seo';
+import { CNGvehicles } from '../../../constants/seo';
+import {
+  BreadcrumbSchema,
+  VehicleSchema,
+} from '../../../components/SEO/schema';
 
 const XL6CNG = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          Maruti Suzuki XL6 CNG 2025 – Premium MPV with Exceptional Efficiency &
-         September Festive CNG Offers at Saboo Nexa
-        </title>
-        <meta
-          name='title'
-          content='Maruti Suzuki XL6 CNG 2025 – Premium MPV with Exceptional Efficiency &September Festive CNG Offers at Saboo Nexa'
-        />
-        <meta
-          name='description'
-          content='Introducing the 2025 Maruti Suzuki XL6 CNG at Saboo Nexa, a premium MPV that combines luxury with exceptional fuel efficiency. Enjoy spacious interiors, advanced features, and the benefits of CNG technology. Take advantage of exclusiveSeptember Festive CNG offers and book your test drive today!'
-        />
-        <meta
-          name='keywords'
-          content='XL6 CNGSeptember Festive Offers, Maruti Suzuki XL6 CNG, Fuel-Efficient CNG MPV, XL6 CNG Fuel Economy, Saboo Nexa XL6 CNG, Premium CNG MPV 2025, CNG Technology MPV, Best XL6 CNG DealsSeptember 2025, Maruti XL6 CNG Offers,September Festive CNG MPV Deals, Nexa XL6 CNG Offers 2025.'
-        />
-        <meta name='author' content='Broaddcast' />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://www.saboonexa.in/the-xl6/' />
-        <meta
-          property='og:title'
-          content='Maruti Suzuki XL6 CNG 2025 – Premium MPV with Exceptional Efficiency &September Festive CNG Offers at Saboo Nexa'
-        />
-        <meta
-          property='og:description'
-          content='Introducing the 2025 Maruti Suzuki XL6 CNG at Saboo Nexa, a premium MPV that combines luxury with exceptional fuel efficiency. Enjoy spacious interiors, advanced features, and the benefits of CNG technology. Take advantage of exclusiveSeptember Festive CNG offers and book your test drive today!'
-        />
-        <meta
-          property='og:image'
-          content='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/XL6.jpg'
-        />
-        <meta property='twitter:card' content='summary_large_image' />
-        <meta
-          property='twitter:url'
-          content='https://www.saboonexa.in/the-xl6/'
-        />
-        <meta
-          property='twitter:title'
-          content='Maruti Suzuki XL6 CNG 2025 – Premium MPV with Exceptional Efficiency &September Festive CNG Offers at Saboo Nexa'
-        />
-        <meta
-          property='twitter:description'
-          content='Introducing the 2025 Maruti Suzuki XL6 CNG at Saboo Nexa, a premium MPV that combines luxury with exceptional fuel efficiency. Enjoy spacious interiors, advanced features, and the benefits of CNG technology. Take advantage of exclusiveSeptember Festive CNG offers and book your test drive today!'
-        />
-        <meta
-          property='twitter:image'
-          content='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/XL6.jpg'
-        />
-      </Helmet>
+      <Seo {...CNGvehicles.XL6} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'XL6 CNG' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki XL6 CNG'
+        description={CNGvehicles.XL6.description}
+        image={CNGvehicles.XL6.image}
+        url={CNGvehicles.XL6.url}
+        fuelType='CNG/Petrol'
+        seatingCapacity='6'
+        vehicleTransmission='5MT/6AT'
+        vehicleEngine='1462 cc VVT Petrol Engine'
+      />
       <Header />
       <div className='pb-[67px] bg-black sm:pb-[120px] lg:pb-[135px]'></div>
       {/* <div>

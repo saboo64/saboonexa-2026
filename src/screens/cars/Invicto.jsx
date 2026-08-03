@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { vechicle } from '../../constants/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 import { MdAirlineSeatReclineExtra } from 'react-icons/md';
 // import Carousel from '../../components/Fronx/Extras/Carousel';
 import { Autoplay, EffectCoverflow } from 'swiper';
@@ -34,6 +35,20 @@ const Invicto = () => {
   return (
     <div className=''>
       <Seo {...vechicle.invicto} />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'Invicto' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki Invicto'
+        description={vechicle.invicto.description}
+        image={vechicle.invicto.image}
+        url={vechicle.invicto.url}
+        priceINR='2497400'
+        fuelType='Petrol/Hybrid'
+        seatingCapacity='7'
+        vehicleTransmission='e-CVT'
+        vehicleEngine='SMART HYBRID / ELECTRIC HYBRID'
+      />
 
       <Header />
       <div className='relative'>

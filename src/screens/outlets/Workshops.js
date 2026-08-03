@@ -1,41 +1,28 @@
 import React from "react";
 import { workshops } from "../../constants";
 
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function Workshops() {
   return (
     <>
       <Header />
-      <Helmet>
-        <title>
-          Trust Your Car with Experts at Saboo Nexa Workshops | Quality Service
-          Guaranteed
-        </title>
-        <meta
-          name="title"
-          content="Trust Your Car with Experts at Saboo Nexa Workshops | Quality Service Guaranteed
-"
-        />
-        <meta
-          name="description"
-          content="Ensure your car receives top-notch care at Saboo Nexa Workshops. Our team of expert technicians provides quality service and maintenance for your vehicle, ensuring it stays in prime condition.
- "
-        />
-        <meta
-          name="keywords"
-          content="Car service, car maintenance, car repair, car workshop, Saboo Nexa workshop, car service center, expert technicians, quality service, car care, vehicle maintenance
-"
-        />
-        <meta name="author" content="Broaddcast" />
-      </Helmet>
+      <Seo
+        title="Trust Your Car with Experts at Saboo Nexa Workshops | Quality Service Guaranteed"
+        description="Ensure your car receives top-notch care at Saboo Nexa Workshops. Our team of expert technicians provides quality service and maintenance for your vehicle, ensuring it stays in prime condition."
+        keywords="Car service, car maintenance, car repair, car workshop, Saboo Nexa workshop, car service center, expert technicians, quality service, car care, vehicle maintenance"
+        url="https://saboonexa.in/maruti-nexa-workshop-outlets-in-hyderabad"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Workshops' }]} />
       <div className="h-16 bg-black lg:h-20"></div>
 
       <img
         src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
         className="w-full max-w-full"
-        alt="finance banner"
+        alt="Popular Nexa Workshop Outlets in Hyderabad"
       />
 
       <div className="pt-10 mb-2 text-4xl font-medium text-center uppercase lg:pt-16 md:text-5xl">

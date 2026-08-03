@@ -97,7 +97,7 @@ function Footer() {
             <div className="lg:col-span-2 md:col-span-2 sm:col-span-1">
               <img
                 src={require("../../assets/others/logo_color.png")}
-                alt="deva"
+                alt="Popular Nexa Logo"
                 className="h-10 lg:h-12"
               />
               <div className="grid grid-rows-2 gap-4">

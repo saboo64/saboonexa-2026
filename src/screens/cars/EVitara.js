@@ -7,7 +7,11 @@ import 'swiper/css/pagination';
 import { FaLessThan } from 'react-icons/fa';
 import { FaGreaterThan } from 'react-icons/fa';
 import 'swiper/swiper-bundle.min.css';
-import Helmet from 'react-helmet';
+import Seo from '../../components/SEO/seo';
+import {
+  BreadcrumbSchema,
+  VehicleSchema,
+} from '../../components/SEO/schema';
 // import { CarComp } from "./Invicto";
 // import TestDrive from "../../components/utils/TestDrive";
 import { Customise } from '../../components/Vitara/e-vitara/customize';
@@ -243,25 +247,27 @@ const EVitara = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          2025 Discounts and festive Offers on Maruti Suzuki e-VITARA - Luxury
-          and Savings Combined! at RKS Motor
-        </title>
-        <meta
-          name='description'
-        //  content="Drive home the luxurious Maruti Suzuki e-VITARA with exciting 2025 Discounts and festive Offers! Avail exclusive finance offers, exchange benefits, and additional savings on this premium SUV. Limited period offers—book yours now!"
-        />
-        <meta
-          name='title'
-        // content="2025 Discounts and festive Offers on Maruti Suzuki e-VITARA - Luxury and Savings Combined! at RKS Motor"
-        />
-
-        <meta
-          name='keywords'
-        //  content="Maruti Suzuki e-VITARA  offers, 2025 Discounts and festive Offers e-VITARA , luxury SUV deals, e-VITARA  Nexa offers, Maruti e-VITARA  finance, premium SUV offers ,2025 Discounts and festive Offers."
-        />
-      </Helmet>
+      <Seo
+        title='Maruti Suzuki e-Vitara On-Road Price in Hyderabad 2026 | Electric SUV Offers – Nexa'
+        description='Discover the all-electric Maruti Suzuki e-Vitara at Popular Nexa Hyderabad. Check on-road price, range, features and Monsoon 2026 offers on this premium electric SUV.'
+        keywords='Maruti e-Vitara price Hyderabad, e-Vitara electric SUV, Maruti Suzuki e-Vitara Nexa, e-Vitara on road price, e-Vitara range'
+        url='https://saboonexa.in/nexa-evitara-on-road'
+        image='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/e-vitara/evitara-videoposter.avif'
+      />
+      <BreadcrumbSchema
+        items={[{ name: 'Home', path: '/' }, { name: 'e-Vitara' }]}
+      />
+      <VehicleSchema
+        name='Maruti Suzuki e-Vitara'
+        description='All-electric Maruti Suzuki e-Vitara with up to 500+ km expected range, Permanent Magnet Synchronous Motor, and 5-seat capacity.'
+        image='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/e-vitara/evitara-videoposter.avif'
+        url='https://saboonexa.in/nexa-evitara-on-road'
+        priceINR='1099000'
+        fuelType='Electric'
+        seatingCapacity='5'
+        vehicleTransmission='Single Speed Automatic'
+        vehicleEngine='Permanent Magnet Synchronous Motor (Electric)'
+      />
 
       <Header />
       {/* logo section */}

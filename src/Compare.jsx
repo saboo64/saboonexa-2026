@@ -4,7 +4,8 @@ import Header from "./components/Header/Header";
 import "swiper/css";
 import "swiper/css/navigation";
 import { products } from "./constants";
-import { Helmet } from "react-helmet";
+import Seo from "./components/SEO/seo";
+import { BreadcrumbSchema } from "./components/SEO/schema";
 
 function Compare() {
   const [selec1, setSelec1] = useState(0);
@@ -32,17 +33,13 @@ function Compare() {
 
   return (
     <>
-      <Helmet>
-        <title>Compare Cars | Nexa Hyderabad |  Popular Nexa</title>
-        <meta
-          name="title"
-          content="Compare Cars | Nexa Hyderabad |  Popular Nexa"
-        />
-        <meta
-          name="description"
-          content="Best Nexa Showroom in Hyderabad.  Popular Nexa onde of the leading Nexa car dealers in Hyderabad. "
-        />
-      </Helmet>
+      <Seo
+        title="Compare Cars | Nexa Hyderabad | Popular Nexa"
+        description="Best Nexa Showroom in Hyderabad. Popular Nexa, one of the leading Nexa car dealers in Hyderabad."
+        keywords="Compare Cars, Nexa Cars Comparison, Popular Nexa, Maruti Suzuki Nexa Hyderabad"
+        url="https://saboonexa.in/compare"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Compare Cars' }]} />
       <Header col={true} />
       <div className="pb-[67px]  sm:pb-[120px] lg:pb-[135px]"></div>
       <p className="pt-4 text-2xl font-medium text-center uppercase sm:text-3xl md:text-4xl ">

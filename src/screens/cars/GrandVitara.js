@@ -21,6 +21,7 @@ import { useRef } from 'react';
 import { GiBeltBuckles, GiSpeedometer } from 'react-icons/gi';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
+import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
 
 // const width = window.innerWidth;
 
@@ -34,6 +35,23 @@ function GrandVitara() {
   return (
     <>
       <Seo {...vechicle.GrandVitara} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'Grand Vitara' },
+        ]}
+      />
+      <VehicleSchema
+        name='Maruti Grand Vitara'
+        description={vechicle.GrandVitara.description}
+        image={vechicle.GrandVitara.image}
+        url={vechicle.GrandVitara.url}
+        priceINR='1076500'
+        fuelType='Petrol/CNG'
+        seatingCapacity='5'
+        vehicleTransmission='5MT/6AT/e-CVT'
+        vehicleEngine='SMART HYBRID / INTELLIGENT ELECTRIC HYBRID'
+      />
 
       <Header />
       <VariantPlayer />

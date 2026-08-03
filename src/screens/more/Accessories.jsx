@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { accsliders, categoriess } from "../../constants";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
 import AccessoriesPop from "../../components/utils/AccessoriesPop";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function Accessories() {
   const [selectedCategory, setSelectedCategory] = useState(0);
@@ -30,21 +31,14 @@ function Accessories() {
 
   return (
     <>
-      <Helmet>
-        <title>Shop Maruti Suzuki Genuine Accessories Online at RKS Motors – Premium Quality & Best Deals!</title>
-        <meta
-          name="title"
-          content="Shop Maruti Suzuki Genuine Accessories Online at RKS Motors – Premium Quality & Best Deals!"
-        />
-        <meta
-          name="description"
-          content="Shop authorized Maruti Suzuki accessories online at the best price. Register and buy spare parts and accessories for Jimny, Ignis, Baleno, Grand Vitara, Ciaz, and more at RKS Motor"
-        />
-        <meta
-          name="keywords"
-          content="Maruti Suzuki Accessories, Buy Maruti Suzuki Accessories Online, RKS Motors Accessories, Jimny Accessories, Ignis Accessories, Baleno Accessories, Grand Vitara Accessories, Ciaz Accessories, Maruti Suzuki Spare Parts, Genuine Maruti Suzuki Parts, Maruti Suzuki Car Accessories, Genuine Accessories for Maruti Suzuki, Maruti Suzuki Online Accessories Shop, Best Maruti Suzuki Accessories Deals, Premium Maruti Accessories Online."
-        />
-      </Helmet>
+      <Seo
+        title="Shop Maruti Suzuki Genuine Accessories Online at RKS Motors – Premium Quality & Best Deals!"
+        description="Shop authorized Maruti Suzuki accessories online at the best price. Register and buy spare parts and accessories for Jimny, Ignis, Baleno, Grand Vitara, Ciaz, and more at RKS Motor"
+        keywords="Maruti Suzuki Accessories, Buy Maruti Suzuki Accessories Online, RKS Motors Accessories, Jimny Accessories, Ignis Accessories, Baleno Accessories, Grand Vitara Accessories, Ciaz Accessories, Maruti Suzuki Spare Parts"
+        url="https://saboonexa.in/accessories"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/accessories/INVICTO-Banner_Desktop.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Accessories' }]} />
       <Header col={true} />
       <div className="pb-[67px]  sm:pb-[120px] md:pb-[134px] bg-white"></div>
       <div className="hidden md:block">

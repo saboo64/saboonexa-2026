@@ -2,16 +2,14 @@ import React from "react";
 
 import { useState } from "react";
 import TodayApp from "./TodayApp";
-import { Helmet } from "react-helmet";
+import Seo from "../../../components/SEO/seo";
 
 const Dashboard = () => {
   const [open, setOpen] = useState(true);
 
   return (
     <>
-      <Helmet>
-        <title>Nexa Careers Dashboard</title>
-      </Helmet>
+      <Seo title="Nexa Careers Dashboard" url="https://saboonexa.in/dashboard" noindex />
       <div className="flex w-full h-screen mx-auto font-roboto">
         <div className="h-[80vh] lg:h-[90vh]  w-full  px-4 ">
           <TodayApp open={open} setOpen={setOpen} />

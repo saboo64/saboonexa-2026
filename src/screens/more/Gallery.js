@@ -1,68 +1,22 @@
 import React from "react";
 import { useState } from "react";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 function Gallery() {
   const [ind, setInd] = useState(0);
 
   return (
     <>
-      <Helmet>
-        <title>New Gallery: A Glance Through RKS Motor Events</title>
-        <meta
-          name="title"
-          content="New Gallery: A Glance Through RKS Motor Events"
-        />
-        <meta
-          name="description"
-          content="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School."
-        />
-        <meta
-          name="keywords"
-          content="Gallery, Images, Photos, Cars, Showroom, Events, Popular Rks Nexa"
-        />
-        <meta name="author" content="Broaddcast" />
-        <link rel="canonical" href="https://www.saboonexa.in/gallery" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="New Gallery: A Glance Through RKS Motor Events "
-        />
-        <meta
-          property="og:description"
-          content="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School."
-        />
-        <meta property="og:url" content="https://www.saboonexa.in/gallery/" />
-        <meta property="og:site_name" content="Popular Rks RKS Motors Pvt Ltd" />
-        <meta
-          property="og:image"
-          itemprop="image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/gallery.jpg"
-        />
-        <meta property="og:image:width" content="850" />
-        <meta property="og:image:height" content="445" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.saboonexa.in/gallery/"
-        />
-        <meta
-          property="twitter:title"
-          content="New Gallery: A Glance Through RKS Motor Events "
-        />
-        <meta
-          property="twitter:description"
-          content="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School."
-        />
-        <meta
-          name="twitter:image"
-          content="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/gallery.jpgg"
-        />
-        <meta name="twitter:creator" content="@rksnexa" />
-        <meta name="twitter:site" content="@rksnexa" />
-      </Helmet>
+      <Seo
+        title="New Gallery: A Glance Through RKS Motor Events"
+        description="Arena, Nexa, Commercial Vehicles, events | Authorised Maruti Suzuki Dealers For Nexa, Arena, True Value and Driving School."
+        keywords="Gallery, Images, Photos, Cars, Showroom, Events, Popular Rks Nexa"
+        url="https://saboonexa.in/gallery"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/gallery.jpg"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Gallery' }]} />
       <Header />
       <div className="bg-black h-[4.1rem] "></div>
       <img

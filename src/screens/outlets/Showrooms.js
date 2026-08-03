@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import Helmet from "react-helmet";
 import Header from "../../components/Header/Header";
+import Seo from "../../components/SEO/seo";
+import { BreadcrumbSchema } from "../../components/SEO/schema";
 
 import { CgSpinner } from "react-icons/cg";
 
@@ -29,31 +30,20 @@ function Showrooms({ title }) {
 
   return (
     <>
-      <Helmet>
-        <title>
-          Discover Luxury and Innovation at Popular RKS Nexa Outlets | Find Your Dream
-          Car Today
-        </title>
-        <meta
-          name="title"
-          content="Discover Luxury and Innovation at Popular RKS Nexa Outlets | Find Your Dream Car Today"
-        />
-        <meta
-          name="description"
-          content="Explore the latest collection of premium Nexa cars at Popular RKS Nexa Outlets. From sleek sedans to stylish SUVs, find your perfect ride with us."
-        />
-        <meta
-          name="keywords"
-          content="Nexa cars, luxury cars, premium cars, car showroom, car dealership, Popular RKS Nexa, dream car, car collection, stylish cars, innovative cars"
-        />
-        <meta name="author" content="Broaddcast" />
-      </Helmet>
+      <Seo
+        title="Discover Luxury and Innovation at Popular RKS Nexa Outlets | Find Your Dream Car Today"
+        description="Explore the latest collection of premium Nexa cars at Popular RKS Nexa Outlets. From sleek sedans to stylish SUVs, find your perfect ride with us."
+        keywords="Nexa cars, luxury cars, premium cars, car showroom, car dealership, Popular RKS Nexa, dream car, car collection, stylish cars, innovative cars"
+        url="https://saboonexa.in/maruti-nexa-showroom-outlets-in-hyderabad"
+        image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
+      />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Showrooms' }]} />
       <Header />
       <div className="h-16 bg-black lg:h-20"></div>
       <img
         src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
         className="w-full max-w-full "
-        alt="finance banner"
+        alt="Popular Nexa Showroom Outlets in Hyderabad"
       />
       {/* <div className="px-4 shadow sm:px-0">
         <p className="container py-4 mx-auto"><Link to='/'>Home</Link> / Showroom</p>
