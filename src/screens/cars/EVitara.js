@@ -248,8 +248,8 @@ const EVitara = () => {
   return (
     <>
       <Seo
-        title='Maruti Suzuki e-Vitara On-Road Price in Hyderabad 2026 | Electric SUV Offers – Nexa'
-        description='Discover the all-electric Maruti Suzuki e-Vitara at Popular Nexa Hyderabad. Check on-road price, range, features and Monsoon 2026 offers on this premium electric SUV.'
+        title='Maruti Suzuki e-Vitara On-Road Price in Hyderabad {{YEAR}} | Electric SUV Offers – Nexa'
+        description='Discover the all-electric Maruti Suzuki e-Vitara at Popular Nexa Hyderabad. Check on-road price, range, features and {{SEASON}} {{YEAR}} offers on this premium electric SUV.'
         keywords='Maruti e-Vitara price Hyderabad, e-Vitara electric SUV, Maruti Suzuki e-Vitara Nexa, e-Vitara on road price, e-Vitara range'
         url='https://saboonexa.in/nexa-evitara-on-road'
         image='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/e-vitara/evitara-videoposter.avif'

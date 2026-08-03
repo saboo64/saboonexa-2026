@@ -47,10 +47,10 @@ function Home({ setSelected }) {
   return (
     <div className='relative'>
       <Seo
-        title="Monsoon 2026 Offers on Maruti Suzuki Nexa Cars in Hyderabad | Popular RKS Nexa"
-        description="Get exclusive Monsoon 2026 offers on Maruti Suzuki Nexa cars in Hyderabad at Popular RKS Nexa. Explore Baleno, Fronx, Grand Vitara, Jimny, XL6, Invicto, and Ciaz with attractive discounts, exchange bonus, low EMI plans, and instant delivery benefits."
-        keywords="Monsoon offers Nexa Hyderabad, Maruti Suzuki Nexa cars Hyderabad, Baleno offers Hyderabad, Fronx offers Hyderabad, Grand Vitara offers Hyderabad, Jimny offers Hyderabad, XL6 offers Hyderabad, Nexa showroom Hyderabad, Nexa dealer Hyderabad, Nexa EMI offers, Nexa exchange bonus, Maruti Nexa Hyderabad"
-        url="https://www.saboonexa.in/"
+        title="{{SEASON}} {{YEAR}} Offers on Maruti Suzuki Nexa Cars in Hyderabad | Popular RKS Nexa"
+        description="Get exclusive {{SEASON}} {{YEAR}} offers on Maruti Suzuki Nexa cars in Hyderabad at Popular RKS Nexa. Explore Baleno, Fronx, Grand Vitara, Jimny, XL6, Invicto, and e-Vitara with attractive discounts, exchange bonus, low EMI plans, and instant delivery benefits."
+        keywords="{{SEASON}} offers Nexa Hyderabad {{YEAR}}, Maruti Suzuki Nexa cars Hyderabad, Baleno offers Hyderabad, Fronx offers Hyderabad, Grand Vitara offers Hyderabad, Jimny offers Hyderabad, XL6 offers Hyderabad, Nexa showroom Hyderabad, Nexa dealer Hyderabad, Nexa EMI offers, Nexa exchange bonus, Maruti Nexa Hyderabad"
+        url="https://saboonexa.in/"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg"
       />
 

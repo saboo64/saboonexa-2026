@@ -32,10 +32,10 @@ function Offers() {
   return (
     <>
       <Seo
-        title="Monsoon 2026 Offers on Maruti Suzuki Cars in Hyderabad | Saboo Nexa"
-        description="Get exclusive Monsoon 2026 offers on Maruti Suzuki Nexa cars in Hyderabad. Explore Grand Vitara, Fronx, Baleno, XL6, Jimny, and Invicto with attractive discounts, exchange bonus, low EMI plans, free vehicle checkups, and service benefits."
-        keywords="Monsoon offers Maruti Suzuki Hyderabad, Nexa offers Hyderabad, Grand Vitara offers, Fronx offers, Baleno offers, XL6 offers, Jimny offers, Invicto offers, Maruti Suzuki discounts Hyderabad, Nexa exchange bonus, Monsoon car deals Hyderabad"
-        url="https://www.saboonexa.in/offers"
+        title="{{SEASON}} {{YEAR}} Offers on Maruti Suzuki Cars in Hyderabad | Saboo Nexa"
+        description="Get exclusive {{SEASON}} {{YEAR}} offers on Maruti Suzuki Nexa cars in Hyderabad. Explore Grand Vitara, Fronx, Baleno, XL6, Jimny, and Invicto with attractive discounts, exchange bonus, low EMI plans, free vehicle checkups, and service benefits."
+        keywords="{{SEASON}} offers Maruti Suzuki Hyderabad {{YEAR}}, Nexa offers Hyderabad, Grand Vitara offers, Fronx offers, Baleno offers, XL6 offers, Jimny offers, Invicto offers, Maruti Suzuki discounts Hyderabad, Nexa exchange bonus"
+        url="https://saboonexa.in/offers"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg"
       />
 

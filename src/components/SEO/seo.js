@@ -1,5 +1,15 @@
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
+import { getCurrentSeasonalOffer } from '../../constants/seasonalOffers';
+
+// Any title/description/keywords string may contain {{SEASON}} / {{YEAR}}
+// placeholders — they're swapped for the live seasonal campaign name and
+// current year on every render, so no page needs manual monthly edits.
+const applySeasonalPlaceholders = (value) => {
+  if (typeof value !== 'string') return value;
+  const { label, year } = getCurrentSeasonalOffer();
+  return value.replace(/\{\{SEASON\}\}/g, label).replace(/\{\{YEAR\}\}/g, year);
+};
 
 const SITE_NAME = 'Popular Nexa';
 const DEFAULT_TITLE =
@@ -26,6 +36,10 @@ const Seo = ({
   noindex = false,
   robots,
 }) => {
+  title = applySeasonalPlaceholders(title);
+  description = applySeasonalPlaceholders(description);
+  keywords = applySeasonalPlaceholders(keywords);
+
   const resolvedCanonical = canonical || url;
   const resolvedRobots =
     robots ||
