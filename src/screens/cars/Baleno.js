@@ -79,7 +79,7 @@ function Baleno() {
               data-aos-duration='500'
               className='text-2xl lg:text-4xl'
             >
-              THE NEW AGE
+              THE STUNNING NEW 
             </div>
             <div
               data-aos='fade-right'
@@ -95,7 +95,7 @@ function Baleno() {
               data-aos-duration='1000'
               className='mb-2 text-2xl uppercase lg:text-5xl lg:mb-4'
             >
-              TECH GOES BOLD
+              DARE TO GO GLAM
             </div>
             <a
               href='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Brochure/The_New_Age_Baleno_Brochure.pdf'
