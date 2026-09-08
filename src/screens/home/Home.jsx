@@ -1127,16 +1127,16 @@ const Offer = () => {
   return (
     <div className='container px-2 pb-5 mx-auto xl:max-w-7xl '>
       <div className='hidden sm:block'>
-          <img
-            src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
-            alt='components/Website_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp'
-            className={`hidden w-full sm:block rounded-xl border-b border-gray-300 border-x`}
-            loading='lazy'
-          />
-        </div>
+        <img
+          src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_September_Offers_Festival_Special_Offers_Ganesh_Chaturthi_Popular_RKS_Popular_Vehicle_Services.webp')}
+          alt='components/Website_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp'
+          className={`hidden w-full sm:block rounded-xl border-b border-gray-300 border-x`}
+          loading='lazy'
+        />
+      </div>
       <div className='sm:hidden'>
         <img
-          src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
+          src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_September_Offers_Festival_Special_Offers_Ganesh_Chaturthi_Popular_RKS_Popular_Vehicle_Services.webp')}
           // src={require("../../Website_Mobile_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp")}
           // src={require("../../assets/HomePageImages/Website_Mobile_Maruti_Suzuki_Nexa_Year_End_Offers_Remember_To_Remember_Offers_Saboo_RKS_Motor_Nexa.webp")}
           alt='Mobile_Maruti_Suzuki_Nexa_Year_End_Offers_Remember_To_Remember_Offers_Saboo_RKS_Motor_Nexa'

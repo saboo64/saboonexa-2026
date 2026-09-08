@@ -80,18 +80,18 @@ function Offers() {
               <img
                 //  src={require("../../components/Website_Maruti_Suzuki_Nexa_Year_End_Offers_2024_biggest_offers_are_live_at_Saboo_RKS_Motor (1).webp")}
                 // src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Nexa+Service+Hafeezpet.webp"
-                src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
+                src={require('../../assets/others/Website_Maruti_Suzuki_Nexa_September_Offers_Festival_Special_Offers_Ganesh_Chaturthi_Popular_RKS_Popular_Vehicle_Services.webp')}
                 alt='may-web-Banner-Nexa.webp'
                 className={` w-full `}
                 loading='lazy'
               />
             </div>
           </SwiperSlide>{' '}
-    
+
         </Swiper>
         <div className='sm:hidden'>
           <img
-            src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_July_Offers_Monsoon_Special_Offers_Popular_RKS_Popular_Vehicle_Services.webp')}
+            src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_September_Offers_Festival_Special_Offers_Ganesh_Chaturthi_Popular_RKS_Popular_Vehicle_Services.webp')}
 
             alt='Maruti_Suzuki_No1_SUV_Maker_Saboo_RKS_Motor_Hyderabad_Dealer_Offers_Service_Invicto_Fronx_Xl6_Jimny_GrandVitara_Ciaz_Ignis_Baleno_Nexa_Car_Black_Edition_Mobile'
             className='w-full '
