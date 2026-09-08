@@ -45,13 +45,6 @@ function Baleno() {
     AOS.init({ once: true });
   }, []);
 
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-  // Define the video source URL based on the browser
-  // const videoSource = isSafari
-  //   ? 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/Baleno_safari.mov'
-  //   : 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/baleno/Baleno.webm';
-
   const [tabsColors, setTabsColors] = useState(1);
   const [exterior, setExterior] = useState(false);
   return (
@@ -74,21 +67,11 @@ function Baleno() {
       <Header />
       <div className='relative bg-black'>
         <div className='top-0 left-0 w-full h-screen '>
-          <video
+          <img
+            src={require('../../assets/cars/banner_final.jpeg')}
+            alt='Maruti Suzuki Baleno'
             className='object-cover w-full h-full '
-            preload='metadata'
-            loop
-            autoPlay
-            playsInline
-            muted
-            poster={require('../../assets/cars/banner_final.jpeg')}
-          // poster="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/new_baleno/1.webp"
-          >
-            {/* <source
-              src={videoSource}
-              type={isSafari ? 'video/quicktime' : 'video/mp4'}
-            /> */}
-          </video>
+          />
           <div className='absolute bottom-40 lg:bottom-24 left-[3%] lg:left-[5%] text-white '>
             <div
               data-aos='fade-right'
@@ -787,7 +770,7 @@ const BalenoInteriorSlider = () => {
 //   );
 // };
 
-const BalenoFeature = () => {
+export const BalenoFeature = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const data = [
     {
