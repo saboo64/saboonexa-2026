@@ -1006,7 +1006,7 @@ export const Outlets = () => {
             ></div>
           </a>
         </div>
-        <div
+        {/* <div
           data-aos='zoom-in'
           data-aos-delay='0'
           data-aos-duration='500'
@@ -1016,7 +1016,7 @@ export const Outlets = () => {
           <div className='mb-4 text-xl font-medium uppercase sm:text-2xl lg:text-3xl xl:text-4xl'>
             Nexa Jubilee
           </div>
-          {/* <div className="mb-2">Jubilee Hills, Hyderabad - 500033</div> */}
+        
           <a
             href='https://www.google.com/maps/place/NEXA/@17.439431,78.398485,14z/data=!4m5!3m4!1s0x0:0x1cb759ff5f828d3!8m2!3d17.4394309!4d78.398485?hl=en'
             target='_blank'
@@ -1027,14 +1027,13 @@ export const Outlets = () => {
               className='flex justify-center duration-500 bg-center h-52 lg:h-60 group-hover:saturate-200 rounded-3xl grayscale group-hover:grayscale-0'
               style={{
                 backgroundImage: `url(${require('../../assets/HomePageImages/SABOO_NEXA_JUBILEE_HILLS_SHOWROOM_HYDERABAD.webp')})`,
-                // backgroundImage:
-                //   'url("https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/jubilee-outlet.webp")',
+      
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
             ></div>
           </a>
-        </div>
+        </div> */}
         <div
           data-aos='zoom-in'
           data-aos-delay='0'

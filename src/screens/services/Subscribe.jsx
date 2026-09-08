@@ -297,7 +297,7 @@ const PreferenceForm = () => {
                 className="block w-full h-10 px-3 py-2 bg-white border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               >
                 <option disabled>Select Outlet</option>
-                <option value="Nexa Jubilee">Nexa Jubilee</option>
+                {/* <option value="Nexa Jubilee">Nexa Jubilee</option> */}
                 <option value="Nexa Lumbini">Nexa Lumbini</option>
                 <option value="Hafeezpet">Hafeezpet</option>
               </select>

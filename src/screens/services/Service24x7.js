@@ -798,7 +798,7 @@ function Service24x7() {
             <div className='col-span-1 px-2'>
               <div className='flex object-cover'>
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/misc/rks+logo3.png'
+                  src={require('../../assets/others/logo_color.png')}
                   alt=''
                   className='h-10 md:h-16'
                 />
@@ -1005,8 +1005,8 @@ function Service24x7() {
             <div className='flex flex-wrap gap-2 pb-2 mt-8 text-xs text-gray-300 lg:col-span-2 lg:gap-2 md:justify-around lg:mt-20'>
               <div className='font-serif'>Terms & Conditions</div>
               <div className='font-serif'>Privacy Policy</div>
-              <div className='font-serif'>
-                ©2023 All Rights Reserved by Popular RKS Pvt Ltd.
+              <div className="font-serif">
+                © {new Date().getFullYear()} All Rights Reserved by Popular RKS.
               </div>
             </div>
           </div>

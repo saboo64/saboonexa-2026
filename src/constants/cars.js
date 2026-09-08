@@ -804,7 +804,6 @@ export const ciaz = {
     },
   ],
 };
-
 export const baleno = {
   engine: [
     {
@@ -813,82 +812,86 @@ export const baleno = {
     },
     {
       specs: "MAXIMUM POWER (KW@RPM)",
-      data: "61/6000",
+      data: "61 kW @ 5700 rpm",
     },
     {
-      specs: "MAXIMUM TORQUE (nm@rpm)",
-      data: "113/4200",
+      specs: "MAXIMUM TORQUE (NM@RPM)",
+      data: "112.4 Nm @ 4500 rpm",
     },
     {
       specs: "NUMBER OF CYLINDERS",
-      data: "4",
+      data: "3",
     },
     {
       specs: "POWER STEERING TYPE",
-      data: "	Electric, Rack & Pinion type",
+      data: "Electric, Rack & Pinion Type",
     },
     {
       specs: "FUEL-EFFICIENCY (km/l)",
-      data: "21.01(MT), 19.56(CVT)",
+      data: "23.80 km/l (MT), 24.77 km/l (AMT)",
     },
     {
-      specs: "FUEL TANK CAPACITY (l)",
+      specs: "FUEL TANK CAPACITY (L)",
       data: "37",
     },
   ],
+
   transmission: [
     {
-      body: "ENGINE TYPE",
-      data: "5MT/CVT",
+      body: "TRANSMISSION TYPE",
+      data: "5MT / 5AMT",
     },
   ],
+
   dimensions: [
     {
       body: "LENGTH (MM)",
       data: "3990",
     },
     {
-      body: "WIDTH (mm)",
+      body: "WIDTH (MM)",
       data: "1745",
     },
     {
-      body: "HEIGHT (MM)",
-      data: "1500",
+      body: "HEIGHT (UNLADEN) (MM)",
+      data: "1530",
     },
     {
-      body: "WHEELBASE (mm)",
+      body: "WHEELBASE (MM)",
       data: "2520",
     },
     {
-      body: "BOOT SPACE (l)",
-      data: "318*",
+      body: "BOOT SPACE (L)",
+      data: "318",
     },
     {
       body: "SEATING CAPACITY",
       data: "5",
     },
     {
-      body: "MIN.TURNING RADIUS (m)",
+      body: "MIN. TURNING RADIUS (M)",
       data: "4.85",
     },
   ],
+
   weight: [
     {
       body: "KERB WEIGHT (KG)",
-      data: "920-955 (MT), 935-960 (AMT)",
+      data: "950-985 (MT), 965-990 (AMT)",
     },
     {
-      body: "GROSS VEHICLE WEIGHT (kg)",
+      body: "GROSS VEHICLE WEIGHT (KG)",
       data: "1410",
     },
   ],
+
   brakes: [
     {
-      body: "Front Brakes",
-      data: "Disk",
+      body: "FRONT BRAKES",
+      data: "Disc",
     },
     {
-      body: "Rear Brakes",
+      body: "REAR BRAKES",
       data: "Drum",
     },
   ],
@@ -896,36 +899,51 @@ export const baleno = {
   suspension: [
     {
       body: "FRONT SUSPENSION",
-      data: "McPherson Strut",
+      data: "MacPherson Strut",
     },
     {
       body: "REAR SUSPENSION",
       data: "Torsion Beam",
     },
   ],
+
   tyre: [
     {
       body: "VARIANTS",
-      data: "Sigma, Delta, Delta AMT, Zeta, Zeta AMT, Alpha, Alpha AMT",
+      data: "Sigma, Delta, Zeta, Alpha, Alpha (O)",
     },
     {
-      body: "TYRE SIZE(cc)",
-      data: "185/65 R15 (Steel Wheel),195/55 R16 (Alloy Wheel)",
+      body: "TYRE SIZE",
+      data: "185/65 R15 (Steel) - Sigma, Delta; 195/55 R16 (Alloy) - Zeta, Alpha, Alpha (O)",
     },
   ],
+
   fuel: [
     {
-      body: "FUEL EFFICIENCY(km/l)",
-      data: "22.35 (MT), 22.94 (AMT)",
+      body: "PETROL FUEL EFFICIENCY",
+      data: "23.80 km/l (MT), 24.77 km/l (AMT)",
     },
     {
-      body: "FUEL TANK CAPACITY (L)",
+      body: "CNG FUEL EFFICIENCY",
+      data: "33.61 km/kg (MT)",
+    },
+    {
+      body: "PETROL FUEL TANK CAPACITY (L)",
       data: "37",
     },
+    {
+      body: "CNG CAPACITY",
+      data: "55 L (Water Equivalent)",
+    },
+    {
+      body: "IDLE START STOP",
+      data: "Yes",
+    },
   ],
+
   seating: [
     {
-      body: "Seating Capacity (L)",
+      body: "SEATING CAPACITY",
       data: "5",
     },
   ],

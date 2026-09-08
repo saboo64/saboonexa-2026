@@ -28,7 +28,7 @@ const NexaPriceList = () => {
             <Link to="/">
               <img
                 className="w-auto h-12"
-                src={require("../../assets/others/logo.webp")}
+                src={require("../../assets/others/logo_color.png")}
                 alt="logo"
               />
             </Link>

@@ -87,12 +87,11 @@ function Showrooms({ title }) {
               ></div>
             </a>
           </div>
-          <div className=" w-full  px-4 text-left py-6 hover:text-white shadow-xl shadow-[#b0b0b0] group duration-500 border-t rounded-3xl relative overflow-hidden">
+          {/* <div className=" w-full  px-4 text-left py-6 hover:text-white shadow-xl shadow-[#b0b0b0] group duration-500 border-t rounded-3xl relative overflow-hidden">
             <div className="bg-black h-32 w-36 duration-500 group-hover:h-[200%] group-hover:w-[200%] group-hover:-top-56 group-hover:-right-56 rounded-full absolute -top-20 -right-20 -z-10"></div>
             <div className="mb-4 text-xl font-medium uppercase sm:text-2xl lg:text-3xl ">
               Nexa Jubilee
             </div>
-            {/* <div className="mb-2">Jubilee Hills, Hyderabad - 500033</div> */}
             <a
               href="https://www.google.com/maps/place/NEXA/@17.439431,78.398485,14z/data=!4m5!3m4!1s0x0:0x1cb759ff5f828d3!8m2!3d17.4394309!4d78.398485?hl=en"
               target="_blank"
@@ -109,13 +108,13 @@ function Showrooms({ title }) {
                 }}
               ></div>
             </a>
-          </div>
+          </div> */}
           <div className=" w-full  px-4 text-left py-6 hover:text-white shadow-xl shadow-[#b0b0b0] group duration-500 border-t rounded-3xl relative overflow-hidden">
             <div className="bg-black h-32 w-36 duration-500 group-hover:h-[200%] group-hover:w-[200%] group-hover:-top-56 group-hover:-right-56 rounded-full absolute -top-20 -right-20 -z-10"></div>
             <div className="mb-4 text-xl font-medium uppercase sm:text-2xl lg:text-3xl ">
               Nexa Hafeezpet
             </div>
-            {/* <div className="mb-2">Hafeezpet, Hyderabad - 500049</div> */}
+           
             <a
               href="https://goo.gl/maps/rgoP8TXGQ9b3WvYu8"
               target="_blank"
@@ -386,7 +385,7 @@ function Showrooms({ title }) {
                       <option value="" disabled>
                         Select Showroom
                       </option>
-                      <option value="Nexa Jubilee">Nexa Jubilee</option>
+                      {/* <option value="Nexa Jubilee">Nexa Jubilee</option> */}
                       <option value="Nexa Lumbini">Nexa Lumbini</option>
                       <option value="Hafeezpet">Hafeezpet</option>
                     </Field>

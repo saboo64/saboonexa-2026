@@ -12,19 +12,13 @@ import {
   BreadcrumbSchema,
   VehicleSchema,
 } from '../../components/SEO/schema';
-// import { CarComp } from "./Invicto";
-// import TestDrive from "../../components/utils/TestDrive";
 import { Customise } from '../../components/Vitara/e-vitara/customize';
-// import { MiniBanner } from "../../components/Vitara/e-vitara/mini-banner";
 import TabsListVitara from '../../components/Vitara/e-vitara/tabs-list-vitara';
 import Video from '../../components/Vitara/e-vitara/video';
 import { Options } from '../../components/Vitara/e-vitara/options';
 import Header from '../../components/Header/Header';
 import { CarEnq2 } from '../../components/Invicto/CarEnq2';
-// import { products } from "../../constants";
-// import { LuMoveRight } from 'react-icons/lu';
 import { Navigation } from 'swiper';
-// import { Button } from "@mui/material";
 import View360 from '../../components/utils/View360';
 import { Tb360View, TbView360 } from 'react-icons/tb';
 import { GiReturnArrow } from 'react-icons/gi';
@@ -355,8 +349,6 @@ const EVitara = () => {
           <a href="/e-vitara"> e VITARA </a>
         </div> */}
         <div className='space-x-5'>
-          {/* <a href="/">Overview</a> */}
-          {/* <a href="/">Build Your Own </a> */}
         </div>
       </div>
 

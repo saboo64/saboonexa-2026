@@ -14,13 +14,30 @@ import { GiReturnArrow } from 'react-icons/gi';
 
 // Import Swiper styles
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, FreeMode, Navigation, Thumbs } from 'swiper';
+import { Autoplay, EffectCoverflow, FreeMode, Navigation, Thumbs } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
 import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
+
+import NexaBlueImg from '../../assets/baleno/colors/Nexa_Blue.png';
+import ArcticWhiteImg from '../../assets/baleno/colors/Arctic_White.png';
+import SplendidSilverImg from '../../assets/baleno/colors/Splendid_Silver.png';
+import GrandeurGreyImg from '../../assets/baleno/colors/Grandeur_Grey.png';
+import OpulentRedImg from '../../assets/baleno/colors/Opulent_Red.png';
+import EnigmaticTealGreenImg from '../../assets/baleno/colors/Enigmatic_Teal_Green.png';
+import BluishBlackImg from '../../assets/baleno/colors/Bluish_Black.png';
+
+const baleno360ImagesContext = require.context(
+  '../../assets/baleno/360',
+  false,
+  /\.png$/
+);
+const baleno360Images = Array.from({ length: 55 }, (_, i) =>
+  baleno360ImagesContext(`./Baleno- (${i + 1}).png`)
+);
 
 function Baleno() {
   useEffect(() => {
@@ -31,11 +48,12 @@ function Baleno() {
   const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   // Define the video source URL based on the browser
-  const videoSource = isSafari
-    ? 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/Baleno_safari.mov'
-    : 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/baleno/Baleno.webm';
+  // const videoSource = isSafari
+  //   ? 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/Baleno_safari.mov'
+  //   : 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/baleno/Baleno.webm';
 
   const [tabsColors, setTabsColors] = useState(1);
+  const [exterior, setExterior] = useState(false);
   return (
     <>
       <Seo {...vechicle.baleno} />
@@ -63,13 +81,13 @@ function Baleno() {
             autoPlay
             playsInline
             muted
-            poster={require('../../assets/cars/Nexa_Baleno_offers _in_Hyderabad.webp')}
-            // poster="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/new_baleno/1.webp"
+            poster={require('../../assets/cars/banner_final.jpeg')}
+          // poster="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/new_baleno/1.webp"
           >
-            <source
+            {/* <source
               src={videoSource}
               type={isSafari ? 'video/quicktime' : 'video/mp4'}
-            />
+            /> */}
           </video>
           <div className='absolute bottom-40 lg:bottom-24 left-[3%] lg:left-[5%] text-white '>
             <div
@@ -117,7 +135,7 @@ function Baleno() {
       </div>
       <CarEnq2 title='BOOK YOUR BALENO' carName='BALENO' />
       <Variant />
-      <BalenoFeature />
+      {/* <BalenoFeature /> */}
       <Technology />
       <div className='pt-2 text-white bg-black '>
         <div className='w-full pt-10 pb-8 text-3xl text-center uppercase sm:text-4xl md:text-5xl'>
@@ -146,79 +164,79 @@ function Baleno() {
             </div>
             <div className='col-span-2'>
               <div className='mx-auto'>
-                {/* Granite-Grey */}
+                {/* Nexa Blue */}
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/colors/CelestialBlue.webp'
-                  alt='Saboo-Nexa-Baleno-Colours-CelestialBlue'
+                  src={NexaBlueImg}
+                  alt='Saboo-Nexa-Baleno-Colours-Nexa-Blue'
                   className={
                     tabsColors === 1
-                      ? 'lg:h-[415px] lg:mt-32 ml-[14%] mr-auto'
+                      ? 'h-[260px] sm:h-[320px] lg:h-[480px] mx-auto lg:mt-32 lg:ml-[14%]'
                       : 'hidden'
                   }
                 />
 
-                {/* Nexa-Blue */}
+                {/* Arctic White */}
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/colors/ArticWhite.webp'
-                  alt='Saboo-Nexa-Baleno-Colours-NEXA-ArticWhite'
+                  src={ArcticWhiteImg}
+                  alt='Saboo-Nexa-Baleno-Colours-Arctic-White'
                   className={
                     tabsColors === 2
-                      ? 'lg:h-[415px] lg:mt-32 ml-[14%] mr-auto'
+                      ? 'h-[260px] sm:h-[320px] lg:h-[480px] mx-auto lg:mt-32 lg:ml-[14%]'
                       : 'hidden'
                   }
                 />
 
                 {/* Splendid Silver */}
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/colors/SplendidSilver.webp'
+                  src={SplendidSilverImg}
                   alt='Saboo-Nexa-Baleno-Colours-Splendid-Silver'
                   className={
                     tabsColors === 3
-                      ? 'lg:h-[415px] lg:mt-32 ml-[14%] mr-auto'
+                      ? 'h-[260px] sm:h-[320px] lg:h-[480px] mx-auto lg:mt-32 lg:ml-[14%]'
                       : 'hidden'
                   }
                 />
 
                 {/* Grandeur Grey */}
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/colors/GrandeurGrey.webp'
+                  src={GrandeurGreyImg}
                   alt='Saboo-Nexa-Baleno-Colours-Grandeur-Grey'
                   className={
                     tabsColors === 4
-                      ? 'lg:h-[415px] lg:mt-32 ml-[14%] mr-auto'
+                      ? 'h-[260px] sm:h-[320px] lg:h-[480px] mx-auto lg:mt-32 lg:ml-[14%]'
                       : 'hidden'
                   }
                 />
 
-                {/* Opulant Red */}
+                {/* Opulent Red */}
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/colors/OpulantRed.webp'
-                  alt='Saboo-Nexa-Baleno-Colours-Opulant-Red'
+                  src={OpulentRedImg}
+                  alt='Saboo-Nexa-Baleno-Colours-Opulent-Red'
                   className={
                     tabsColors === 5
-                      ? 'lg:h-[415px] lg:mt-32 ml-[14%] mr-auto'
+                      ? 'h-[260px] sm:h-[320px] lg:h-[480px] mx-auto lg:mt-32 lg:ml-[14%]'
                       : 'hidden'
                   }
                 />
 
-                {/* Luxe Beige */}
+                {/* Enigmatic Teal Green */}
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/colors/LuxeBeige.webp'
-                  alt='Saboo-Nexa-Baleno-Colours-Luxe-Beige'
+                  src={EnigmaticTealGreenImg}
+                  alt='Saboo-Nexa-Baleno-Colours-Enigmatic-Teal-Green'
                   className={
                     tabsColors === 6
-                      ? 'lg:h-[415px] lg:mt-32 ml-[14%] mr-auto'
+                      ? 'h-[260px] sm:h-[320px] lg:h-[480px] mx-auto lg:mt-32 lg:ml-[14%]'
                       : 'hidden'
                   }
                 />
 
-                {/* Peral Midnight Black */}
+                {/* Bluish Black */}
                 <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/baleno/colors/Desktop_PearlMidnightBlack_810x411.webp'
-                  alt='Saboo-Nexa-Baleno-Peral-Midnight-Black'
+                  src={BluishBlackImg}
+                  alt='Saboo-Nexa-Baleno-Colours-Bluish-Black'
                   className={
                     tabsColors === 7
-                      ? 'lg:h-[415px] lg:mt-32 ml-[14%] mr-auto'
+                      ? 'h-[260px] sm:h-[320px] lg:h-[480px] mx-auto lg:mt-32 lg:ml-[14%]'
                       : 'hidden'
                   }
                 />
@@ -226,26 +244,26 @@ function Baleno() {
               <div className='flex items-center justify-center mb-3'>
                 <div onClick={() => setTabsColors(1)}>
                   <div className={tabsColors === 1 ? 'relative' : 'hidden'}>
-                    <p className='w-6 h-6 bg-[#31416d] mr-[10px] border-t border-x'></p>
+                    <p className='w-6 h-6 bg-[#1f3a63] mr-[10px] border-t border-x'></p>
                     <span className="bg-[url('https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/check-icon.png')] h-6 w-6 absolute top-0 -left-2 right-0 mx-auto bg-no-repeat bg-center "></span>
-                    <p className='arrow-dropdown-selected-car border-t-8 border-[#31416d]'></p>
+                    <p className='arrow-dropdown-selected-car border-t-8 border-[#1f3a63]'></p>
                   </div>
                   <p
                     className={
-                      tabsColors !== 1 ? 'w-6 h-6 bg-[#31416d] mr-2' : 'hidden'
+                      tabsColors !== 1 ? 'w-6 h-6 bg-[#1f3a63] mr-2' : 'hidden'
                     }
                   ></p>
                 </div>
 
                 <div onClick={() => setTabsColors(2)}>
                   <div className={tabsColors === 2 ? 'relative' : 'hidden'}>
-                    <p className='w-6 h-6 bg-[#ffffff] mr-[10px] border-t border-x'></p>
+                    <p className='w-6 h-6 bg-[#f2f1ec] mr-[10px] border-t border-x'></p>
                     <span className="bg-[url('https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/check-icon.png')] h-6 w-6 absolute top-0 -left-2 right-0 mx-auto bg-no-repeat bg-center"></span>
-                    <p className='arrow-dropdown-selected-car border-t-8 border-[#ffffff]'></p>
+                    <p className='arrow-dropdown-selected-car border-t-8 border-[#f2f1ec]'></p>
                   </div>
                   <p
                     className={
-                      tabsColors !== 2 ? 'w-6 h-6 bg-[#ffffff] mr-2' : 'hidden'
+                      tabsColors !== 2 ? 'w-6 h-6 bg-[#f2f1ec] mr-2' : 'hidden'
                     }
                   ></p>
                 </div>
@@ -264,13 +282,13 @@ function Baleno() {
 
                 <div onClick={() => setTabsColors(4)}>
                   <div className={tabsColors === 4 ? 'relative' : 'hidden'}>
-                    <p className='w-6 h-6 bg-[#545454] mr-[10px] border-t border-x'></p>
+                    <p className='w-6 h-6 bg-[#4a4d52] mr-[10px] border-t border-x'></p>
                     <span className="bg-[url('https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/check-icon.png')] h-6 w-6 absolute top-0 -left-2 right-0 mx-auto bg-no-repeat bg-center"></span>
-                    <p className='arrow-dropdown-selected-car border-t-8 border-[#545454]'></p>
+                    <p className='arrow-dropdown-selected-car border-t-8 border-[#4a4d52]'></p>
                   </div>
                   <p
                     className={
-                      tabsColors !== 4 ? 'w-6 h-6 bg-[#545454] mr-2' : 'hidden'
+                      tabsColors !== 4 ? 'w-6 h-6 bg-[#4a4d52] mr-2' : 'hidden'
                     }
                   ></p>
                 </div>
@@ -290,25 +308,25 @@ function Baleno() {
 
                 <div onClick={() => setTabsColors(6)}>
                   <div className={tabsColors === 6 ? 'relative' : 'hidden'}>
-                    <p className='w-6 h-6 bg-[#704e40] mr-[10px] border-t border-x'></p>
+                    <p className='w-6 h-6 bg-[#1c4a44] mr-[10px] border-t border-x'></p>
                     <span className="bg-[url('https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/check-icon.png')] h-6 w-6 absolute top-0 -left-2 right-0 mx-auto bg-no-repeat bg-center"></span>
-                    <p className='arrow-dropdown-selected-car border-t-8 border-[#704e40]'></p>
+                    <p className='arrow-dropdown-selected-car border-t-8 border-[#1c4a44]'></p>
                   </div>
                   <p
                     className={
-                      tabsColors !== 6 ? 'w-6 h-6 bg-[#704e40] mr-2' : 'hidden'
+                      tabsColors !== 6 ? 'w-6 h-6 bg-[#1c4a44] mr-2' : 'hidden'
                     }
                   ></p>
                 </div>
                 <div onClick={() => setTabsColors(7)}>
                   <div className={tabsColors === 7 ? 'relative' : 'hidden'}>
-                    <p className='w-6 h-6 bg-black mr-[10px] border-t border-x'></p>
+                    <p className='w-6 h-6 bg-[#10141c] mr-[10px] border-t border-x'></p>
                     <span className="bg-[url('https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/logos/check-icon.png')] h-6 w-6 absolute top-0 -left-2 right-0 mx-auto bg-no-repeat bg-center"></span>
-                    <p className='border-t-8 border-black arrow-dropdown-selected-car'></p>
+                    <p className='border-t-8 border-[#10141c] arrow-dropdown-selected-car'></p>
                   </div>
                   <p
                     className={
-                      tabsColors !== 7 ? 'w-6 h-6 bg-black mr-2' : 'hidden'
+                      tabsColors !== 7 ? 'w-6 h-6 bg-[#10141c] mr-2' : 'hidden'
                     }
                   ></p>
                 </div>
@@ -329,7 +347,7 @@ function Baleno() {
                     : 'hidden'
                 }
               >
-                Pearl Arctic White
+                Arctic White
               </p>
               <p
                 className={
@@ -365,7 +383,7 @@ function Baleno() {
                     : 'hidden'
                 }
               >
-                Luxe Beige
+                Enigmatic Teal Green
               </p>
               <p
                 className={
@@ -374,7 +392,7 @@ function Baleno() {
                     : 'hidden'
                 }
               >
-                Pearl Midnight Black
+                Bluish Black
               </p>
             </div>
           </div>
@@ -384,14 +402,61 @@ function Baleno() {
       {/* <ImageViewer /> */}
       {/* <OnRoadPrice title={'Baleno'} /> */}
       {/* <Features /> */}
+
+      {/* Int & Ext Sliders */}
+      <div className='pb-10 bg-black lg:pb-20 '>
+        <div className='mx-auto xl:container'>
+          <div className='pb-4 text-3xl text-center text-white uppercase sm:text-4xl md:text-5xl lg:pt-8 '>
+            Discover Opulence
+          </div>
+          <div className='flex justify-center gap-5 pb-2 text-xl '>
+            <div className=''>
+              <button
+                className={`px-4 py-1  border tracking-widest rounded-lg duration-500  ${!exterior
+                    ? 'border-white bg-white text-black '
+                    : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
+                  }`}
+                onClick={() => setExterior(false)}
+                aria-label='Exterior'
+              >
+                Exterior
+              </button>
+            </div>
+            <div className=''>
+              <button
+                className={`px-4 py-1  border tracking-widest rounded-lg duration-500 ${exterior
+                    ? 'border-white bg-white text-black'
+                    : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
+                  } `}
+                onClick={() => setExterior(true)}
+                aria-label='Interior'
+              >
+                Interior
+              </button>
+            </div>
+          </div>
+          <div className='relative '>
+            <div className={`${exterior ? 'opacity-0' : 'opacity-100'}`}>
+              <BalenoExteriorSlider />
+            </div>
+            <div
+              className={`absolute inset-0 ${exterior ? 'opacity-100' : 'opacity-0'
+                }`}
+            >
+              <BalenoInteriorSlider />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Bi360 />
       <BalenoSafety />
-      <div className='pt-2 '>
+      {/* <div className='pt-2 '>
         <div className='w-full pt-12 pb-4 text-3xl text-center uppercase sm:text-4xl md:text-5xl'>
           Design
         </div>
-      </div>
-      <ImageOptions />
+      </div> */}
+      {/* <ImageOptions /> */}
       <CarComp details={products[6]} />
       <CarEnq2 title='BOOK YOUR BALENO' carName='Baleno' />
     </>
@@ -415,15 +480,13 @@ const Variant = () => {
               className='block w-full max-w-[375px] py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none sm:text-sm'
               aria-labelledby='model'
             >
-              <option value='5,98,900'>MT Sigma </option>
-              <option value='6,79,900'>MT Delta</option>
-              <option value='7,69,900'>MT Zeta</option>
-              <option value='8,59,900'>MT Alpha </option>
-              <option value='7,69,900'>CNG - MT Delta </option>
-              <option value='8,59,900'>CNG - MT Zeta </option>
-              <option value='7,29,900'>AGS Delta </option>
-              <option value='8,19,900'>AGS Zeta </option>
-              <option value='9,09,900'>AGS Alpha </option>
+              <option value='5,98,900'>Sigma MT </option>
+              <option value='6,79,900'>Delta MT</option>
+              <option value='7,69,900'>Zeta MT</option>
+              <option value='8,59,900'>Alpha MT </option>
+              <option value='7,69,900'>Alpha (O) MT</option>
+              <option value='8,59,900'>Delta CNG </option>
+              <option value='7,29,900'>Zeta CNG MT </option>
             </select>
           </div>
           <div className='text-center text-gray-200'>
@@ -448,141 +511,281 @@ const Variant = () => {
   );
 };
 
-const ImageOptions = () => {
+const BalenoExteriorSlider = () => {
+  const [swiper, setSwiper] = useState(null);
+
+  const styles = `
+  .swiper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  `;
+  const handleClickSlide = (index) => {
+    if (swiper) {
+      swiper.slideTo(index);
+    }
+  };
+
+  const images = [
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/exterior/antena.jpg',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/exterior/Chrome_fender_garnish.jpg',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/exterior/fog_lamp.jpg',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/exterior/next_wavegrill.jpg',
+
+  ];
+
   return (
-    <div className='container px-2 mx-auto md:px-0'>
-      <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
-        <div className='overflow-hidden cursor-pointer'>
-          <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-1177x751-exterior-liquid-flow.webp'
-            alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Front-Lamp'
-            className='w-full duration-500 hover:scale-105'
-          />
-        </div>
-        <div className='py-2 mx-auto my-auto space-y-3 md:p-8'>
-          <p className='text-3xl font-medium '>Enhanced Liquid Flow Design</p>
-          <p className='w-20 h-1 bg-black rounded-full '></p>
-          <p>
-            The New Age Baleno is a sight to behold. Carrying forward the Liquid
-            Flow Aesthetic, it exudes boldness from every curve. Its dynamic
-            stance with strong shoulders and sharp character lines flow with
-            harmony, from front to back. So, no matter if you see it coming, or
-            passing by, you won’t be able to look away.
-          </p>
-        </div>
+    <>
+      <style>{styles}</style>
+      <div className='select-none '>
+        <Swiper
+          effect={'coverflow'}
+          centeredSlides={true}
+          slidesPerView={2}
+          spaceBetween={-30}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          }}
+          onSwiper={setSwiper}
+          modules={[EffectCoverflow, Autoplay]}
+          className='rounded-3xl'
+        >
+          {images.map((img, index) => (
+            <SwiperSlide key={index} className='overflow-hidden rounded-2xl'>
+              <div className='relative'>
+                <img
+                  src={img}
+                  alt='Saboo-Nexa-Baleno-Exterior'
+                  className='overflow-hidden rounded-2xl'
+                  onClick={() => handleClickSlide(index)}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-
-      <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
-        <div className='p-2 mx-auto my-auto space-y-3'>
-          <p className='text-3xl font-medium'>NEXWave Grille</p>
-          <p className='w-20 h-1 bg-black rounded-full '></p>
-          <p>
-            The signature NEXWave Grille is the first thing you see when you
-            look upon the New Age Baleno. And it gets harder to look anywhere
-            else. This artistically crafted grille with accentuated chrome
-            strips gives Baleno a wider look, making it even more intimidating
-            than ever before.
-          </p>
-        </div>
-        <div className='overflow-hidden cursor-pointer'>
-          <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-749x751-grille.webp'
-            alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Front-Gril'
-            className='w-full duration-500 hover:scale-105'
-          />
-        </div>
-      </div>
-
-      <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
-        <div className='overflow-hidden cursor-pointer'>
-          <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-751x379-alloy-wheels.webp'
-            alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Alloy-Wheel'
-            className='w-full duration-500 hover:scale-105'
-          />
-        </div>
-        <div className='p-2 mx-auto my-auto space-y-3'>
-          <p className='text-3xl font-medium'>
-            16-Inch Precision Cut Alloy Wheels
-          </p>
-          <p className='w-20 h-1 bg-black rounded-full '></p>
-          <p>
-            They are bold. They are sharp. And they drive the style quotient of
-            the New Age Baleno to a whole new level. Even when parked. These new
-            16-Inch Precision Cut Alloy Wheels are crafted to perfection and are
-            made to stand out.
-          </p>
-        </div>
-      </div>
-
-      <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
-        <div className='p-2 mx-auto my-auto space-y-3'>
-          <p className='text-3xl font-medium'>Interior Design</p>
-          <p className='w-20 h-1 bg-black rounded-full '></p>
-          <p>
-            The New Age Baleno is more than just good looks. It is comfort
-            reimagined. So, immerse yourself in the state-of-the-art cabin
-            crafted with sleek chrome accentuation with smooth and natural flow
-            lines. Bask in the glory of the Dual-tone Interiors with Piano Black
-            inserts. And relax in the lap of the comfortable seats with deep
-            curves for an indulgent experience like never before.
-          </p>
-        </div>
-        <div className='overflow-hidden cursor-pointer'>
-          <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-1177x751-interior.webp'
-            alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Side-Lamp'
-            className='w-full duration-500 hover:scale-105'
-          />
-        </div>
-      </div>
-      <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
-        <div className='overflow-hidden cursor-pointer'>
-          <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-749x751-LED-DRLs.webp'
-            alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Side-Lamp'
-            className='w-full duration-500 hover:scale-105'
-          />
-        </div>
-        <div className='p-2 mx-auto my-auto space-y-3 md:p-8'>
-          <p className='text-3xl font-medium'>
-            NEXTre' LED Rear Combination Lights
-          </p>
-          <p className='w-20 h-1 bg-black rounded-full '></p>
-          <p>
-            The New Age Baleno never ceases to bowl you over with its looks.
-            Even when viewed from behind. The sharp and stylish NEXTre’ LED Rear
-            Combination Lights flow and merge effortlessly with the Liquid Flow
-            Aesthetics of the Baleno, adding more flair to its bold looks.
-          </p>
-        </div>
-      </div>
-      <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
-        <div className='p-2 mx-auto my-auto space-y-3'>
-          <p className='text-3xl font-medium'>
-            LED Projector Headlamps With NEXTre’ LED DRLs
-          </p>
-          <p className='w-20 h-1 bg-black rounded-full '></p>
-          <p>
-            The night is when the New Age Baleno truly comes alive. Driving down
-            the beautiful tarmac, the Projector Headlamps with signature NEXTre’
-            LED DRLs make a bold impression that is hard to forget. These
-            crystal-clear Headlamps and sharp DRLs can brighten up any road. Day
-            or night. Moreover, they can detect the lighting conditions around
-            you and automatically turn on or off.
-          </p>
-        </div>
-        <div className='overflow-hidden cursor-pointer'>
-          <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-751x379-Rear-lamps.webp'
-            alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Side-Lamp'
-            className='w-full duration-500 hover:scale-105'
-          />
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
+
+const BalenoInteriorSlider = () => {
+  const [swiper, setSwiper] = useState(null);
+
+  const styles = `
+  .swiper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  `;
+  const handleClickSlide = (index) => {
+    if (swiper) {
+      swiper.slideTo(index);
+    }
+  };
+
+  const images = [
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/Interior/ac_vents.jpg',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/Interior/auto_climate)control.jpg',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/Interior/seat_upholestry.jpg',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/Interior/ventilated_seats.jpg',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/Interior/wireless_charging2.jpg',
+  ];
+
+  return (
+    <>
+      <style>{styles}</style>
+      <div className='select-none'>
+        <Swiper
+          effect={'coverflow'}
+          centeredSlides={true}
+          slidesPerView={2}
+          spaceBetween={-30}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          coverflowEffect={{
+            rotate: 45,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          }}
+          onSwiper={setSwiper}
+          modules={[EffectCoverflow, Autoplay]}
+          className='rounded-3xl'
+        >
+          {images.map((img, index) => (
+            <SwiperSlide key={index} className='overflow-hidden rounded-2xl'>
+              <div className='relative'>
+                <img
+                  src={img}
+                  alt='Saboo-Nexa-Baleno-Interior'
+                  className='overflow-hidden rounded-2xl'
+                  onClick={() => handleClickSlide(index)}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </>
+  );
+};
+
+// const ImageOptions = () => {
+//   return (
+//     <div className='container px-2 mx-auto md:px-0'>
+//       <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
+//         <div className='overflow-hidden cursor-pointer'>
+//           <img
+//             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-1177x751-exterior-liquid-flow.webp'
+//             alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Front-Lamp'
+//             className='w-full duration-500 hover:scale-105'
+//           />
+//         </div>
+//         <div className='py-2 mx-auto my-auto space-y-3 md:p-8'>
+//           <p className='text-3xl font-medium '>Enhanced Liquid Flow Design</p>
+//           <p className='w-20 h-1 bg-black rounded-full '></p>
+//           <p>
+//             The New Age Baleno is a sight to behold. Carrying forward the Liquid
+//             Flow Aesthetic, it exudes boldness from every curve. Its dynamic
+//             stance with strong shoulders and sharp character lines flow with
+//             harmony, from front to back. So, no matter if you see it coming, or
+//             passing by, you won’t be able to look away.
+//           </p>
+//         </div>
+//       </div>
+
+//       <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
+//         <div className='p-2 mx-auto my-auto space-y-3'>
+//           <p className='text-3xl font-medium'>NEXWave Grille</p>
+//           <p className='w-20 h-1 bg-black rounded-full '></p>
+//           <p>
+//             The signature NEXWave Grille is the first thing you see when you
+//             look upon the New Age Baleno. And it gets harder to look anywhere
+//             else. This artistically crafted grille with accentuated chrome
+//             strips gives Baleno a wider look, making it even more intimidating
+//             than ever before.
+//           </p>
+//         </div>
+//         <div className='overflow-hidden cursor-pointer'>
+//           <img
+//             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-749x751-grille.webp'
+//             alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Front-Gril'
+//             className='w-full duration-500 hover:scale-105'
+//           />
+//         </div>
+//       </div>
+
+//       <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
+//         <div className='overflow-hidden cursor-pointer'>
+//           <img
+//             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-751x379-alloy-wheels.webp'
+//             alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Alloy-Wheel'
+//             className='w-full duration-500 hover:scale-105'
+//           />
+//         </div>
+//         <div className='p-2 mx-auto my-auto space-y-3'>
+//           <p className='text-3xl font-medium'>
+//             16-Inch Precision Cut Alloy Wheels
+//           </p>
+//           <p className='w-20 h-1 bg-black rounded-full '></p>
+//           <p>
+//             They are bold. They are sharp. And they drive the style quotient of
+//             the New Age Baleno to a whole new level. Even when parked. These new
+//             16-Inch Precision Cut Alloy Wheels are crafted to perfection and are
+//             made to stand out.
+//           </p>
+//         </div>
+//       </div>
+
+//       <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
+//         <div className='p-2 mx-auto my-auto space-y-3'>
+//           <p className='text-3xl font-medium'>Interior Design</p>
+//           <p className='w-20 h-1 bg-black rounded-full '></p>
+//           <p>
+//             The New Age Baleno is more than just good looks. It is comfort
+//             reimagined. So, immerse yourself in the state-of-the-art cabin
+//             crafted with sleek chrome accentuation with smooth and natural flow
+//             lines. Bask in the glory of the Dual-tone Interiors with Piano Black
+//             inserts. And relax in the lap of the comfortable seats with deep
+//             curves for an indulgent experience like never before.
+//           </p>
+//         </div>
+//         <div className='overflow-hidden cursor-pointer'>
+//           <img
+//             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-1177x751-interior.webp'
+//             alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Side-Lamp'
+//             className='w-full duration-500 hover:scale-105'
+//           />
+//         </div>
+//       </div>
+//       <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
+//         <div className='overflow-hidden cursor-pointer'>
+//           <img
+//             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-749x751-LED-DRLs.webp'
+//             alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Side-Lamp'
+//             className='w-full duration-500 hover:scale-105'
+//           />
+//         </div>
+//         <div className='p-2 mx-auto my-auto space-y-3 md:p-8'>
+//           <p className='text-3xl font-medium'>
+//             NEXTre' LED Rear Combination Lights
+//           </p>
+//           <p className='w-20 h-1 bg-black rounded-full '></p>
+//           <p>
+//             The New Age Baleno never ceases to bowl you over with its looks.
+//             Even when viewed from behind. The sharp and stylish NEXTre’ LED Rear
+//             Combination Lights flow and merge effortlessly with the Liquid Flow
+//             Aesthetics of the Baleno, adding more flair to its bold looks.
+//           </p>
+//         </div>
+//       </div>
+//       <div className='grid px-2 py-4 shadow-lg sm:grid-cols-2 md:p-8 '>
+//         <div className='p-2 mx-auto my-auto space-y-3'>
+//           <p className='text-3xl font-medium'>
+//             LED Projector Headlamps With NEXTre’ LED DRLs
+//           </p>
+//           <p className='w-20 h-1 bg-black rounded-full '></p>
+//           <p>
+//             The night is when the New Age Baleno truly comes alive. Driving down
+//             the beautiful tarmac, the Projector Headlamps with signature NEXTre’
+//             LED DRLs make a bold impression that is hard to forget. These
+//             crystal-clear Headlamps and sharp DRLs can brighten up any road. Day
+//             or night. Moreover, they can detect the lighting conditions around
+//             you and automatically turn on or off.
+//           </p>
+//         </div>
+//         <div className='overflow-hidden cursor-pointer'>
+//           <img
+//             src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Baleno/exterior/submenu-design-751x379-Rear-lamps.webp'
+//             alt='Saboo-Nexa-Maruti-Suzuki-Baleno-Side-Lamp'
+//             className='w-full duration-500 hover:scale-105'
+//           />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 const BalenoFeature = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -712,35 +915,21 @@ const BalenoSafety = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const data = [
     {
-      img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/features/baleno_safety_1170x521_2.webp?la=en&hash=BA6CFC7780CD156D01B663302B01F5FC',
-      title: 'Electronic Stability Program      ',
-      body: 'The New Age Baleno comes equipped with Electronic Stability Program (ESP), which helps in improved vehicle control during cornering, immediate lane changes to avoid obstacles and provides more stability while driving on uneven or broken roads.',
+      img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/safety/nb_desktop_cruise.jpg.jpeg',
+      title: 'ADAS Level 2',
+      body: 'The New Age Baleno comes equipped with Level 2 Advanced Driver Assistance Systems (ADAS), including Automatic Emergency Braking, Lane Keep Assist, Adaptive Cruise Control and High Beam Assist, helping provide enhanced safety, convenience and confidence while driving.',
     },
     {
-      img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/features/baleno_safety_1170x521_3.webp?la=en&hash=45AE746094CB9E6C69FB51BE64D5D8D3',
+      img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/safety/nd_desktop_airbags.jpg.jpeg',
       title: '6 Airbags',
-      body: 'For the first time ever, Baleno gets 6 Airbags (Front, Side, and Curtain), that provide advanced safety in the event of a collision.',
+      body: 'Comprehensive protection for occupants, thoughtfully engineered to provide greater peace of mind when it matters most.',
     },
     {
-      img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/features/baleno_safety_1170x521_4.webp?la=en&hash=B594B2ABD8E2EF170C610AF8D408DD6F',
-      title: 'ISOFIX Child Seat Anchorages',
-      body: 'The New Age Baleno comes with ISOFIX Child Seat anchorages, for that perfect drive with your little ones.',
+      img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/safety/Esp_desktop.jpg.jpeg',
+      title: 'Electronic Stability Program with Hill Hold Assist',
+      body: 'Greater stability when you need it and added control when you’re starting on an incline, for confidence across changing road conditions.',
     },
-    {
-      img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/features/seat-belt-reminder.webp?la=en&hash=EF35E5EFEE8447C3207EC3E06519D4F6',
-      title: 'Seat Belt Reminder',
-      body: 'The New Age Baleno comes with seat belt reminders for the driver and all passengers with an indication and a buzzer. Seat belt reminder comes on unless all rear passenger’s seat belts are fastened irrespective of the presence or absence of passenger.',
-    },
-    {
-      img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/features/baleno_safety_1170x521_6.webp?la=en&hash=A21C0366728942F018BD6F560132E461',
-      title: 'Rear Parking Assist Sensors',
-      body: 'Parking in tough spots is now easier in the New Age Baleno as it is equipped with Rear Parking Assist Sensors.',
-    },
-    {
-      img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/features/safety_banner_7.webp?la=en&hash=96517A0D2CA132573D1677155130EFD8',
-      title: 'Hill Hold Assist',
-      body: 'Hill Hold Assist helps the car to not to go back after you leave break and before you accelerate.',
-    },
+ 
   ];
   return (
     <div className='bg-black '>
@@ -858,7 +1047,7 @@ const Technology = () => {
           <SwiperSlide className=''>
             <div className='w-full '>
               <img
-                src='https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/technology/technology-1080x420-hud.webp'
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/HUD_desktop.jpg.jpeg'
                 alt='Head Up Display'
                 className='relative '
               />
@@ -881,22 +1070,13 @@ const Technology = () => {
           <SwiperSlide className='relative'>
             <div className='w-full'>
               <img
-                src='https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/technology/technology-1080x420-360-camera-view.webp'
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/mid_desktop.jpg.jpeg'
                 alt='360 View Camera'
               />
               <div className='w-full pt-4 text-left '>
-                <div className='pb-2 font-medium'> 360 View Camera</div>
+                <div className='pb-2 font-medium '> Multi-Information Display</div>
                 <div className='text-sm font-light lg:pr-40 md:text-base'>
-                  Intelligence is all about knowing what’s around you. And the
-                  New Age Baleno lets you see everything around you with the 360
-                  View Camera. Experience the ease of driving and parking in
-                  tight spaces with multiple view modes (3 each for front and
-                  back) like never before. Moreover, the Approaching Object
-                  Detection (AOD) up to 8 meters intuitively alerts you when
-                  deemed necessary. It also offers 3D views of the complete
-                  vehicle surroundings as well. And if that was not all, the
-                  steering based dynamic grid-lines smartly pave the way for
-                  you, into the spot.
+                  Driving information and vehicle updates are presented clearly at a glance, keeping you informed without taking your focus away from the road.
                 </div>
               </div>
             </div>
@@ -904,22 +1084,15 @@ const Technology = () => {
           <SwiperSlide className='relative'>
             <div className='w-full'>
               <img
-                src='https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/technology/technology-1080x420-apple-carplay.webp'
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/sgssg.jpg.jpeg'
                 alt='22.86 CM HD Smartplay Pro+'
               />
               <div className='w-full pt-4 text-left '>
                 <div className='pb-2 font-medium'>
-                  22.86 CM HD Smartplay Pro+
+                  360 View Camera
                 </div>
                 <div className='text-sm font-light lg:pr-40 md:text-base'>
-                  Intuitive. Instinctive. Intelligent. That’s the experience
-                  waiting for you inside the New Age Baleno. Now equipped with
-                  the all-new 22.86 Cm Full HD touch Screen Display. It comes
-                  with an intuitive user interface with Advanced Voice Assist to
-                  offer seamless connectivity. And it also boasts of premium
-                  superior acoustic tuning experience “Surround Sense” powered
-                  by ARKAMYS. Moreover, you can enjoy wireless connectivity for
-                  Android Auto*** & Apple CarPlay****
+                  A comprehensive view of your surroundings makes parking, manoeuvring and navigating tighter spaces feel more effortless, helping you drive with greater awareness.
                 </div>
               </div>
             </div>
@@ -927,24 +1100,31 @@ const Technology = () => {
           <SwiperSlide className='relative'>
             <div className='w-full '>
               <img
-                src='https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/baleno/technology/technology-1080x420-suzuki-connect.webp'
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/smartplay_pro_desktop.jpg.jpeg'
                 alt='Next Generation Suzuki Connect'
               />
               <div className='w-full pt-4 text-left '>
                 <div className='pb-2 font-medium'>
-                  Next Generation Suzuki Connect
+                  Smartplay Pro+ Infotainment
                 </div>
                 <div className='text-sm font-light lg:pr-40 md:text-base'>
-                  The New Age Baleno is smarter than ever with the Next
-                  Generation Suzuki Connect - Advanced Telematics Solution,
-                  bringing a host of intelligent features to your fingertips.
-                  Remotely access the headlamps, hazard lights, doors, alarm,
-                  engine immobiliser as well as monitor your car’s battery
-                  health in real-time. It also boasts of a host of safety &
-                  security functions along with insightful trip and driving
-                  behavior report. This is not all, due to its compatibility
-                  with Alexa Skill as well as your smartwatch, the New Age
-                  Baleno offers a connected car experience in its true sense.
+                  The SmartPlay Pro+ infotainment system combines navigation, entertainment and smartphone connectivity through a responsive touchscreen with Advanced Voice Assist, wireless Apple CarPlay®, wireless Android Auto™ and immersive Surround Sense powered by ARKAMYS.
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className='relative'>
+            <div className='w-full '>
+              <img
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/new-baleno-2026/wireless_charging.jpg.jpeg'
+                alt='Next Generation Suzuki Connect'
+              />
+              <div className='w-full pt-4 text-left '>
+                <div className='pb-2 font-medium'>
+                  Wireless Charging Dock With Active Cooling
+                </div>
+                <div className='text-sm font-light lg:pr-40 md:text-base'>
+                  Convenient wireless charging keeps compatible smartphones powered throughout every drive, without adding clutter to the cabin.
                 </div>
               </div>
             </div>
@@ -973,18 +1153,12 @@ const Bi360 = () => {
         </div>
       </div>
       <div className='relative'>
-        <View360
-          path={
-            'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/new_baleno'
-          }
-          count={34}
-          format={'webp'}
-        />
-        <div className='absolute flex-col items-center hidden text-white top-10 left-10 md:flex '>
+        <View360 images={baleno360Images} />
+        <div className='absolute flex-col items-center hidden text-black top-10 left-10 md:flex '>
           <TbView360 className='text-2xl lg:text-5xl animate-pulse' />
           <Tb360View className='text-xl lg:text-4xl' />
         </div>
-        <div className='absolute flex-col items-center hidden w-full text-white top-10 lg:flex '>
+        <div className='absolute flex-col items-center hidden w-full text-black top-10 lg:flex '>
           <div className='w-full pb-2 text-3xl text-center uppercase sm:text-4xl md:text-5xl'>
             360
             <sup>
@@ -997,10 +1171,10 @@ const Bi360 = () => {
             Better
           </div>
         </div>
-        <div className='absolute flex flex-col items-center text-white top-1/2 left-10 lg:left-20 '>
+        <div className='absolute flex flex-col items-center text-black top-1/2 left-10 lg:left-20 '>
           <GiReturnArrow className='text-2xl rotate-180 lg:text-5xl animate-pulse' />
         </div>
-        <div className='absolute flex flex-col items-center text-white top-1/2 right-10 lg:right-20 '>
+        <div className='absolute flex flex-col items-center text-black top-1/2 right-10 lg:right-20 '>
           <GiReturnArrow className='text-2xl lg:text-5xl animate-pulse' />
         </div>
       </div>

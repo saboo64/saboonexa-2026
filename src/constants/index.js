@@ -275,7 +275,7 @@ export const products = [
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/newage_baleno_logo.png',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/cng/baleno-cng-thubnail.webp',
     specImage:
-      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/specification/Baleno+Spec.webp',
+      'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/specification/baleno_.png',
     brouchure:
       'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Brochure/The_New_Age_Baleno_Brochure.pdf',
     explore: '/new-maruti-baleno-price-in-hyderabad',
@@ -391,7 +391,7 @@ export const offer_products = [
   {
     name: 'Jimny',
     price: '50,000',
-   
+
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/jimny/120x30+black.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/jimny.webp',
     explore: '/maruti-jimny-price-in-hyderabad',

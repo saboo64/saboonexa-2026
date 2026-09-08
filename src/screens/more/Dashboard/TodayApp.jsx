@@ -6,7 +6,7 @@ import ExcelData from "./ExcelData";
 // import { AiOutlineDownload } from "react-icons/ai";
 import { BiRefresh } from "react-icons/bi";
 // import * as XLSX from "xlsx";
-import logo from "../../../assets/others/logo.webp";
+import logo from "../../../assets/others/logo_color.png";
 import ModalView from "./ModalView";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";

@@ -284,7 +284,7 @@ function TestDrive({ open, setOpen, title }) {
                             <option value="" disabled>
                               Select Showroom
                             </option>
-                            <option value="Nexa Jubilee">Nexa Jubilee</option>
+                            {/* <option value="Nexa Jubilee">Nexa Jubilee</option> */}
                             <option value="Nexa Lumbini">Nexa Lumbini</option>
                             <option value="Hafeezpet">Hafeezpet</option>
                           </Field>

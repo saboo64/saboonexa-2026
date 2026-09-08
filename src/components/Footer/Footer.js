@@ -282,22 +282,25 @@ function Footer() {
               </Link>
             </div>
             <p className="text-sm">
-              © {new Date().getFullYear()} All Rights Reserved by RKS Motor Pvt
-              Ltd.
+              © {new Date().getFullYear()} All Rights Reserved by Popular RKS 
+              .
             </p>
           </div>
-          <p className="text-sm">
+          <p className="flex items-center text-sm">
             Powered by{" "}
             <a
-              className="hover:text-red-500"
+              className="inline-flex items-center ml-1 hover:opacity-80"
               href="https://broaddcast.com"
               target="_blank"
               rel="noreferrer"
               aria-label="broaddcast"
             >
-              BroaddCast Business Solutions LLP
+              <img
+                src={require("../../assets/logo-white.svg").default}
+                alt="BroaddCast Business Solutions LLP"
+                className="h-10"
+              />
             </a>
-            .
           </p>
         </div>
       </div>
