@@ -79,7 +79,7 @@ function Baleno() {
               data-aos-duration='500'
               className='text-2xl lg:text-4xl'
             >
-              THE STUNNING NEW 
+              THE STUNNING NEW
             </div>
             <div
               data-aos='fade-right'
@@ -396,8 +396,8 @@ function Baleno() {
             <div className=''>
               <button
                 className={`px-4 py-1  border tracking-widest rounded-lg duration-500  ${!exterior
-                    ? 'border-white bg-white text-black '
-                    : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
+                  ? 'border-white bg-white text-black '
+                  : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
                   }`}
                 onClick={() => setExterior(false)}
                 aria-label='Exterior'
@@ -408,8 +408,8 @@ function Baleno() {
             <div className=''>
               <button
                 className={`px-4 py-1  border tracking-widest rounded-lg duration-500 ${exterior
-                    ? 'border-white bg-white text-black'
-                    : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
+                  ? 'border-white bg-white text-black'
+                  : 'border-gray-800 text-gray-500 hover:text-white hover:border-white'
                   } `}
                 onClick={() => setExterior(true)}
                 aria-label='Interior'
@@ -447,7 +447,7 @@ function Baleno() {
 }
 
 const Variant = () => {
-  const [price, setPrice] = useState('5,98,900');
+  const [price, setPrice] = useState('6,10,000');
   return (
     <div className=" bg-opacity-25  bg-[url('https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_bg_image/5.webp')] bg-fixed  bg-black">
       <div className='container py-20 mx-auto bg-black bg-opacity-10 '>
@@ -463,13 +463,18 @@ const Variant = () => {
               className='block w-full max-w-[375px] py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none sm:text-sm'
               aria-labelledby='model'
             >
-              <option value='5,98,900'>Sigma MT </option>
-              <option value='6,79,900'>Delta MT</option>
-              <option value='7,69,900'>Zeta MT</option>
-              <option value='8,59,900'>Alpha MT </option>
-              <option value='7,69,900'>Alpha (O) MT</option>
-              <option value='8,59,900'>Delta CNG </option>
-              <option value='7,29,900'>Zeta CNG MT </option>
+              <option value='6,09,900'>Sigma MT </option>
+              <option value='6,99,900'>Delta MT</option>
+              <option value='7,49,900'>Zeta MT</option>
+              <option value='7,92,400'>Delta CNG </option>
+              <option value='7,49,900'>Delta AGS </option>
+              <option value='8,92,400'>Zeta CNG MT </option>
+              <option value='8,49,900'>Zeta AGS</option>
+              <option value='9,09,900'>Alpha MT </option>
+              <option value='9,49,900'>Alpha (O) MT</option>
+              <option value='9,99,900'>Alpha (O) AGS</option>
+              <option value='9,59,900'>Alpha AGS</option>
+
             </select>
           </div>
           <div className='text-center text-gray-200'>
@@ -912,7 +917,7 @@ const BalenoSafety = () => {
       title: 'Electronic Stability Program with Hill Hold Assist',
       body: 'Greater stability when you need it and added control when you’re starting on an incline, for confidence across changing road conditions.',
     },
- 
+
   ];
   return (
     <div className='bg-black '>

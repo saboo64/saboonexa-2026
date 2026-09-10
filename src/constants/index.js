@@ -271,7 +271,7 @@ export const products = [
   {
     id: 6,
     name: 'Baleno',
-    price: '5,98,900*',
+    price: '6,10,000*',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/newage_baleno_logo.png',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/cng/baleno-cng-thubnail.webp',
     specImage:
