@@ -31,9 +31,9 @@ function Showrooms({ title }) {
   return (
     <>
       <Seo
-        title="Discover Luxury and Innovation at Popular RKS Nexa Outlets | Find Your Dream Car Today"
-        description="Explore the latest collection of premium Nexa cars at Popular RKS Nexa Outlets. From sleek sedans to stylish SUVs, find your perfect ride with us."
-        keywords="Nexa cars, luxury cars, premium cars, car showroom, car dealership, Popular RKS Nexa, dream car, car collection, stylish cars, innovative cars"
+        title="Maruti Nexa Showrooms in Hyderabad | Popular Nexa"
+        description="Find Maruti Suzuki Nexa showrooms in Hyderabad, including Jubilee Hills & Secretariat Road. Get address, contact number & directions at Popular Nexa."
+        keywords="Maruti Nexa showroom Hyderabad, Nexa showroom near me, Nexa Jubilee Hills, Nexa Secretariat Road, Nexa Tadbund, Saboo RKS Nexa address"
         url="https://saboonexa.in/maruti-nexa-showroom-outlets-in-hyderabad"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
       />

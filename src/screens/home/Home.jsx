@@ -36,6 +36,7 @@ import { HomePageEnq } from './HomePageEnq';
 import Header from '../../components/Header/Header';
 import { blogData } from '../../components/Home/BlogPage';
 import Seo from '../../components/SEO/seo';
+import { getHomepageSeo } from '../../constants/seo';
 // import Header from "../../components/Header/Header copy";
 
 function Home({ setSelected }) {
@@ -47,9 +48,7 @@ function Home({ setSelected }) {
   return (
     <div className='relative'>
       <Seo
-        title="{{SEASON}} {{YEAR}} Offers on Maruti Suzuki Nexa Cars in Hyderabad | Popular RKS Nexa"
-        description="Get exclusive {{SEASON}} {{YEAR}} offers on Maruti Suzuki Nexa cars in Hyderabad at Popular RKS Nexa. Explore Baleno, Fronx, Grand Vitara, Jimny, XL6, Invicto, and e-Vitara with attractive discounts, exchange bonus, low EMI plans, and instant delivery benefits."
-        keywords="{{SEASON}} offers Nexa Hyderabad {{YEAR}}, Maruti Suzuki Nexa cars Hyderabad, Baleno offers Hyderabad, Fronx offers Hyderabad, Grand Vitara offers Hyderabad, Jimny offers Hyderabad, XL6 offers Hyderabad, Nexa showroom Hyderabad, Nexa dealer Hyderabad, Nexa EMI offers, Nexa exchange bonus, Maruti Nexa Hyderabad"
+        {...getHomepageSeo()}
         url="https://saboonexa.in/"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg"
       />
@@ -338,6 +337,57 @@ const VehicleProducts = () => {
   );
 };
 
+const MobileOfferCarousel = ({ children }) => (
+  <div className='container px-2 mx-auto mb-2 overflow-hidden md:hidden lg:mx-0 rounded-xl lg:rounded-3xl'>
+    <Swiper
+      slidesPerView={1}
+      spaceBetween={1}
+      navigation={false}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      breakpoints={{
+        '@0.00': {
+          slidesPerView: 1,
+          spaceBetween: 5,
+        },
+        '@0.75': {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        '@1.00': {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        '@1.50': {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+      }}
+      modules={[Autoplay, Navigation, Pagination]}
+      className='mySwiper'
+    >
+      {children}
+    </Swiper>
+  </div>
+);
+
+const HoverImageLink = ({ to, src, alt }) => (
+  <div data-aos='zoom-in' data-aos-delay='0' data-aos-duration='500'>
+    <Link to={to}>
+      <img
+        src={src}
+        alt={alt}
+        className={`w-full max-w-full overflow-hidden duration-500 hover:shadow-lg rounded-xl hover:scale-95 shadow-gray-500 grayscale hover:grayscale-0 hover:saturate-200 `}
+      />
+    </Link>
+  </div>
+);
+
 const SerFinInsur = () => {
   // const [num, setNum] = useState(1);
 
@@ -486,61 +536,20 @@ const SerFinInsur = () => {
         </div>
 
         <div className='hidden grid-cols-2 gap-2 md:grid '>
-          <div data-aos='zoom-in' data-aos-delay='0' data-aos-duration='500'>
-            <Link to='/maruti-car-insurance'>
-              <img
-                src={require('../../assets/HomePageImages/Saboo_Nexa_Insurance_Hyderabad.webp')}
-                // src="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/home-page-banners/Insurance+Desktop.webp"
-                alt='Saboo_Nexa_Insurance_Hyderabad'
-                className={`w-full max-w-full overflow-hidden duration-500 hover:shadow-lg rounded-xl hover:scale-95 shadow-gray-500 grayscale hover:grayscale-0 hover:saturate-200 `}
-              />
-            </Link>
-          </div>
-          <div data-aos='zoom-in' data-aos-delay='0' data-aos-duration='500'>
-            <Link to='/maruti-car-finance'>
-              <img
-                src={require('../../assets/HomePageImages/Saboo_Nexa_Finance_Hyderabad.webp')}
-                alt='Saboo_Nexa_Finance_Hyderabad'
-                className={`w-full max-w-full overflow-hidden duration-500 hover:shadow-lg rounded-xl hover:scale-95 shadow-gray-500 grayscale hover:grayscale-0 hover:saturate-200 `}
-              />
-            </Link>
-          </div>
+          <HoverImageLink
+            to='/maruti-car-insurance'
+            src={require('../../assets/HomePageImages/Saboo_Nexa_Insurance_Hyderabad.webp')}
+            alt='Saboo_Nexa_Insurance_Hyderabad'
+          />
+          <HoverImageLink
+            to='/maruti-car-finance'
+            src={require('../../assets/HomePageImages/Saboo_Nexa_Finance_Hyderabad.webp')}
+            alt='Saboo_Nexa_Finance_Hyderabad'
+          />
         </div>
       </div>
-      <div className='container px-2 mx-auto mb-2 overflow-hidden md:hidden lg:mx-0 rounded-xl lg:rounded-3xl'>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={1}
-          navigation={false}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            '@0.00': {
-              slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            '@0.75': {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-            '@1.00': {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            '@1.50': {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-          }}
-          modules={[Autoplay, Navigation, Pagination]}
-          className='mySwiper'
-        >
-          {/* <SwiperSlide>
+      <MobileOfferCarousel>
+        {/* <SwiperSlide>
             <figure className="relative cursor-pointer">
               <Link to="/book-online-maruti-nexa-car-service">
                 <img
@@ -555,84 +564,51 @@ const SerFinInsur = () => {
                 </div>
                 {/* <div className='text-xs'>
                 <p>Rules with revolutionary technology</p>
-              </div> 
+              </div>
               </figcaption>
             </figure>
           </SwiperSlide> */}
-          <SwiperSlide>
-            <figure className='relative cursor-pointer'>
-              <Link to='/book-online-maruti-nexa-car-service'>
-                <img
-                  src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_Service_At_Kompally_Suchitra_Beat_the_Heat_with_Saboo_RKS_Motor_service_Summer_Serviceat.webp')}
-                  alt='Service'
-                  className='rounded-xl'
-                />
-              </Link>
-              <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
-                {/* <div className='text-xl'>
+        <SwiperSlide>
+          <figure className='relative cursor-pointer'>
+            <Link to='/book-online-maruti-nexa-car-service'>
+              <img
+                src={require('../../assets/others/WM_Maruti_Suzuki_Nexa_Service_At_Kompally_Suchitra_Beat_the_Heat_with_Saboo_RKS_Motor_service_Summer_Serviceat.webp')}
+                alt='Service'
+                className='rounded-xl'
+              />
+            </Link>
+            <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
+              {/* <div className='text-xl'>
                   <p>INSURANCE</p>
                 </div> */}
-                {/* <div className='text-xs'>
+              {/* <div className='text-xs'>
                 <p>Rules with a firm grip</p>
               </div> */}
-              </figcaption>
-            </figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <figure className='relative cursor-pointer'>
-              <Link to='/book-online-maruti-nexa-car-service'>
-                <img
-                  src={require('../../assets/HomePageImages/Saboo_Nexa_Service_Center_In_Hyderabad_Mobile.webp')}
-                  alt='service'
-                  className='rounded-xl'
-                />
-              </Link>
-              <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
-                {/* <div className='text-xl md-20'>
+            </figcaption>
+          </figure>
+        </SwiperSlide>
+        <SwiperSlide>
+          <figure className='relative cursor-pointer'>
+            <Link to='/book-online-maruti-nexa-car-service'>
+              <img
+                src={require('../../assets/HomePageImages/Saboo_Nexa_Service_Center_In_Hyderabad_Mobile.webp')}
+                alt='service'
+                className='rounded-xl'
+              />
+            </Link>
+            <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
+              {/* <div className='text-xl md-20'>
                   <p>FINANCE</p>
                 </div> */}
-                {/* <div className='text-xs'>
+              {/* <div className='text-xs'>
                 <p>Rules with utmost comfort</p>
               </div> */}
-              </figcaption>
-            </figure>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-      <div className='container px-2 mx-auto mb-2 overflow-hidden md:hidden lg:mx-0 rounded-xl lg:rounded-3xl'>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={1}
-          navigation={false}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            '@0.00': {
-              slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            '@0.75': {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-            '@1.00': {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            '@1.50': {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-          }}
-          modules={[Autoplay, Navigation, Pagination]}
-          className='mySwiper'
-        >
-          {/* <SwiperSlide>
+            </figcaption>
+          </figure>
+        </SwiperSlide>
+      </MobileOfferCarousel>
+      <MobileOfferCarousel>
+        {/* <SwiperSlide>
             <figure className="relative cursor-pointer">
               <Link to="/book-online-maruti-nexa-car-service">
                 <img
@@ -647,69 +623,68 @@ const SerFinInsur = () => {
                 </div>
                 {/* <div className='text-xs'>
                 <p>Rules with revolutionary technology</p>
-              </div> 
+              </div>
               </figcaption>
             </figure>
           </SwiperSlide> */}
-          <SwiperSlide>
-            <figure className='relative cursor-pointer'>
-              <Link to='/maruti-car-insurance'>
-                <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/homepage-mobile-carousel/Insurance+Mobile+800x800.webp'
-                  alt='Insurance'
-                  className='rounded-xl'
-                />
-              </Link>
-              <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
-                <div className='text-xl'>
-                  <p>INSURANCE</p>
-                </div>
-                {/* <div className='text-xs'>
+        <SwiperSlide>
+          <figure className='relative cursor-pointer'>
+            <Link to='/maruti-car-insurance'>
+              <img
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/homepage-mobile-carousel/Insurance+Mobile+800x800.webp'
+                alt='Insurance'
+                className='rounded-xl'
+              />
+            </Link>
+            <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
+              <div className='text-xl'>
+                <p>INSURANCE</p>
+              </div>
+              {/* <div className='text-xs'>
                 <p>Rules with a firm grip</p>
               </div> */}
-              </figcaption>
-            </figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <figure className='relative cursor-pointer'>
-              <Link to='/maruti-car-finance'>
-                <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/homepage-mobile-carousel/Finance+Mobile+800x800.webp'
-                  alt='Finance'
-                  className='rounded-xl'
-                />
-              </Link>
-              <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
-                <div className='text-xl md-20'>
-                  <p>FINANCE</p>
-                </div>
-                {/* <div className='text-xs'>
+            </figcaption>
+          </figure>
+        </SwiperSlide>
+        <SwiperSlide>
+          <figure className='relative cursor-pointer'>
+            <Link to='/maruti-car-finance'>
+              <img
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/homepage-mobile-carousel/Finance+Mobile+800x800.webp'
+                alt='Finance'
+                className='rounded-xl'
+              />
+            </Link>
+            <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
+              <div className='text-xl md-20'>
+                <p>FINANCE</p>
+              </div>
+              {/* <div className='text-xs'>
                 <p>Rules with utmost comfort</p>
               </div> */}
-              </figcaption>
-            </figure>
-          </SwiperSlide>
-          <SwiperSlide>
-            <figure className='relative cursor-pointer'>
-              <Link to='/accessories'>
-                <img
-                  src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/homepage-mobile-carousel/Accessories+Mobile+800x800.webp'
-                  alt='Accessories'
-                  className='rounded-xl'
-                />
-              </Link>
-              <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
-                <div className='text-xl'>
-                  <p>ACCESSORIES</p>
-                </div>
-                {/* <div className='text-xs'>
+            </figcaption>
+          </figure>
+        </SwiperSlide>
+        <SwiperSlide>
+          <figure className='relative cursor-pointer'>
+            <Link to='/accessories'>
+              <img
+                src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/banners/homepage-mobile-carousel/Accessories+Mobile+800x800.webp'
+                alt='Accessories'
+                className='rounded-xl'
+              />
+            </Link>
+            <figcaption className='absolute px-4 -mt-16 text-lg text-white'>
+              <div className='text-xl'>
+                <p>ACCESSORIES</p>
+              </div>
+              {/* <div className='text-xs'>
                 <p>Rules with a Powerful Persona</p>
               </div> */}
-              </figcaption>
-            </figure>
-          </SwiperSlide>
-        </Swiper>
-      </div>
+            </figcaption>
+          </figure>
+        </SwiperSlide>
+      </MobileOfferCarousel>
       <div className='container flex flex-col gap-2 mx-auto sm:flex-row'>
         <section
           data-aos='zoom-in'
@@ -826,7 +801,76 @@ const News = ({ setSelected }) => {
   );
 };
 
+const TestimonialCard = ({
+  name,
+  quote,
+  wrapperClassName,
+  starsClassName,
+  quoteClassName,
+  bottomQuoteClassName,
+}) => (
+  <div
+    data-aos='zoom-in'
+    data-aos-delay='0'
+    data-aos-duration='500'
+    className={wrapperClassName}
+  >
+    <Link to='/testimonials'>
+      <div className='flex flex-col justify-center h-full py-8'>
+        <div className='ml-10 text-4xl text-gray-500 animate-pulse'>
+          <BsQuote />
+        </div>
+        <p className='text-lg text-center text-gray-100 uppercase'>{name}</p>
+        <div className={starsClassName}>
+          <RiStarFill />
+          <RiStarFill />
+          <RiStarFill />
+          <RiStarFill />
+          <RiStarFill />
+        </div>
+        <p className={quoteClassName}>{quote}</p>
+        <div className={bottomQuoteClassName}>
+          <BsQuote />
+        </div>
+      </div>
+    </Link>
+  </div>
+);
+
 const Testimonials = () => {
+  const testimonials = [
+    {
+      name: 'ROHIN KUMAR',
+      quote:
+        "Great experience buying my new XL6. It all started with the praveen one of the RM making a call about my interest followed by Mr. Abishek's cordial and informative interactions that made me go with RKs",
+      wrapperClassName: ' rounded-3xl  bg-[#000000f4] ',
+      starsClassName: 'flex items-center justify-center text-red-600',
+      quoteClassName: 'px-5 mt-6 text-center text-gray-200',
+      bottomQuoteClassName:
+        'mr-10 text-4xl text-gray-500 rotate-180 animate-pulse',
+    },
+    {
+      name: 'JYOTHSNA INKOLLU',
+      quote:
+        'This is the best service center i have seen still now. Best service and best staff.',
+      wrapperClassName: ' rounded-3xl bg-[#000000f4] ',
+      starsClassName: 'flex items-center justify-center text-red-600',
+      quoteClassName: 'px-5 mt-6 text-center text-gray-100',
+      bottomQuoteClassName:
+        'mr-10 text-4xl text-gray-500 rotate-180 animate-pulse lg:mt-4 ',
+    },
+    {
+      name: 'JHANSI PRIYA',
+      quote:
+        'It was a fabulous experience with you. Thanks a lot for the support provided by you, on time delivery, info about vehicle & Discounts. Good to have an executive like you. All the best, for your future endeavour.',
+      wrapperClassName: ' rounded-3xl bg-[#000000f4] ',
+      starsClassName: 'flex items-center justify-center text-red-600 ',
+      quoteClassName: 'px-5 mt-6 text-center text-gray-100',
+      bottomQuoteClassName:
+        'mr-10 text-4xl text-gray-500 rotate-180 animate-pulse',
+    },
+  ];
+
   return (
     <div className='container px-2 pt-10 pb-16 mx-auto space-y-4 xl:max-w-7xl '>
       <div className=''>
@@ -849,119 +893,38 @@ const Testimonials = () => {
       </div>
 
       <div className='grid grid-cols-1 gap-4 mt-3 md:grid-cols-3 lg:gap-10 '>
-        <div
-          data-aos='zoom-in'
-          data-aos-delay='0'
-          data-aos-duration='500'
-          className=' rounded-3xl  bg-[#000000f4] '
-        >
-          <Link to='/testimonials'>
-            {/* <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/Saboo-Nexa-Profile-Icon.webp'
-            alt='profile icon'
-            className='mx-auto'
-          /> */}
-            <div className='flex flex-col justify-center h-full py-8'>
-              <div className='ml-10 text-4xl text-gray-500 animate-pulse'>
-                <BsQuote />
-              </div>
-              <p className='text-lg text-center text-gray-100 uppercase'>
-                ROHIN KUMAR
-              </p>
-              <div className='flex items-center justify-center text-red-600'>
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-              </div>
-              <p className='px-5 mt-6 text-center text-gray-200'>
-                Great experience buying my new XL6. It all started with the
-                praveen one of the RM making a call about my interest followed
-                by Mr. Abishek's cordial and informative interactions that made
-                me go with RKs
-              </p>
-              <div className='mr-10 text-4xl text-gray-500 rotate-180 animate-pulse'>
-                <BsQuote />
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div
-          data-aos='zoom-in'
-          data-aos-delay='0'
-          data-aos-duration='500'
-          className=' rounded-3xl bg-[#000000f4] '
-        >
-          <Link to='/testimonials'>
-            {/* <img
-            src='https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/icons/Saboo-Nexa-Profile-Icon.webp'
-            alt='profile icon'
-            className='mx-auto'
-          /> */}
-            <div className='flex flex-col justify-center h-full py-8'>
-              <div className='ml-10 text-4xl text-gray-500 animate-pulse'>
-                <BsQuote />
-              </div>
-              <p className='text-lg text-center text-gray-100 uppercase'>
-                JYOTHSNA INKOLLU
-              </p>
-              <div className='flex items-center justify-center text-red-600'>
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-                {/* <RiStarHalfFill /> */}
-              </div>
-              <div className='px-5 mt-6 text-center text-gray-100'>
-                This is the best service center i have seen still now. Best
-                service and best staff.
-              </div>
-              <div className='mr-10 text-4xl text-gray-500 rotate-180 animate-pulse lg:mt-4 '>
-                <BsQuote />
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        <div
-          data-aos='zoom-in'
-          data-aos-delay='0'
-          data-aos-duration='500'
-          className=' rounded-3xl bg-[#000000f4] '
-        >
-          <Link to='/testimonials'>
-            <div className='flex flex-col justify-center h-full py-8'>
-              <div className='ml-10 text-4xl text-gray-500 animate-pulse'>
-                <BsQuote />
-              </div>
-              <p className='text-lg text-center text-gray-100 uppercase'>
-                JHANSI PRIYA
-              </p>
-              <div className='flex items-center justify-center text-red-600 '>
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-                <RiStarFill />
-              </div>
-              <p className='px-5 mt-6 text-center text-gray-100'>
-                It was a fabulous experience with you. Thanks a lot for the
-                support provided by you, on time delivery, info about vehicle &
-                Discounts. Good to have an executive like you. All the best, for
-                your future endeavour.
-              </p>
-              <div className='mr-10 text-4xl text-gray-500 rotate-180 animate-pulse'>
-                <BsQuote />
-              </div>
-            </div>
-          </Link>
-        </div>
+        {testimonials.map((t) => (
+          <TestimonialCard key={t.name} {...t} />
+        ))}
       </div>
     </div>
   );
 };
+
+const OutletCard = ({ name, mapsUrl, ariaLabel, image, note }) => (
+  <div
+    data-aos='zoom-in'
+    data-aos-delay='0'
+    data-aos-duration='500'
+    className=' w-full  px-4 text-left py-6 hover:text-white shadow-xl shadow-[#b0b0b0] group duration-500 border-t rounded-3xl relative overflow-hidden'
+  >
+    <div className='bg-black h-32 w-36 duration-500 group-hover:h-[200%] group-hover:w-[200%] group-hover:-top-56 group-hover:-right-56 rounded-full absolute -top-20 -right-20 -z-10'></div>
+    <div className='mb-4 text-xl font-medium uppercase sm:text-2xl lg:text-3xl xl:text-4xl'>
+      {name}
+    </div>
+    {note && <div className='mb-2'>{note}</div>}
+    <a href={mapsUrl} target='_blank' rel='noreferrer' aria-label={ariaLabel}>
+      <div
+        className='flex justify-center duration-500 bg-center h-52 lg:h-60 group-hover:saturate-200 rounded-3xl grayscale group-hover:grayscale-0'
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      ></div>
+    </a>
+  </div>
+);
 
 export const Outlets = () => {
   return (
@@ -977,92 +940,25 @@ export const Outlets = () => {
       </div>
 
       <div className='container grid grid-cols-1 gap-4 mx-auto sm:grid-cols-3 lg:gap-10 '>
-        <div
-          data-aos='zoom-in'
-          data-aos-delay='0'
-          data-aos-duration='500'
-          className=' w-full  px-4 text-left py-6 hover:text-white shadow-xl shadow-[#b0b0b0] group duration-500 border-t rounded-3xl relative overflow-hidden'
-        >
-          <div className='bg-black h-32 w-36 duration-500 group-hover:h-[200%] group-hover:w-[200%] group-hover:-top-56 group-hover:-right-56 rounded-full absolute -top-20 -right-20 -z-10'></div>
-          <div className='mb-4 text-xl font-medium uppercase sm:text-2xl lg:text-3xl xl:text-4xl'>
-            Nexa Lumbini
-          </div>
-          {/* <div className="mb-2">Adarsh Nagar, Hyderabad - 500063</div> */}
-          <a
-            href='https://www.google.com/maps/place/NEXA/@17.407435,78.472675,14z/data=!4m5!3m4!1s0x0:0x167869bcabc7428b!8m2!3d17.407435!4d78.4726753?hl=en'
-            target='_blank'
-            rel='noreferrer'
-            aria-label='Nexa Lumbini Showroom'
-          >
-            <div
-              className='flex justify-center duration-500 bg-center h-52 lg:h-60 group-hover:saturate-200 rounded-3xl grayscale group-hover:grayscale-0'
-              style={{
-                backgroundImage: `url(${require('../../assets/HomePageImages/SABOO_NEXA_LUMBINI_SHOWROOM_HYDERABAD.webp.webp')})`,
-                // backgroundImage:
-                //   'url("https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/lumbini_outlet.webp")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
-            ></div>
-          </a>
-        </div>
-        {/* <div
-          data-aos='zoom-in'
-          data-aos-delay='0'
-          data-aos-duration='500'
-          className=' w-full  px-4 text-left py-6 hover:text-white shadow-xl shadow-[#b0b0b0] group duration-500 border-t rounded-3xl relative overflow-hidden'
-        >
-          <div className='bg-black h-32 w-36 duration-500 group-hover:h-[200%] group-hover:w-[200%] group-hover:-top-56 group-hover:-right-56 rounded-full absolute -top-20 -right-20 -z-10'></div>
-          <div className='mb-4 text-xl font-medium uppercase sm:text-2xl lg:text-3xl xl:text-4xl'>
-            Nexa Jubilee
-          </div>
-        
-          <a
-            href='https://www.google.com/maps/place/NEXA/@17.439431,78.398485,14z/data=!4m5!3m4!1s0x0:0x1cb759ff5f828d3!8m2!3d17.4394309!4d78.398485?hl=en'
-            target='_blank'
-            rel='noreferrer'
-            aria-label='Nexa Jubilee Showroom'
-          >
-            <div
-              className='flex justify-center duration-500 bg-center h-52 lg:h-60 group-hover:saturate-200 rounded-3xl grayscale group-hover:grayscale-0'
-              style={{
-                backgroundImage: `url(${require('../../assets/HomePageImages/SABOO_NEXA_JUBILEE_HILLS_SHOWROOM_HYDERABAD.webp')})`,
-      
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
-            ></div>
-          </a>
-        </div> */}
-        <div
-          data-aos='zoom-in'
-          data-aos-delay='0'
-          data-aos-duration='500'
-          className=' w-full  px-4 text-left py-6 hover:text-white shadow-xl shadow-[#b0b0b0] group duration-500 border-t rounded-3xl relative overflow-hidden'
-        >
-          <div className='bg-black h-32 w-36 duration-500 group-hover:h-[200%] group-hover:w-[200%] group-hover:-top-56 group-hover:-right-56 rounded-full absolute -top-20 -right-20 -z-10'></div>
-          <div className='mb-4 text-xl font-medium uppercase sm:text-2xl lg:text-3xl xl:text-4xl'>
-            Nexa Hafeezpet
-          </div>
-          {/* <div className="mb-2">Hafeezpet, Hyderabad - 500049</div> */}
-          <a
-            href='https://goo.gl/maps/rgoP8TXGQ9b3WvYu8'
-            target='_blank'
-            rel='noreferrer'
-            aria-label='Nexa Hafeezpet Showroom'
-          >
-            <div
-              className='flex justify-center duration-500 bg-center h-52 lg:h-60 group-hover:saturate-200 rounded-3xl grayscale group-hover:grayscale-0'
-              style={{
-                backgroundImage: `url(${require('../../assets/HomePageImages/SABOO_NEXA_HAFEEZPET_SHOWROOM_HYDERABAD.webp')})`,
-                // backgroundImage:
-                //   'url("https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/hafeezpet-outlet.webp")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
-            ></div>
-          </a>
-        </div>
+        <OutletCard
+          name='Nexa Lumbini'
+          mapsUrl='https://www.google.com/maps/place/NEXA/@17.407435,78.472675,14z/data=!4m5!3m4!1s0x0:0x167869bcabc7428b!8m2!3d17.407435!4d78.4726753?hl=en'
+          ariaLabel='Nexa Lumbini Showroom'
+          image={require('../../assets/HomePageImages/SABOO_NEXA_LUMBINI_SHOWROOM_HYDERABAD.webp.webp')}
+        />
+        {/* Nexa Jubilee outlet — hidden (closed)
+        <OutletCard
+          name='Nexa Jubilee'
+          mapsUrl='https://www.google.com/maps/place/NEXA/@17.439431,78.398485,14z/data=!4m5!3m4!1s0x0:0x1cb759ff5f828d3!8m2!3d17.4394309!4d78.398485?hl=en'
+          ariaLabel='Nexa Jubilee Showroom'
+          image={require('../../assets/HomePageImages/SABOO_NEXA_JUBILEE_HILLS_SHOWROOM_HYDERABAD.webp')}
+        /> */}
+        <OutletCard
+          name='Nexa Hafeezpet'
+          mapsUrl='https://goo.gl/maps/rgoP8TXGQ9b3WvYu8'
+          ariaLabel='Nexa Hafeezpet Showroom'
+          image={require('../../assets/HomePageImages/SABOO_NEXA_HAFEEZPET_SHOWROOM_HYDERABAD.webp')}
+        />
       </div>
     </div>
   );

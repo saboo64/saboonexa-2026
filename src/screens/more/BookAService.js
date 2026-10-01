@@ -34,9 +34,9 @@ function BookAService() {
     <>
       <Header />
       <Seo
-        title="Book Nexa Car Service in Hyderabad | {{SEASON}} {{YEAR}} Service Offers – Popular RKS Nexa"
-        description="Book Nexa car service online in Hyderabad at Popular RKS Nexa. Enjoy {{SEASON}} {{YEAR}} service offers, expert technicians, genuine Maruti parts, free pickup & drop, periodic maintenance, wheel alignment, AC service, and attractive discounts."
-        keywords="Nexa service center Hyderabad, Nexa car service Hyderabad, Book Nexa service online, {{SEASON}} service offers {{YEAR}}, Baleno service Hyderabad, Fronx service Hyderabad, Grand Vitara service Hyderabad, Jimny service Hyderabad, XL6 service Hyderabad, Maruti Nexa workshop Hyderabad, Nexa maintenance Hyderabad, Nexa genuine parts"
+        title="Maruti Nexa Service Center in Hyderabad | Popular Nexa"
+        description="Book your Maruti Suzuki Nexa car service in Hyderabad at Popular Nexa. Genuine parts, trained technicians and a premium service experience."
+        keywords="Nexa service center Hyderabad, Maruti Nexa car service, Nexa workshop near me, Maruti genuine parts, Popular Nexa service"
         url="https://saboonexa.in/book-online-maruti-nexa-car-service"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Book-service.jpg"
       />

@@ -53,9 +53,9 @@ function Finance() {
   return (
     <>
       <Seo
-        title="Maruti Suzuki Car Finance with Low Interest | Popular RKS Nexa"
-        description="Maruti Finance provides the best finance deals on New & Pre-Owned Car Loans. Get Quick Car Loan, Special offers, Quick Approval, Low-Interest Rates & Low EMI."
-        keywords="Maruti Suzuki Nexa Car Finance"
+        title="Maruti Nexa Car Loan & Finance in Hyderabad | Popular Nexa"
+        description="Get a Maruti Suzuki Nexa car loan in Hyderabad with low interest rates, quick approval and flexible EMI options. Apply at Popular Nexa today."
+        keywords="Nexa car loan Hyderabad, Maruti Nexa finance, Nexa EMI, Maruti car loan interest rate, low EMI Nexa"
         url="https://saboonexa.in/maruti-car-finance"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/Finance.jpg"
       />

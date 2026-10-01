@@ -18,6 +18,7 @@ import { products } from '../../constants';
 
 import { CarEnq2 } from '../../components/Invicto/CarEnq2';
 import Seo from '../../components/SEO/seo';
+import { getVideoSource } from '../../utils/video';
 
 const Invicto = () => {
   useEffect(() => {
@@ -26,11 +27,10 @@ const Invicto = () => {
   }, []);
 
   const [exterior, setExterior] = useState(false);
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-  const videoSource = isSafari
-    ? 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/Invicto_safari.mov'
-    : 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/videos/WEBSITE+mp4.webm';
+  const { src: videoSource, type: videoType } = getVideoSource(
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/videos/WEBSITE+mp4.webm',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/Invicto_safari.mov'
+  );
 
   return (
     <div className=''>
@@ -63,10 +63,7 @@ const Invicto = () => {
             playsInline
             muted
           >
-            <source
-              src={videoSource}
-              type={isSafari ? 'video/quicktime' : 'video/mp4'}
-            />
+            <source src={videoSource} type={videoType} />
           </video>
           <div className='absolute bottom-40 lg:bottom-24 left-[3%] lg:left-[5%] text-white '>
             <div

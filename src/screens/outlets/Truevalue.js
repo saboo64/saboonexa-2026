@@ -12,9 +12,9 @@ function Truevalue() {
     <>
       <Header />
       <Seo
-        title="Find Quality Pre-Owned Cars at Saboo Nexa True Value | Drive with Confidence"
-        description="Looking for a reliable pre-owned car? Explore the extensive range of certified pre-owned vehicles at Saboo Nexa True Value. Drive with confidence knowing you're getting top-quality cars."
-        keywords="Pre-owned cars, used cars, certified pre-owned cars, True Value, car dealership, reliable cars, quality cars, Saboo Nexa True Value, pre-owned car showroom, second-hand cars"
+        title="Maruti True Value Used Cars in Hyderabad | Popular Nexa"
+        description="Buy certified pre-owned cars at Maruti Suzuki True Value, Hyderabad. Quality-checked used cars, easy finance & best exchange value at Popular Nexa."
+        keywords="Maruti True Value Hyderabad, used cars Hyderabad, certified pre-owned Maruti, second hand Maruti cars Hyderabad"
         url="https://saboonexa.in/maruti-nexa-truevalue-outlets-in-hyderabad"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/Banner/banners/Saboo-Nexa-Outlet.webp"
       />

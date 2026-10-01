@@ -13,6 +13,7 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Navigation } from 'swiper';
 import Seo from '../../components/SEO/seo';
+import { getOffersSeo } from '../../constants/seo';
 
 function Offers() {
   const months = [
@@ -32,9 +33,7 @@ function Offers() {
   return (
     <>
       <Seo
-        title="{{SEASON}} {{YEAR}} Offers on Maruti Suzuki Cars in Hyderabad | Saboo Nexa"
-        description="Get exclusive {{SEASON}} {{YEAR}} offers on Maruti Suzuki Nexa cars in Hyderabad. Explore Grand Vitara, Fronx, Baleno, XL6, Jimny, and Invicto with attractive discounts, exchange bonus, low EMI plans, free vehicle checkups, and service benefits."
-        keywords="{{SEASON}} offers Maruti Suzuki Hyderabad {{YEAR}}, Nexa offers Hyderabad, Grand Vitara offers, Fronx offers, Baleno offers, XL6 offers, Jimny offers, Invicto offers, Maruti Suzuki discounts Hyderabad, Nexa exchange bonus"
+        {...getOffersSeo()}
         url="https://saboonexa.in/offers"
         image="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/og-tags/index.jpg"
       />

@@ -29,13 +29,12 @@ import { products } from '../../constants';
 import { vechicle } from '../../constants/seo';
 import Seo from '../../components/SEO/seo';
 import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
+import { getVideoSource } from '../../utils/video';
 
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-// Define the video source URL based on the browser
-const videoSource = isSafari
-  ? 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/XL6_safari_01.mov'
-  : 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/xl6/XL6.webm';
+const { src: videoSource, type: videoType } = getVideoSource(
+  'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/xl6/XL6.webm',
+  'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/XL6_safari_01.mov'
+);
 
 function XL() {
   useEffect(() => {
@@ -87,10 +86,7 @@ function XL() {
             poster={require('../../assets/cars/Maruti_Xl6_offers_Price_in_Hyderabad.webp')}
             // poster="https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/saboonexa/XL6/360/2.webp"
           >
-            <source
-              src={videoSource}
-              type={isSafari ? 'video/quicktime' : 'video/mp4'}
-            />
+            <source src={videoSource} type={videoType} />
           </video>
           <div className='absolute bottom-40 lg:bottom-24 left-[3%] lg:left-[5%] text-white '>
             <div

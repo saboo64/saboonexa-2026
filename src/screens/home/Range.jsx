@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { Autoplay, Navigation } from "swiper";
 import { Link } from "react-router-dom";
+import { isSafariBrowser } from "../../utils/video";
 import "./Range.css";
 const Range = () => {
   const navigationPrevRef = useRef(null);
@@ -247,7 +248,7 @@ const Range = () => {
   const handleContextMenu = (e) => {
     e.preventDefault(); // Prevent the context menu from appearing
   };
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  const isSafari = isSafariBrowser();
   return (
     <>
       <div

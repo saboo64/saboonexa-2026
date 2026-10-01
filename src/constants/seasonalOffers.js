@@ -23,4 +23,15 @@ export const getCurrentSeasonalOffer = () => {
   return { month, label, year: now.getFullYear() };
 };
 
+// Festive campaign window for the Homepage/Offers title+keywords overrides:
+// October = Dussehra, November = Diwali, every other month = no override
+// (the page falls back to its plain evergreen title). Update here if the
+// business wants the festive window to cover different months.
+export const getFestiveCampaign = () => {
+  const month = new Date().getMonth(); // 0-indexed
+  if (month === 9) return 'dussehra'; // October
+  if (month === 10) return 'diwali'; // November
+  return null;
+};
+
 export default SEASONAL_OFFERS;

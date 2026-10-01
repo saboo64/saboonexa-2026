@@ -22,6 +22,7 @@ import { CarEnq2 } from '../../components/Invicto/CarEnq2';
 import Seo from '../../components/SEO/seo';
 import { vechicle } from '../../constants/seo';
 import { BreadcrumbSchema, VehicleSchema } from '../../components/SEO/schema';
+import { getVideoSource } from '../../utils/video';
 
 const Jimny = () => {
   useEffect(() => {
@@ -440,12 +441,10 @@ const Variant = () => {
 };
 
 const VariantPlayer = () => {
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-  // Define the video source URL based on the browser
-  const videoSource = isSafari
-    ? 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/Jimny_safari.mov'
-    : 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/jimny/video/jimny_banner.webm';
+  const { src: videoSource, type: videoType } = getVideoSource(
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/jimny/video/jimny_banner.webm',
+    'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/slider_video/Nexa+Website+Safari/header_video/Jimny_safari.mov'
+  );
 
   return (
     <div className='relative top-0 left-0 w-full h-screen bg-black '>
@@ -460,10 +459,7 @@ const VariantPlayer = () => {
         playsInline
         muted
       >
-        <source
-          src={videoSource}
-          type={isSafari ? 'video/quicktime' : 'video/mp4'}
-        />
+        <source src={videoSource} type={videoType} />
       </video>
       <div className='absolute bottom-40 lg:bottom-24 left-[3%] lg:left-[5%] text-white '>
         <div
