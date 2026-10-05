@@ -374,7 +374,7 @@ export const products = [
 export const offer_products = [
   {
     name: 'Grand Vitara',
-    price: '1,90,000',
+    price: '1,95,000',
     desc: '+5 year EW',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/color-icons/GV-logo-204x37+webp.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/grand-vitara/thumbnails/gt-thumbnail-cng.webp',
@@ -390,7 +390,7 @@ export const offer_products = [
   },
   {
     name: 'Jimny',
-    price: '50,000',
+    price: '40,000',
 
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/jimny/120x30+black.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/thumbnails/jimny.webp',
@@ -423,7 +423,7 @@ export const offer_products = [
   },
   {
     name: 'Fronx',
-    price: '25,000',
+    price: '20,000',
     //desc: "Free Velocity Kit (Worth 43K)",
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/Flash_header_Menu_logo.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/fronx-cng-thumbnail.webp',
@@ -431,11 +431,19 @@ export const offer_products = [
   },
   {
     name: 'Invicto ',
-    price: '2,60,000',
+    price: '95,000',
     // desc: '+ 50000 ( LOYALTY UPGRADE BONUS)',
     logo: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/D23+logo+without+outline+Black_125x35.webp',
     img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/invicto-main-thubmnail-no-bg.webp',
     explore: '/maruti-invicto-price-in-hyderabad',
+  },
+  {
+    name: 'Evitara',
+    price: '95,000',
+    desc: 'free charger & Installation worth 50,000 + Exchange bonus 30,000',
+    logo: require('../components/Header/e vitara logo-01 webp.webp'),
+    img: require('../assets/cars/Evitara.png'),
+    explore: '/nexa-evitara-on-road',
   },
 ];
 
