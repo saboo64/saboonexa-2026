@@ -23,14 +23,12 @@
     { "source": "/new-cars/maruti-baleno.html", "destination": "/new-maruti-baleno-price-in-hyderabad", "permanent": true },
     { "source": "/maruti-nexa-car-service-center-near-me", "destination": "/book-online-maruti-nexa-car-service", "permanent": true },
     { "source": "/book-a-test-drive.php", "destination": "/contact-us", "permanent": true },
-    { "source": "/privacy-policy/", "destination": "/terms-and-condition", "permanent": true },
     { "source": "/terms-and-conditions", "destination": "/terms-and-condition", "permanent": true },
     { "source": "/nexa-ignis-on-road-price-in-hyderabad.php", "destination": "/nexa-ignis-on-road-price-in-hyderabad", "permanent": true },
     { "source": "/maruti-nexa-workshop-outlets-in-hyderabad.php", "destination": "/maruti-nexa-showroom-outlets-in-hyderabad", "permanent": true },
     { "source": "/saboo-maruti-faq", "destination": "/", "permanent": true },
     { "source": "/faq", "destination": "/terms-and-condition", "permanent": true },
     { "source": "/about-us", "destination": "/about", "permanent": true },
-    { "source": "/privacy-policy", "destination": "/terms-and-condition", "permanent": true },
     { "source": "/new-cars", "destination": "/", "permanent": true },
     { "source": "/privacy-policy.php", "destination": "/terms-and-condition", "permanent": true },
     { "source": "/new-age-baleno", "destination": "/new-maruti-baleno-price-in-hyderabad", "permanent": true },
@@ -44,7 +42,7 @@
     { "source": "/about-us.php", "destination": "/about", "permanent": true },
     { "source": "/maruti-nexa-showroom-outlets-in-hyderabad.php", "destination": "/maruti-nexa-showroom-outlets-in-hyderabad", "permanent": true },
     { "source": "/nexa-newage-baleno", "destination": "/new-maruti-baleno-price-in-hyderabad", "permanent": true },
-    { "source": "/en/new-cars/maruti-ciaz.html", "destination": "/nexa-ciaz-on-road-price-in-hyderabad", "permanent": true },
+    { "source": "/en/new-cars/maruti-ciaz.html", "destination": "/", "permanent": true },
     { "source": "/maruti-nexa-outlets-in-hyderabad.php", "destination": "/maruti-nexa-showroom-outlets-in-hyderabad", "permanent": true },
     { "source": "/new-xl6.php", "destination": "/nexa-xl6-on-road-price-in-hyderabad", "permanent": true },
     { "source": "/en/new-cars/compare/maruti-ignis.html", "destination": "/compare", "permanent": true },
@@ -55,8 +53,8 @@
     { "source": "/wp-content/uploads/2019/08/Baleno-Accessories-Brochure.pdf", "destination": "/new-maruti-baleno-price-in-hyderabad", "permanent": true },
     { "source": "/about-us/", "destination": "/about", "permanent": true },
     { "source": "/maruti-ignis/", "destination": "/nexa-ignis-on-road-price-in-hyderabad", "permanent": true },
-    { "source": "/offers.php", "destination": "/offers", "permanent": true },
-    { "source": "/twitter-took-the-new-ciaz-out-of-the-wraps", "destination": "/nexa-ciaz-on-road-price-in-hyderabad", "permanent": true },
+    { "source": "/offers.php", "destination": "/nexa-car-offers-in-hyderabad", "permanent": true },
+    { "source": "/twitter-took-the-new-ciaz-out-of-the-wraps", "destination": "/", "permanent": true },
     { "source": "/new-maruti-scross/", "destination": "/", "permanent": true },
     { "source": "/nexa-scross-petrol-on-road-price-in-hyderabad.php", "destination": "/", "permanent": true },
     { "source": "/maruti-scross-petrol-2", "destination": "/", "permanent": true },
@@ -65,7 +63,6 @@
     { "source": "/faq.php", "destination": "/terms-and-condition", "permanent": true },
     { "source": "/maruti-finance", "destination": "/maruti-car-finance", "permanent": true },
     { "source": "/maruti-nexa-car-service-center-near-me.php", "destination": "/book-online-maruti-nexa-car-service", "permanent": true },
-    { "source": "/book-online-maruti-nexa-car-service/", "destination": "/book-online-maruti-nexa-car-service", "permanent": true },
     { "source": "/nexa-car-offers/", "destination": "/nexa-car-offers-in-hyderabad", "permanent": true },
     { "source": "/more", "destination": "/", "permanent": true },
     { "source": "/grand-vitara-brezza-price-in-hyderabad", "destination": "/grand-vitara-on-road-price-in-hyderabad", "permanent": true },
@@ -73,9 +70,36 @@
     { "source": "/wp-content/uploads/2019/07/Brochure.pdf", "destination": "/", "permanent": true },
     { "source": "/images/CSR_POLICY.pdf", "destination": "/", "permanent": true },
     { "source": "/nexa-extended-warranty", "destination": "/terms-and-condition", "permanent": true },
-    { "source": "/nexa-ciaz-on-road-price-in-hyderabad.php", "destination": "/nexa-ciaz-on-road-price-in-hyderabad", "permanent": true }
+    { "source": "/nexa-ciaz-on-road-price-in-hyderabad.php", "destination": "/", "permanent": true },
+    { "source": "/offers", "destination": "/nexa-car-offers-in-hyderabad", "permanent": true },
+    { "source": "/offers/", "destination": "/nexa-car-offers-in-hyderabad", "permanent": true },
+    { "source": "/nexa-ciaz-on-road-price-in-hyderabad", "destination": "/", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/blog", "destination": "/api/blog-page" },
+    { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" },
+    { "source": "/blog-sitemap.xml", "destination": "/api/blog-sitemap" },
+    { "source": "/nexa-car-offers-in-hyderabad", "destination": "/api/offers-page" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/admin",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/admin/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
   ]
 }

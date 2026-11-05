@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { lazy, Suspense, useEffect, useState } from 'react';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import About from './screens/about/About';
@@ -57,17 +57,35 @@ import DrivingSchool from './components/DrivingSchool/DrivingSchool';
 import Subscribe from './screens/services/Subscribe';
 import TermsAndCond from './screens/more/TermsAndCond';
 import EVitara from './screens/cars/EVitara';
+import PageSeoOverride from './components/SEO/PageSeoOverride';
+
+// Loaded only when opened, so visitors never download Firebase or the editor.
+const BlogList = lazy(() => import('./screens/blog/BlogList'));
+const BlogPost = lazy(() => import('./screens/blog/BlogPost'));
+const AdminApp = lazy(() => import('./screens/admin/AdminApp'));
+
+const PageLoading = () => (
+  <p className='py-40 text-center text-gray-500'>Loading…</p>
+);
 
 function App() {
   const [selected, setSelected] = useState(0);
 
   const location = useLocation();
 
+  const { pathname } = useLocation();
+  const isDashboard = pathname === '/admin' || pathname.startsWith('/admin/');
+
   const isAdminRoute =
     location.pathname === '/maruti-suzuki-24/7-service-in-hyderabad' ||
-    location.pathname === '/dashboard';
+    location.pathname === '/dashboard' ||
+    isDashboard;
 
-  const { pathname } = useLocation();
+  // Covers arriving at the dashboard from another page. Opening it directly never
+  // starts the chat widget at all (see public/index.html).
+  useEffect(() => {
+    document.body.classList.toggle('hide-chatbot', isDashboard);
+  }, [isDashboard]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -159,7 +177,10 @@ function App() {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/accessories' element={<Accessories />} />
         <Route path='/nexa-car-offers-in-hyderabad' element={<Offers />} />
-        <Route path='/offers' element={<Offers />} />
+        <Route
+          path='/offers'
+          element={<Navigate to='/nexa-car-offers-in-hyderabad' replace />}
+        />
         <Route path='/pricelist' element={<NexaPriceList />} />
 
         <Route
@@ -191,13 +212,42 @@ function App() {
           path='/maruti-suzuki-driving-school'
           element={<DrivingSchool />}
         />
+        {/* Blog */}
+        <Route
+          path='/blog'
+          element={
+            <Suspense fallback={<PageLoading />}>
+              <BlogList />
+            </Suspense>
+          }
+        />
+        <Route
+          path='/blog/:slug'
+          element={
+            <Suspense fallback={<PageLoading />}>
+              <BlogPost />
+            </Suspense>
+          }
+        />
+        {/* Staff dashboard */}
+        <Route
+          path='/admin/*'
+          element={
+            <Suspense fallback={<PageLoading />}>
+              <AdminApp />
+            </Suspense>
+          }
+        />
         {/* PageNotFound */}
         <Route path='*' element={<PageNotFound />} />
       </Routes>
-      <CallButton />
+      {/* Must stay after <Routes>, so dashboard SEO changes win on every page. */}
+      <PageSeoOverride key={pathname} />
+      {!isDashboard && <CallButton />}
 
       <ToastContainer
-        position='top-right'
+        // On the dashboard, the top-right corner holds the Publish and Save buttons.
+        position={isDashboard ? 'bottom-right' : 'top-right'}
         autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}

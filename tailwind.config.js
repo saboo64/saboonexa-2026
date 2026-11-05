@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        nexa: "#1c1c1c",
+      },
       animation: {
         shake: "shake infinite 1s linear",
         type: "type 2.7s ease-out .8s infinite alternate both",

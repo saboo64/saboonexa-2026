@@ -160,7 +160,7 @@ const navigation = {
     },
     {
       name: "Blog",
-      to: "/maruti-nexa-latest-news",
+      to: "/blog",
     },
     {
       name: "24/7 Service",

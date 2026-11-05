@@ -177,14 +177,14 @@ const navigation = {
     },
     {
       name: "Blog",
-      to: "/maruti-nexa-latest-news",
+      to: "/blog",
     },
   ],
   all: [
     { name: "About Us", to: "/about" },
     { name: "Accessories", to: "/accessories" },
     { name: "Awards", to: "/awards" },
-    { name: "Blog", to: "/maruti-nexa-latest-news" },
+    { name: "Blog", to: "/blog" },
     { name: "Careers", to: "/career" },
     { name: "Nexa CNG", to: "/cng" },
     { name: "Compare", to: "/compare" },
@@ -655,7 +655,7 @@ function Header({ col }) {
                           <Link to="/awards">Awards</Link>
                         </h3>
                         <h3 className="cursor-pointer hover:text-black">
-                          <Link to="/maruti-nexa-latest-news">Blogs</Link>
+                          <Link to="/blog">Blogs</Link>
                         </h3>
                         {/* <h3 className="cursor-pointer hover:text-black">
                           <Link to="/corporate">Corporate</Link>

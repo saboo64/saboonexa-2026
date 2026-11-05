@@ -1,0 +1,121 @@
+/* Post text styles, shared by the public post page and the dashboard editor. */
+.blog-content {
+  color: #1f2937;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.blog-content p {
+  margin: 0 0 1.1em;
+}
+.blog-content h2 {
+  margin: 1.6em 0 0.5em;
+  color: #1c1c1c;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.blog-content h3 {
+  margin: 1.4em 0 0.4em;
+  color: #1c1c1c;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.blog-content > :first-child {
+  margin-top: 0;
+}
+.blog-content ul,
+.blog-content ol {
+  margin: 0 0 1.1em;
+  padding-left: 1.5em;
+}
+.blog-content ul {
+  list-style: disc;
+}
+.blog-content ol {
+  list-style: decimal;
+}
+.blog-content li > p {
+  margin-bottom: 0.3em;
+}
+.blog-content a {
+  color: #dc2626;
+  text-decoration: underline;
+}
+.blog-content blockquote {
+  margin: 1.4em 0;
+  padding-left: 1em;
+  border-left: 4px solid #dc2626;
+  color: #4b5563;
+  font-style: italic;
+}
+.blog-content hr {
+  margin: 2em 0;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+.blog-content code {
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: #f3f4f6;
+  font-size: 0.9em;
+}
+.blog-content pre {
+  margin: 0 0 1.1em;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+.blog-content pre code {
+  padding: 0;
+  background: none;
+}
+.blog-content img {
+  display: block;
+  height: auto;
+  margin: 1.6em auto;
+  border-radius: 8px;
+}
+.blog-content img[data-size='small'] {
+  width: 33%;
+}
+.blog-content img[data-size='medium'] {
+  width: 50%;
+}
+.blog-content img[data-size='large'] {
+  width: 75%;
+}
+.blog-content img[data-size='full'] {
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .blog-content img[data-size='small'] {
+    width: 60%;
+  }
+  .blog-content img[data-size='medium'] {
+    width: 80%;
+  }
+  .blog-content img[data-size='large'] {
+    width: 100%;
+  }
+}
+
+/* Editor only */
+.rich-editor-surface {
+  min-height: 420px;
+  padding: 1.5rem;
+  outline: none;
+}
+.rich-editor-surface img.ProseMirror-selectednode {
+  outline: 3px solid #1c1c1c;
+  outline-offset: 2px;
+}
+.rich-editor-surface p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  color: #9ca3af;
+  pointer-events: none;
+}

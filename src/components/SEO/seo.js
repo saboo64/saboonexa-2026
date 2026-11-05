@@ -1,15 +1,10 @@
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
-import { getCurrentSeasonalOffer } from '../../constants/seasonalOffers';
+import { applySeasonalPlaceholders } from '../../constants/seasonalOffers';
 
 // Any title/description/keywords string may contain {{SEASON}} / {{YEAR}}
 // placeholders — they're swapped for the live seasonal campaign name and
 // current year on every render, so no page needs manual monthly edits.
-const applySeasonalPlaceholders = (value) => {
-  if (typeof value !== 'string') return value;
-  const { label, year } = getCurrentSeasonalOffer();
-  return value.replace(/\{\{SEASON\}\}/g, label).replace(/\{\{YEAR\}\}/g, year);
-};
 
 const SITE_NAME = 'Popular Nexa';
 const DEFAULT_TITLE =
@@ -35,6 +30,7 @@ const Seo = ({
   imageHeight = '630',
   noindex = false,
   robots,
+  type = 'website',
 }) => {
   title = applySeasonalPlaceholders(title);
   description = applySeasonalPlaceholders(description);
@@ -58,7 +54,7 @@ const Seo = ({
       <link rel='canonical' href={resolvedCanonical} />
 
       {/* Open Graph */}
-      <meta property='og:type' content='website' />
+      <meta property='og:type' content={type} />
       <meta property='og:site_name' content={SITE_NAME} />
       <meta property='og:locale' content='en_IN' />
       <meta property='og:url' content={url} />
@@ -95,6 +91,7 @@ Seo.propTypes = {
   author: PropTypes.string,
   noindex: PropTypes.bool,
   robots: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default Seo;

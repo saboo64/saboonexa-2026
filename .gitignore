@@ -64,6 +64,13 @@ build
 
 # dotenv environment variables file
 .env
+.env.*
+!.env.example
+
+# Created before each build from the dashboard's saved SEO changes
+/src/generated
+
+.vercel
 
 # dataconnect generated files
 .dataconnect

@@ -57,3 +57,4 @@ Disallow: /thank-you
 Disallow: /dashboard
 
 Sitemap: https://saboonexa.in/sitemap.xml
+Sitemap: https://www.saboonexa.in/blog-sitemap.xml

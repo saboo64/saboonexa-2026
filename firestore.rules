@@ -1,0 +1,59 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function adminDoc() {
+      return /databases/$(database)/documents/admins/$(request.auth.uid);
+    }
+
+    function isAdmin() {
+      return request.auth != null && exists(adminDoc());
+    }
+
+    // A staff member with no `roles` field has full access. Otherwise `roles` lists
+    // what they can manage: 'blog', 'offers', and 'seo'.
+    function hasRole(role) {
+      return isAdmin()
+        && (!('roles' in get(adminDoc()).data) || role in get(adminDoc()).data.roles);
+    }
+
+    // Admins are added by hand in the Firebase console, using the user's UID.
+    // Nobody can make themselves an admin from the website.
+    match /admins/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Visitors read published posts through /api/posts, never directly, so
+    // drafts stay private.
+    match /posts/{slug} {
+      allow read, write: if hasRole('blog');
+    }
+
+    // Visitors read live offers through /api/offers, so scheduled ones stay private.
+    match /offers/{id} {
+      allow read, write: if hasRole('offers');
+    }
+    match /offerBanners/{id} {
+      allow read, write: if hasRole('offers');
+    }
+
+    match /seoPages/{id} {
+      allow read, write: if hasRole('seo');
+    }
+    match /seoMeta/{id} {
+      allow read, write: if hasRole('seo');
+    }
+
+    // A permanent record of who changed what: it can't be edited or deleted, and
+    // entries can't be written in someone else's name.
+    match /changeLog/{id} {
+      allow read: if isAdmin();
+      allow create: if isAdmin() && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

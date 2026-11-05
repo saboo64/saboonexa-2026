@@ -157,3 +157,10 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   width: 8px;
 }
+
+/* Staff dashboard: hides the chat widget if it started on an earlier page. */
+.hide-chatbot iframe[src*="chat360"],
+.hide-chatbot [id*="chat360"],
+.hide-chatbot [class*="chat360"] {
+  display: none !important;
+}

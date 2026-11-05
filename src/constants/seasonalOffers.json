@@ -1,0 +1,50 @@
+[
+  {
+    "month": "January",
+    "label": "New Year & Republic Day"
+  },
+  {
+    "month": "February",
+    "label": "Winter"
+  },
+  {
+    "month": "March",
+    "label": "Financial Year-End"
+  },
+  {
+    "month": "April",
+    "label": "New Financial Year"
+  },
+  {
+    "month": "May",
+    "label": "Summer"
+  },
+  {
+    "month": "June",
+    "label": "Monsoon"
+  },
+  {
+    "month": "July",
+    "label": "Monsoon"
+  },
+  {
+    "month": "August",
+    "label": "Independence Day & Monsoon"
+  },
+  {
+    "month": "September",
+    "label": "Monsoon"
+  },
+  {
+    "month": "October",
+    "label": "Dussehra & Navratri"
+  },
+  {
+    "month": "November",
+    "label": "Diwali"
+  },
+  {
+    "month": "December",
+    "label": "Year-End"
+  }
+]
